@@ -147,7 +147,7 @@ export const PROJECTS = [
       "NextAuth.js", "Zustand", "Zod",
       "Docker", "Radix UI", "Recharts",
     ],
-    liveUrl: "https://example.com",
+    liveUrl: null,
     githubUrl: null,
     achievements: [
       "100 leads analyzed per job across 1–7 concurrent crawlers",
