@@ -187,7 +187,7 @@ function ArchitectureSection() {
                     )}
                   </div>
                 </div>
-                <div className={`hidden md:block ${i % 2 === 1 ? "md:order-1" : ""}`}>
+                <div className={`${i % 2 === 1 ? "md:order-1" : ""}`}>
                   {agent.name === "Alex" ? (
                     <DesktopMockup>
                       <img src="/images/lead-engine/alex.webp" alt="Alex lead collection interface" className="w-full object-contain" />
