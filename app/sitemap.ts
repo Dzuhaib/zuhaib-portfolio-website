@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { SERVICES, PROJECTS, BLOG_POSTS } from "@/lib/constants";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://zuhaibahmed.com";
+  const baseUrl = "https://zuhaib.aivized.com";
 
   const staticPages = [
     "",

@@ -5,7 +5,7 @@
 Zuhaib Ahmed Based in Sindh, Pakistan — a Full Stack Developer & AI Engineer helping businesses across the globe build scalable web applications and AI-powered systems that drive real results. With deep expertise in Next.js, React, Python, and AI technologies like LangChain and RAG. Specializing in AI chatbot development, custom web applications, and intelligent automation — delivering world-class solutions from Sindh, Pakistan.
 
 **Location:** Sindh, Pakistan
-**Email:** hello@zuhaibahmed.com
+**Email:** hello@zuhaib.aivized.com
 **Availability:** Open to projects
 
 ## Core Services
@@ -133,14 +133,14 @@ AI + Automation multi-agent system. Tech: TypeScript, Next.js 15, React 19, Tail
 - GitHub: https://github.com/zuhaibahmed
 - LinkedIn: https://linkedin.com/in/zuhaibahmed
 - X: https://x.com/zuhaibahmed
-- Email: hello@zuhaibahmed.com
+- Email: hello@zuhaib.aivized.com
 - WhatsApp: https://wa.me/923390349804
 
 ## Pages
 
-- Home: https://zuhaibahmed.com/
-- Portfolio: https://zuhaibahmed.com/portfolio
-- Services: https://zuhaibahmed.com/services
-- About: https://zuhaibahmed.com/about
-- Blog: https://zuhaibahmed.com/blog
-- Contact: https://zuhaibahmed.com/contact
+- Home: https://zuhaib.aivized.com/
+- Portfolio: https://zuhaib.aivized.com/portfolio
+- Services: https://zuhaib.aivized.com/services
+- About: https://zuhaib.aivized.com/about
+- Blog: https://zuhaib.aivized.com/blog
+- Contact: https://zuhaib.aivized.com/contact

@@ -28,6 +28,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: "/api/",
       },
     ],
-    sitemap: "https://zuhaibahmed.com/sitemap.xml",
+    sitemap: "https://zuhaib.aivized.com/sitemap.xml",
   };
 }

@@ -3,7 +3,7 @@ export const SITE = {
   title: "Zuhaib Ahmed Based in Sindh - Full Stack Developer & AI Engineer",
   description:
     "Zuhaib Ahmed Based in Sindh, Pakistan — Full Stack Developer & AI Engineer building scalable web applications, AI automation systems, intelligent chatbots, and modern digital products for global clients.",
-  url: "https://zuhaibahmed.com",
+  url: "https://zuhaib.aivized.com",
   locale: "en_US",
   author: "Zuhaib Ahmed",
   email: "myselfzuhaib@gmail.com",
