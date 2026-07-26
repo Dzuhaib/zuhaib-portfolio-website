@@ -67,11 +67,6 @@ export function ProjectHero({ project }: { project: { slug: string; category: st
               <h1 className="heading-xl text-white mb-6">{project.title}</h1>
               <p className="text-lg text-white/60 leading-relaxed">{project.description}</p>
               <div className="flex flex-wrap gap-3 mt-8">
-                {project.liveUrl && (
-                  <Button href={project.liveUrl} size="md" className="bg-white text-black hover:bg-white/90">
-                    Visit Live Site
-                  </Button>
-                )}
                 {project.githubUrl && (
                   <Button href={project.githubUrl} variant="outline" size="md" className="text-white border-white hover:bg-white hover:text-black">
                     View Source
