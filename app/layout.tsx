@@ -77,6 +77,7 @@ export default function RootLayout({
     sameAs: [SITE.social.github, SITE.social.linkedin, SITE.social.twitter],
     jobTitle: ["Full Stack Developer", "AI Engineer"],
     description: SITE.description,
+    email: SITE.email,
   };
 
   return (
