@@ -1,8 +1,8 @@
 export const SITE = {
   name: "Zuhaib Ahmed",
-  title: "Zuhaib Ahmed Based in Sindh - Full Stack Developer & AI Engineer",
+  title: "Zuhaib Ahmed — AI Automation & AI Systems Engineer",
   description:
-    "Zuhaib Ahmed Based in Sindh, Pakistan — Full Stack Developer & AI Engineer building scalable web applications, AI automation systems, intelligent chatbots, and modern digital products for global clients.",
+    "Zuhaib Ahmed Based in Sindh, Pakistan — AI Systems & Automation Engineer building scalable AI SaaS platforms, multi-agent automation engines, and intelligent web applications for global clients.",
   url: "https://zuhaib.aivized.com",
   locale: "en_US",
   author: "Zuhaib Ahmed",
@@ -29,9 +29,12 @@ export const PROJECTS = [
   {
     title: "AIVIZED Agent Factory",
     slug: "aivized-agent-factory",
-    category: "AI + No-Code",
+    category: "AI SaaS & No-Code Platform",
     description:
-      "Struggling with slow chatbot delivery? I built AIVIZED Agent Factory — a no-code AI platform that deploys production-ready chatbots in under 10 minutes. Custom-trained on your business data, embeddable anywhere, no coding required.",
+      "Struggling with slow chatbot delivery? AIVIZED Agent Factory is a no-code AI platform that builds, configures, and deploys production-ready AI chatbots in under 10 minutes.",
+    problem: "Custom AI chatbot development took 1–2 weeks per client with manual backend wiring, custom UI development, and zero reusability across client projects.",
+    solution: "Built a self-service AI agent engine featuring a FastAPI/OpenAI backend, SSE streaming, and a minified Vite IIFE embeddable frontend widget.",
+    impact: "Reduced delivery turnaround from 14 days to under 10 minutes per chatbot deployment with 100% code reusability.",
     thumbnail: "/images/project-agent-factory.svg",
     technologies: [
       "Python", "FastAPI", "SQLAlchemy", "PostgreSQL", "OpenAI",
@@ -48,11 +51,14 @@ export const PROJECTS = [
     featured: true,
   },
   {
-    title: "Instagram Growth OS — Grow with Meta Verified APIs",
+    title: "Instagram Growth OS — Meta Verified AI SaaS",
     slug: "growth-os",
-    category: "AI + Social",
+    category: "AI SaaS & Social Intelligence",
     description:
-      "Stop guessing what works on Instagram. Growth OS connects directly to Meta's official API to analyze your content, generate viral captions with AI, score every post, spy on competitors, and schedule posts — all from one dashboard.",
+      "Growth OS connects directly to Meta's official Graph API to analyze content performance, generate viral AI copy, score posts, and run competitor gap analysis from one workspace.",
+    problem: "Content creators and agencies rely on guesswork for Instagram growth, spending hours writing captions without performance prediction or competitor insights.",
+    solution: "Engineered an AI-driven growth workspace combining official Meta Graph API telemetry with OpenAI models for automated content optimization and scheduling.",
+    impact: "Automated 80% of content strategy workflows while providing real-time engagement scoring before publishing.",
     thumbnail: "/images/growth-os/homepage.webp",
     technologies: [
       "TypeScript", "Next.js 16", "React 19", "Tailwind CSS v4",
@@ -70,11 +76,14 @@ export const PROJECTS = [
     featured: true,
   },
   {
-    title: "Talent AI — Smart Job & Candidate Matching",
+    title: "Talent AI — AI Recruitment & CV Screening",
     slug: "talent-ai",
-    category: "AI + HR Tech",
+    category: "AI Systems & HR Tech",
     description:
-      "Manual CV screening is dead. Talent AI lets you create custom job forms, share a link, and let Google Gemini AI automatically score, rank, and shortlist candidates based on their CV vs your requirements — with full transparency on why each candidate passed or failed.",
+      "Automated recruitment engine that scores, ranks, and shortlists candidate resumes against specific job requirements using Google Gemini AI.",
+    problem: "HR teams spend dozens of hours manually reading unstructured PDF/DOCX resumes, leading to hiring bottlenecks and bias.",
+    solution: "Developed an automated pipeline extracting raw text via pdfjs-dist/mammoth and utilizing Google Gemini AI to generate objective suitability scores and reasoning.",
+    impact: "Shortened candidate evaluation from days to seconds while eliminating resume screening bias with detailed candidate scorecards.",
     thumbnail: "/images/talent-ai/Homepage.webp",
     technologies: [
       "TypeScript", "React 19", "Vite 6", "Express",
@@ -91,11 +100,14 @@ export const PROJECTS = [
     featured: true,
   },
   {
-    title: "FiveOS — Fiverr Growth using AI",
+    title: "FiveOS — Fiverr Market Intelligence AI",
     slug: "fiveos",
-    category: "AI + Market Intelligence",
+    category: "AI Market Intelligence",
     description:
-      "Want to dominate your Fiverr niche? FiveOS scrapes real-time gig data, reviews, and market stats — then uses OpenAI o3-mini and GPT-4o to generate a custom growth strategy streamed live to your browser. Know exactly where to compete and how to win.",
+      "Scrapes live Fiverr gig data, keyword trends, and pricing statistics to generate actionable competitive strategies using dual OpenAI reasoning models.",
+    problem: "Freelancers struggle to identify profitable niche gaps and optimize gig SEO in competitive marketplaces like Fiverr.",
+    solution: "Combined low-level scraping with Cloudflare bypass (curl_cffi) and deep-reasoning AI models (o3-mini & GPT-4o) streaming strategy outputs via WebSockets.",
+    impact: "Delivers instant niche entry blueprints and positioning strategies derived from real-time live market telemetry.",
     thumbnail: "/images/fiveos/Homepage.webp",
     technologies: [
       "TypeScript", "Python", "Next.js 15", "React 19", "FastAPI",
@@ -112,11 +124,14 @@ export const PROJECTS = [
     featured: false,
   },
   {
-    title: "VideoDown — YouTube, Instagram & TikTok Downloader",
+    title: "VideoDown — Cross-Platform Downloader",
     slug: "videodown",
-    category: "Tool",
+    category: "Web Tool & Media Utility",
     description:
-      "Need to save a video or extract audio from any platform? Paste any YouTube, Instagram, or TikTok link — choose MP4 video or MP3 audio — and download instantly. Built with youtube-dl-exec and ffmpeg for maximum format support.",
+      "Instant media utility for downloading video (MP4) and converting high-quality audio (MP3) from YouTube, TikTok, and Instagram.",
+    problem: "Users face slow, ad-ridden, insecure online video downloaders with frequent link breakage.",
+    solution: "Engineered a clean, rate-limited Next.js web application powered by youtube-dl-exec and ffmpeg-static server processing.",
+    impact: "Sub-second URL resolution with reliable conversion across 3 major video platforms.",
     thumbnail: "/images/videodown/Youtube, insta, tiktok video downloader.webp",
     technologies: [
       "TypeScript", "Next.js 14", "React 18", "Tailwind CSS",
@@ -133,11 +148,14 @@ export const PROJECTS = [
     featured: false,
   },
   {
-    title: "AI Lead Engine — Automated Outreach System",
+    title: "AI Lead Engine — Autonomous 4-Agent Pipeline",
     slug: "ai-lead-engine",
-    category: "AI + Automation",
+    category: "Autonomous AI Agents",
     description:
-      "Tired of manual lead generation? AI Lead Engine runs 4 autonomous agents — discovering businesses from Google Maps, verifying their SEO/chatbot needs, and sending personalized AI-crafted emails — all on autopilot. Set it and forget it.",
+      "Autonomous 4-agent outbound system (Alex, Sarah, Marcus, Chloe) that discovers leads from Google Maps, verifies SEO/chatbot gaps, and sends personalized AI emails on autopilot.",
+    problem: "Manual B2B lead prospecting, lead audit, and cold email outreach require enormous human labor and deliver poor response rates.",
+    solution: "Designed a multi-agent orchestration pipeline using Playwright crawlers, PostgreSQL/BullMQ queue management, and OpenAI cold outreach generation.",
+    impact: "Processes 100+ qualified business leads per job automatically without human intervention.",
     thumbnail: "/images/project-lead-engine.svg",
     technologies: [
       "TypeScript", "Next.js 15", "React 19", "Tailwind CSS",

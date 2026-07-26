@@ -65,17 +65,77 @@ function OverviewSection({ project }: { project: (typeof PROJECTS)[number] }) {
   return (
     <section className="section-padding bg-white">
       <div className="container-main">
-        <div className="max-w-3xl">
-          <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
-            Overview
+        <div className="max-w-5xl">
+          <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-3">
+            Case Study Overview
           </p>
-          <h2 className="heading-lg text-black mb-6">The problem we solved</h2>
-          <p className="text-neutral-500 leading-relaxed text-lg">{project.description}</p>
-          <div className="mt-8 p-6 bg-neutral-50 border border-neutral-100">
-            <p className="text-sm font-semibold text-black mb-1">Looking for something similar?</p>
-            <p className="text-sm text-neutral-500">
-              Every project starts with a conversation. <a href="https://wa.me/923390349804" target="_blank" rel="noopener noreferrer" className="text-green underline">Send me a message on WhatsApp</a> — let&apos;s discuss what you need.
-            </p>
+          <h2 className="heading-lg text-black mb-10">Value & Architecture Breakdown</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            {/* Problem */}
+            <div className="p-6 border border-neutral-200 rounded-sm bg-neutral-50/50">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-2 h-2 rounded-full bg-red-500" />
+                <h3 className="text-xs font-mono tracking-wider uppercase text-neutral-500 font-bold">1. Problem</h3>
+              </div>
+              <p className="text-neutral-800 text-base leading-relaxed">
+                {project.problem}
+              </p>
+            </div>
+
+            {/* Solution */}
+            <div className="p-6 border border-neutral-200 rounded-sm bg-neutral-50/50">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-2 h-2 rounded-full bg-green" />
+                <h3 className="text-xs font-mono tracking-wider uppercase text-neutral-500 font-bold">2. Solution</h3>
+              </div>
+              <p className="text-neutral-800 text-base leading-relaxed">
+                {project.solution}
+              </p>
+            </div>
+
+            {/* Tech Stack Summary */}
+            <div className="p-6 border border-neutral-200 rounded-sm bg-neutral-50/50">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-2 h-2 rounded-full bg-blue-500" />
+                <h3 className="text-xs font-mono tracking-wider uppercase text-neutral-500 font-bold">3. Tech Stack</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map((t) => (
+                  <span key={t} className="text-xs px-2.5 py-1 bg-white border border-neutral-200 text-neutral-700 font-mono">
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Business Impact */}
+            <div className="p-6 border border-neutral-200 rounded-sm bg-neutral-50/50">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-2 h-2 rounded-full bg-amber-500" />
+                <h3 className="text-xs font-mono tracking-wider uppercase text-neutral-500 font-bold">4. Business Impact</h3>
+              </div>
+              <p className="text-neutral-800 text-base leading-relaxed font-semibold">
+                {project.impact}
+              </p>
+            </div>
+          </div>
+
+          <div className="p-6 bg-neutral-900 border border-neutral-800 rounded-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+              <p className="text-sm font-semibold text-white">Need an AI system tailored to your business?</p>
+              <p className="text-xs text-neutral-400 mt-0.5">
+                Let&apos;s discuss custom AI automation, agents, or SaaS development.
+              </p>
+            </div>
+            <a
+              href="https://wa.me/923390349804"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2.5 bg-green text-black font-semibold text-xs rounded-sm hover:bg-emerald-400 transition-colors whitespace-nowrap"
+            >
+              Contact on WhatsApp →
+            </a>
           </div>
         </div>
       </div>

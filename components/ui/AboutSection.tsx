@@ -27,7 +27,7 @@ export function AboutSection() {
           <div className="lg:col-span-5 flex items-center justify-center">
             <ProfileCard
               name="Zuhaib Ahmed"
-              title="Full Stack Developer & AI Engineer"
+              title="AI Automation & AI Systems Engineer"
               handle="zuhaibahmed"
               status="Available"
               contactText="Let's Talk"
@@ -47,15 +47,15 @@ export function AboutSection() {
               About Me
             </p>
               <h2 className="heading-lg text-black mb-6">
-                I turn complex problems into{" "}
-                <Highlight>intelligent</Highlight> solutions
+                I build autonomous AI systems and{" "}
+                <Highlight>scalable</Highlight> AI SaaS products
               </h2>
               <div className="space-y-4 text-neutral-500 leading-relaxed max-w-lg">
                 <p className="text-lg text-neutral-600">
-                  I&apos;m Zuhaib Ahmed — a Full Stack Developer & AI Engineer Based in Sindh, Pakistan — helping businesses worldwide build scalable web applications, AI chatbots, and intelligent automation systems that drive measurable results.
+                  I&apos;m Zuhaib Ahmed — an AI Systems & Automation Engineer based in Sindh, Pakistan. I specialize in building custom AI SaaS platforms, multi-agent autonomous pipelines, and high-performance full-stack web applications for global clients.
                 </p>
                 <p>
-                  My expertise spans Next.js, React, Python, TypeScript, and AI technologies like LangChain, RAG, and the OpenAI SDK. I don&apos;t just write code — I engineer solutions that move your business forward. Every project I deliver is built for performance, scalability, and real-world impact.
+                  My stack centers around Next.js, FastAPI/Python, TypeScript, PostgreSQL, and multi-model AI integrations (OpenAI o3-mini/GPT-4o, Google Gemini, BullMQ agent orchestration). I build reliable software architecture that automates complex business operations and generates clear ROI.
                 </p>
                 <p>
                   From startups to established businesses, my clients choose me because I deliver production-ready products — not prototypes. When I&apos;m not building, I&apos;m exploring new AI frameworks, optimizing workflows, and pushing what the web can do.
