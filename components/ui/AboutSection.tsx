@@ -52,7 +52,7 @@ export function AboutSection() {
               </h2>
               <div className="space-y-4 text-neutral-500 leading-relaxed max-w-lg">
                 <p className="text-lg text-neutral-600">
-                  I&apos;m Zuhaib Ahmed — an AI Systems & Automation Engineer based in Sindh, Pakistan. I specialize in building custom AI SaaS platforms, multi-agent autonomous pipelines, and high-performance full-stack web applications for global clients.
+                  I&apos;m Zuhaib Ahmed Based in Sindh — an AI Systems & Automation Engineer. I specialize in building custom AI SaaS platforms, multi-agent autonomous pipelines, and high-performance full-stack web applications for global clients.
                 </p>
                 <p>
                   My stack centers around Next.js, FastAPI/Python, TypeScript, PostgreSQL, and multi-model AI integrations (OpenAI o3-mini/GPT-4o, Google Gemini, BullMQ agent orchestration). I build reliable software architecture that automates complex business operations and generates clear ROI.
