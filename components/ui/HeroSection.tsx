@@ -47,7 +47,7 @@ export function HeroSection() {
           className="text-center"
         >
           <p className="text-white/70 text-sm font-mono mb-4 tracking-widest uppercase">
-            Zuhaib Ahmed — AI Automation & AI Systems Engineer
+            Zuhaib Ahmed Based in Sindh — AI Automation & AI Systems Engineer
           </p>
           <h1 className="text-3xl md:text-6xl font-bold text-white leading-tight">
             AI Systems & Autonomous Agents That <span className="text-white/90">Scale</span> Your Business
