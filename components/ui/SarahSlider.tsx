@@ -4,8 +4,8 @@ import { useState } from "react";
 import { DesktopMockup } from "./DesktopMockup";
 
 const images = [
-  { src: "/images/lead-engine/sarah-1.png", alt: "Sarah auditing leads interface" },
-  { src: "/images/lead-engine/sarah-2.png", alt: "Sarah leads needing attention" },
+  { src: "/images/lead-engine/sarah-1.webp", alt: "Sarah auditing leads interface" },
+  { src: "/images/lead-engine/sarah-2.webp", alt: "Sarah leads needing attention" },
 ];
 
 export function SarahSlider() {

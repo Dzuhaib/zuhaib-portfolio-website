@@ -9,13 +9,13 @@ import { TestimonialsSection } from "@/components/ui/TestimonialsSection";
 
 
 export const metadata: Metadata = {
-  title: "Zuhaib Ahmed — Full Stack Developer & AI Engineer",
+  title: "Zuhaib Ahmed Based in Sindh - Full Stack Developer & AI Engineer",
   description:
-    "Full Stack Developer & AI Engineer creating scalable web applications, AI automation systems, intelligent chatbots, and modern user experiences.",
+    "Zuhaib Ahmed Based in Sindh — Full Stack Developer & AI Engineer building scalable web applications, AI automation systems, intelligent chatbots, and modern digital products for global clients.",
   openGraph: {
-    title: "Zuhaib Ahmed — Full Stack Developer & AI Engineer",
+    title: "Zuhaib Ahmed Based in Sindh - Full Stack Developer & AI Engineer",
     description:
-      "Full Stack Developer & AI Engineer creating scalable web applications, AI automation systems, intelligent chatbots, and modern user experiences.",
+      "Zuhaib Ahmed Based in Sindh — Full Stack Developer & AI Engineer building scalable web applications, AI automation systems, intelligent chatbots, and modern digital products for global clients.",
   },
   alternates: { canonical: "/" },
 };

@@ -17,6 +17,8 @@ export function CustomCursor() {
   useEffect(() => {
     setMounted(true);
 
+    if (window.matchMedia("(pointer: coarse)").matches) return;
+
     const move = (e: MouseEvent) => {
       cursorX.set(e.clientX);
       cursorY.set(e.clientY);

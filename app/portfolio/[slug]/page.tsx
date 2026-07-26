@@ -69,8 +69,14 @@ function OverviewSection({ project }: { project: (typeof PROJECTS)[number] }) {
           <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
             Overview
           </p>
-          <h2 className="heading-lg text-black mb-6">What this project was about</h2>
+          <h2 className="heading-lg text-black mb-6">The problem we solved</h2>
           <p className="text-neutral-500 leading-relaxed text-lg">{project.description}</p>
+          <div className="mt-8 p-6 bg-neutral-50 border border-neutral-100">
+            <p className="text-sm font-semibold text-black mb-1">Looking for something similar?</p>
+            <p className="text-sm text-neutral-500">
+              Every project starts with a conversation. <a href="https://wa.me/923390349804" target="_blank" rel="noopener noreferrer" className="text-green underline">Send me a message on WhatsApp</a> — let&apos;s discuss what you need.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -184,13 +190,13 @@ function ArchitectureSection() {
                 <div className={`hidden md:block ${i % 2 === 1 ? "md:order-1" : ""}`}>
                   {agent.name === "Alex" ? (
                     <DesktopMockup>
-                      <img src="/images/lead-engine/alex.png" alt="Alex lead collection interface" className="w-full object-contain" />
+                      <img src="/images/lead-engine/alex.webp" alt="Alex lead collection interface" className="w-full object-contain" />
                     </DesktopMockup>
                   ) : agent.name === "Sarah" ? (
                     <SarahSlider />
                   ) : agent.name === "Marcus" ? (
                     <DesktopMockup>
-                      <img src="/images/lead-engine/marcus.png" alt="Marcus email outreach interface" className="w-full object-contain" />
+                      <img src="/images/lead-engine/marcus.webp" alt="Marcus email outreach interface" className="w-full object-contain" />
                     </DesktopMockup>
                   ) : (
                     <DesktopMockup className={agent.locked ? "border-amber-700/50" : ""}>
@@ -599,32 +605,32 @@ function GrowthOSSection() {
     {
       title: "Hook Analyzer",
       desc: "AI-powered analysis of post hooks — scores effectiveness, suggests improvements, and shows what's working in your niche.",
-      img: "/images/growth-os/Hook analyzer.png",
+      img: "/images/growth-os/Hook analyzer.webp",
     },
     {
       title: "Caption Generator",
       desc: "Generate viral-worthy captions tailored to your brand voice and content type. Trained on high-performing Instagram patterns.",
-      img: "/images/growth-os/Caption generator.png",
+      img: "/images/growth-os/Caption generator.webp",
     },
     {
       title: "Content Scorer",
       desc: "Every post gets a data-driven score based on engagement potential, timing, format, and historical performance of similar content.",
-      img: "/images/growth-os/Content Scorer check.png",
+      img: "/images/growth-os/Content Scorer check.webp",
     },
     {
       title: "Competitor Gap Analyzer",
       desc: "Analyze competitor profiles side-by-side. Discover content gaps, underserved topics, and opportunities to outperform.",
-      img: "/images/growth-os/Competitor Gap analyzer.png",
+      img: "/images/growth-os/Competitor Gap analyzer.webp",
     },
     {
       title: "Niche Tracker",
       desc: "Track trending topics and hashtags in your niche. Stay ahead of content trends before they saturate.",
-      img: "/images/growth-os/Nicher Tracker.png",
+      img: "/images/growth-os/Nicher Tracker.webp",
     },
     {
       title: "Schedule Posts",
       desc: "Plan and schedule Instagram posts directly from the dashboard with a clean calendar interface.",
-      img: "/images/growth-os/Schedule posts.png",
+      img: "/images/growth-os/Schedule posts.webp",
     },
   ];
 
@@ -804,25 +810,25 @@ function FiveOSSection() {
       step: "01",
       title: "Add Niche & Business",
       desc: "Enter your Fiverr niche and business type. The system kicks off a full market analysis pipeline — scraping gigs, reviews, keywords, and competitor stats in real-time.",
-      img: "/images/fiveos/1 Add Niche and business and click genenrate strategy.png",
+      img: "/images/fiveos/1 Add Niche and business and click genenrate strategy.webp",
     },
     {
       step: "02",
       title: "Scraping & Analysis",
       desc: "The Python backend uses curl_cffi to bypass Cloudflare and scrape live Fiverr data — gig listings, pricing, reviews, keywords, and seller stats. BeautifulSoup + lxml parse everything into structured data.",
-      img: "/images/fiveos/2 scraping gig lists, kyewords, reviews and market stats.png",
+      img: "/images/fiveos/2 scraping gig lists, kyewords, reviews and market stats.webp",
     },
     {
       step: "03",
       title: "Deep Reasoning Mode",
       desc: "OpenAI o3-mini analyzes the scraped data with deep reasoning — identifying market gaps, pricing opportunities, keyword demand, and competitive weaknesses.",
-      img: "/images/fiveos/3 Deep reasoning mode.png",
+      img: "/images/fiveos/3 Deep reasoning mode.webp",
     },
     {
       step: "04",
       title: "Growth Strategy + Streaming UI",
       desc: "GPT-4o generates a comprehensive growth strategy. The result streams to the frontend in real-time via WebSockets — displayed alongside the WebGL shader background for a premium experience.",
-      img: "/images/fiveos/4 Result Strategy.png",
+      img: "/images/fiveos/4 Result Strategy.webp",
     },
   ];
 
@@ -947,25 +953,25 @@ function TalentAISection() {
       step: "01",
       title: "Create Job Application Form",
       desc: "Employers build custom job application forms with specific requirements, skills, and qualifications. The form auto-generates a shareable link ready for distribution.",
-      img: "/images/talent-ai/1 Creating job application form.png",
+      img: "/images/talent-ai/1 Creating job application form.webp",
     },
     {
       step: "02",
       title: "Share Link & Collect Candidates",
       desc: "Copy the link and share it directly with candidates or post on social media. Each submission feeds into the system automatically.",
-      img: "/images/talent-ai/2 Created job application and copy link and share with candidates or social posting.png",
+      img: "/images/talent-ai/2 Created job application and copy link and share with candidates or social posting.webp",
     },
     {
       step: "03",
       title: "AI-Powered Auto-Shortlisting",
       desc: "When a candidate submits their CV, the system extracts text (PDF via pdfjs-dist, DOCX via mammoth) and scores it against the job requirements using Google Gemini AI. ATS-friendly CVs get shortlisted automatically.",
-      img: "/images/talent-ai/3 I have submitted my cv through the copied link and my CV was ats frienldy so I got shortlisted automatically.png",
+      img: "/images/talent-ai/3 I have submitted my cv through the copied link and my CV was ats frienldy so I got shortlisted automatically.webp",
     },
     {
       step: "04",
       title: "Scoring & Reasoning",
       desc: "Each submission shows exactly why it was shortlisted or rejected — with a detailed score breakdown based on the candidate's CV against the job requirements. Full transparency, no bias.",
-      img: "/images/talent-ai/4 in the view submission it give reason why he made it shortlist and the scoring based on the candidate cv and the job requiremets..png",
+      img: "/images/talent-ai/4 in the view submission it give reason why he made it shortlist and the scoring based on the candidate cv and the job requiremets..webp",
     },
   ];
 
@@ -1112,13 +1118,13 @@ function VideoDownSection() {
       step: "01",
       title: "Paste Your Link",
       desc: "Drop a YouTube, Instagram, or TikTok URL into the input field. The app detects the platform automatically.",
-      img: "/images/videodown/Youtube, insta, tiktok video downloader.png",
+      img: "/images/videodown/Youtube, insta, tiktok video downloader.webp",
     },
     {
       step: "02",
       title: "Choose Format",
       desc: "Select whether you want video (MP4) or audio-only (MP3). ffmpeg handles the conversion on the fly.",
-      img: "/images/videodown/paste your link and choose the format whether you want audio or video in format.png",
+      img: "/images/videodown/paste your link and choose the format whether you want audio or video in format.webp",
     },
   ];
 

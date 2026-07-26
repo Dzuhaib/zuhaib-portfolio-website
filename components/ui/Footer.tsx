@@ -62,17 +62,14 @@ export function Footer() {
 
         <div className="w-full border-t border-neutral-800 py-6 px-6 flex flex-col md:flex-row items-center justify-between gap-4 z-20">
           <div className="flex items-center gap-6">
-            <a href={SITE.social.github} target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
-              GitHub
+            <a href={`mailto:${SITE.email}`} className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
+              Email
             </a>
             <a href={SITE.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
               LinkedIn
             </a>
-            <a href={SITE.social.twitter} target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
-              X
-            </a>
-            <a href={`mailto:${SITE.email}`} className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
-              Email
+            <a href={SITE.social.github} target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
+              GitHub
             </a>
           </div>
           <p className="text-neutral-500 text-xs">

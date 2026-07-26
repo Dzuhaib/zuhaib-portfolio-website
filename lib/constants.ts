@@ -1,17 +1,17 @@
 export const SITE = {
   name: "Zuhaib Ahmed",
-  title: "Zuhaib Ahmed — Full Stack Developer & AI Engineer",
+  title: "Zuhaib Ahmed Based in Sindh - Full Stack Developer & AI Engineer",
   description:
-    "Full Stack Developer & AI Engineer creating scalable web applications, AI automation systems, intelligent chatbots, and modern user experiences.",
+    "Zuhaib Ahmed Based in Sindh, Pakistan — Full Stack Developer & AI Engineer building scalable web applications, AI automation systems, intelligent chatbots, and modern digital products for global clients.",
   url: "https://zuhaibahmed.com",
   locale: "en_US",
   author: "Zuhaib Ahmed",
-  email: "hello@zuhaibahmed.com",
-  location: "Pakistan",
+  email: "myselfzuhaib@gmail.com",
+  location: "Sindh, Pakistan",
   availability: true,
   social: {
-    github: "https://github.com/zuhaibahmed",
-    linkedin: "https://linkedin.com/in/zuhaibahmed",
+    github: "https://github.com/Dzuhaib",
+    linkedin: "https://linkedin.com/in/zuhaibah/",
     twitter: "https://x.com/zuhaibahmed",
   },
 } as const;
@@ -31,7 +31,7 @@ export const PROJECTS = [
     slug: "aivized-agent-factory",
     category: "AI + No-Code",
     description:
-      "Faced with delayed chatbot delivery deadlines, I built a no-code platform that lets me deploy production-ready AI chatbots in under 10 minutes — without writing a single line of code.",
+      "Struggling with slow chatbot delivery? I built AIVIZED Agent Factory — a no-code AI platform that deploys production-ready chatbots in under 10 minutes. Custom-trained on your business data, embeddable anywhere, no coding required.",
     thumbnail: "/images/project-agent-factory.svg",
     technologies: [
       "Python", "FastAPI", "SQLAlchemy", "PostgreSQL", "OpenAI",
@@ -52,8 +52,8 @@ export const PROJECTS = [
     slug: "growth-os",
     category: "AI + Social",
     description:
-      "A full-stack AI-powered platform that connects to Instagram via Meta Graph API v25.0 to analyze content performance, generate viral captions, score posts, track competitors, find niche trends, and schedule posts — all from one dashboard.",
-    thumbnail: "/images/growth-os/homepage.png",
+      "Stop guessing what works on Instagram. Growth OS connects directly to Meta's official API to analyze your content, generate viral captions with AI, score every post, spy on competitors, and schedule posts — all from one dashboard.",
+    thumbnail: "/images/growth-os/homepage.webp",
     technologies: [
       "TypeScript", "Next.js 16", "React 19", "Tailwind CSS v4",
       "Clerk", "OpenAI", "Meta Graph API", "Recharts",
@@ -74,8 +74,8 @@ export const PROJECTS = [
     slug: "talent-ai",
     category: "AI + HR Tech",
     description:
-      "A full-stack AI platform where employers create job applications with custom forms, share a link, and candidates submit their CV — AI automatically shortlists based on ATS-friendliness and skill matching. No more manual screening.",
-    thumbnail: "/images/talent-ai/Homepage.png",
+      "Manual CV screening is dead. Talent AI lets you create custom job forms, share a link, and let Google Gemini AI automatically score, rank, and shortlist candidates based on their CV vs your requirements — with full transparency on why each candidate passed or failed.",
+    thumbnail: "/images/talent-ai/Homepage.webp",
     technologies: [
       "TypeScript", "React 19", "Vite 6", "Express",
       "Google Gen AI", "Firebase", "Tailwind CSS v4",
@@ -95,8 +95,8 @@ export const PROJECTS = [
     slug: "fiveos",
     category: "AI + Market Intelligence",
     description:
-      "An AI-powered Fiverr market analysis tool that scrapes real-time gig data, reviews, and market stats — then generates actionable growth strategies using OpenAI reasoning models, all delivered through a streaming WebSocket UI.",
-    thumbnail: "/images/fiveos/Homepage.png",
+      "Want to dominate your Fiverr niche? FiveOS scrapes real-time gig data, reviews, and market stats — then uses OpenAI o3-mini and GPT-4o to generate a custom growth strategy streamed live to your browser. Know exactly where to compete and how to win.",
+    thumbnail: "/images/fiveos/Homepage.webp",
     technologies: [
       "TypeScript", "Python", "Next.js 15", "React 19", "FastAPI",
       "OpenAI", "Tailwind CSS", "WebSockets", "GLSL",
@@ -116,8 +116,8 @@ export const PROJECTS = [
     slug: "videodown",
     category: "Tool",
     description:
-      "A fast, minimal video/audio downloader for YouTube, Instagram, and TikTok. Paste a link, choose your format (video or MP3 audio), and download instantly — powered by youtube-dl-exec and ffmpeg.",
-    thumbnail: "/images/videodown/Youtube, insta, tiktok video downloader.png",
+      "Need to save a video or extract audio from any platform? Paste any YouTube, Instagram, or TikTok link — choose MP4 video or MP3 audio — and download instantly. Built with youtube-dl-exec and ffmpeg for maximum format support.",
+    thumbnail: "/images/videodown/Youtube, insta, tiktok video downloader.webp",
     technologies: [
       "TypeScript", "Next.js 14", "React 18", "Tailwind CSS",
       "youtube-dl-exec", "ffmpeg",
@@ -137,7 +137,7 @@ export const PROJECTS = [
     slug: "ai-lead-engine",
     category: "AI + Automation",
     description:
-      "An intelligent multi-agent system that discovers high-potential leads from Google Maps, verifies them for SEO/chatbot needs, and sends personalized AI-crafted email outreach — fully automated end-to-end.",
+      "Tired of manual lead generation? AI Lead Engine runs 4 autonomous agents — discovering businesses from Google Maps, verifying their SEO/chatbot needs, and sending personalized AI-crafted emails — all on autopilot. Set it and forget it.",
     thumbnail: "/images/project-lead-engine.svg",
     technologies: [
       "TypeScript", "Next.js 15", "React 19", "Tailwind CSS",

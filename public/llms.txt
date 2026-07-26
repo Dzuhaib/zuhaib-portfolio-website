@@ -1,0 +1,3 @@
+# Zuhaib Ahmed Based in Sindh — Full Stack Developer & AI Engineer
+
+Zuhaib Ahmed Based in Sindh, Pakistan — Full Stack Developer & AI Engineer building scalable web applications, AI automation systems, intelligent chatbots, and modern digital products for clients worldwide. Expert in Next.js, React, Python, TypeScript, and AI technologies like LangChain and RAG.

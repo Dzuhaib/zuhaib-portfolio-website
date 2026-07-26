@@ -37,7 +37,7 @@ export function PortfolioSection() {
             Portfolio
           </p>
           <h2 className="heading-lg text-black">
-            Featured <Highlight>Work</Highlight>
+            Real Projects, <Highlight>Real Results</Highlight>
           </h2>
         </motion.div>
 
@@ -59,12 +59,12 @@ export function PortfolioSection() {
 
 function getProjectImage(slug: string): string | null {
   const images: Record<string, string> = {
-    "ai-lead-engine": "/images/lead-engine/dashboard.png",
-    "aivized-agent-factory": "/images/agent-factory/dashboard.png",
-    "growth-os": "/images/growth-os/homepage.png",
-    "fiveos": "/images/fiveos/Homepage.png",
-    "talent-ai": "/images/talent-ai/Homepage.png",
-    "videodown": "/images/videodown/Youtube, insta, tiktok video downloader.png",
+    "ai-lead-engine": "/images/lead-engine/dashboard.webp",
+    "aivized-agent-factory": "/images/agent-factory/dashboard.webp",
+    "growth-os": "/images/growth-os/homepage.webp",
+    "fiveos": "/images/fiveos/Homepage.webp",
+    "talent-ai": "/images/talent-ai/Homepage.webp",
+    "videodown": "/images/videodown/Youtube, insta, tiktok video downloader.webp",
   };
   return images[slug] || null;
 }

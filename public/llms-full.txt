@@ -1,0 +1,146 @@
+# Zuhaib Ahmed Based in Sindh — Full Stack Developer & AI Engineer
+
+## About
+
+Zuhaib Ahmed Based in Sindh, Pakistan — a Full Stack Developer & AI Engineer helping businesses across the globe build scalable web applications and AI-powered systems that drive real results. With deep expertise in Next.js, React, Python, and AI technologies like LangChain and RAG. Specializing in AI chatbot development, custom web applications, and intelligent automation — delivering world-class solutions from Sindh, Pakistan.
+
+**Location:** Sindh, Pakistan
+**Email:** hello@zuhaibahmed.com
+**Availability:** Open to projects
+
+## Core Services
+
+### Next.js Development
+High-performance React applications with server-side rendering, static generation, and optimal Core Web Vitals. From marketing sites to complex SaaS platforms.
+- Server Components & App Router architecture
+- Optimized Core Web Vitals & Lighthouse scores
+- Dynamic metadata & structured data
+- Full-stack capabilities with API routes
+- CMS integration (Sanity, Contentful, Strapi)
+- Automated deployment pipelines
+
+### React Development
+Scalable, maintainable React applications with clean architecture and exceptional user experiences.
+- Component architecture & design systems
+- State management (Redux, Zustand, Context)
+- React Query & data synchronization
+- Comprehensive unit & integration testing
+- Accessibility-first development (WCAG)
+- Migration from legacy frameworks
+
+### TypeScript Development
+Type-safe, robust codebases that catch errors before production.
+- Full-stack TypeScript (frontend & backend)
+- Type-safe API contracts & data validation
+- Generic patterns & utility types
+- Strict configuration & custom linting
+- Migration from JavaScript to TypeScript
+- Automated type generation from schemas
+
+### Front-End Development
+Responsive, performant front-ends with modern CSS and optimized assets.
+- Responsive & mobile-first designs
+- Tailwind CSS & CSS-in-JS solutions
+- Animation & micro-interactions (Framer Motion)
+- Performance optimization & bundle analysis
+- Cross-browser compatibility
+- Design system creation
+
+### WordPress Development
+Custom WordPress themes and plugins beyond page builders.
+- Custom theme development from scratch
+- Advanced custom Gutenberg blocks
+- Headless WordPress with Next.js frontend
+- Custom plugin development
+- WooCommerce & e-commerce solutions
+- Performance optimization & security hardening
+
+### Website Maintenance
+Comprehensive maintenance to keep sites secure, fast, and up-to-date.
+- Regular security updates & patches
+- Performance monitoring & optimization
+- Content updates & management
+- Backup & disaster recovery
+- SEO monitoring & technical audits
+- 24/7 uptime monitoring
+
+## Portfolio Projects
+
+### AIVIZED Agent Factory
+AI + No-Code platform for creating chatbots without coding. Backend: Python 3.11.8, FastAPI, SQLAlchemy 2.0, PostgreSQL (Neon), OpenAI GPT-4o, cryptography (Fernet), structlog, httpx. Frontend Widget: React 18, TypeScript, Vite 5 IIFE bundle. Admin Dashboard: Next.js 14+, TailwindCSS, Prisma, JWT auth. Infrastructure: PostgreSQL 15+ on Neon, Docker, Railway, OpenAPI 3.0/3.1.
+- Deploy production-ready AI chatbots in under 10 minutes
+- No-code configuration & deployment
+- Self-contained widget bundling
+
+### Instagram Growth OS — Grow with Meta Verified APIs
+AI + Social platform connecting to Instagram via Meta Graph API v25.0. Tech: TypeScript, Next.js 16.1.6 (App Router), React 19.2.3, Tailwind CSS v4, Clerk auth, OpenAI SDK v6.29.0 (gpt-4o-mini), Recharts v3.8, Zustand v5, Stripe.js. Deployment: Vercel. Zero database — all data in Clerk metadata, generated dynamically via OpenAI.
+- Hook analysis, caption generation, reel scripts
+- Content scoring & comment intelligence
+- Competitor gap analysis & niche trend tracking
+- Story planning & post scheduling
+
+### FiveOS — Fiverr Growth using AI
+AI + Market Intelligence tool. Languages: TypeScript, Python 3.11, GLSL, CSS. Frontend: Next.js 15 (App Router), React 19, Tailwind CSS 3, lucide-react, react-markdown, ogl (WebGL/3D). Backend: FastAPI + Uvicorn, OpenAI API (o3-mini + gpt-4o), curl_cffi (Cloudflare bypass), BeautifulSoup4 + lxml. Real-time Fiverr market analysis with streaming UI.
+- Real-time Fiverr scraping via curl_cffi
+- Multi-model AI (o3-mini + gpt-4o) deep strategy reasoning
+- WebGL shader background with streaming strategy output
+
+### Talent AI — Smart Job & Candidate Matching
+AI + HR Tech platform. Languages: TypeScript. Frontend: React 19, Vite 6, React Router DOM v7, Tailwind CSS v4, shadcn/ui (base-nova), Base UI React, Lucide React, Motion (Framer Motion), class-variance-authority, clsx, tailwind-merge, Sonner, date-fns. Backend: Express, tsx, dotenv. AI: Google Gen AI SDK (Gemini API). Data: pdfjs-dist (PDF), mammoth (DOCX). Database & Auth: Firebase v12 (Firestore, Auth, Storage).
+- AI-powered CV scoring against job requirements
+- Auto-shortlisting based on ATS compatibility
+- Custom job application forms with shareable links
+- Detailed scoring & reasoning per submission
+
+### VideoDown — YouTube, Instagram & TikTok Downloader
+Tool. Languages: TypeScript, CSS. Framework: Next.js 14 (App Router), React 18. Styling: Tailwind CSS 3, PostCSS, Autoprefixer. Libraries: youtube-dl-exec, ffmpeg-static, rate-limiter-flexible. Cross-platform video/audio downloader.
+- Cross-platform downloads (YouTube, TikTok, Instagram)
+- Video + MP3 audio extraction via ffmpeg
+- Rate-limited API
+
+### AI Lead Engine — Automated Outreach System
+AI + Automation multi-agent system. Tech: TypeScript, Next.js 15, React 19, Tailwind CSS, Prisma, PostgreSQL, BullMQ, Redis, Playwright, Cheerio, OpenAI SDK, Nodemailer, NextAuth.js, Zustand, Zod, Docker, Radix UI, Recharts. Four agents: Alex (Lead Collector via Google Maps scraping + social activity check), Sarah (Lead Verifier for SEO/speed/chatbot readiness), Marcus (Email Outreach via OpenAI + SMTP/Gmail), Chloe (Social Outreach — Instagram/LinkedIn DMs, in progress).
+- 100 leads analyzed per job
+- Automated SEO/speed/chatbot verification
+- Personalized email generation via OpenAI
+
+## Experience
+
+### Freelance — Full Stack Developer & AI Engineer (2020 — Present)
+- Delivered 50+ web applications and AI solutions for clients globally
+- Built custom AI automation systems reducing operational costs by 40%
+- Achieved 99% client satisfaction rate
+
+### Tech Agency — Senior Full Stack Developer (2022 — 2024)
+- Led development of 15+ major web projects using Next.js and React
+- Implemented CI/CD pipelines reducing deployment time by 70%
+- Mentored junior developers
+
+### Digital Solutions Inc — Web Developer (2020 — 2022)
+- Built responsive web applications serving 100k+ monthly users
+- Migrated legacy PHP applications to modern React architecture
+- Optimized Core Web Vitals achieving 95+ Lighthouse scores
+
+## Skills
+
+**Frontend:** Next.js, React, TypeScript, Tailwind CSS, Framer Motion
+**Backend:** Node.js, Python, FastAPI, PostgreSQL, MongoDB
+**AI:** OpenAI, LangChain, RAG, Vector Databases, n8n
+**Cloud & DevOps:** Docker, Vercel, AWS, CI/CD, Linux
+
+## Social
+
+- GitHub: https://github.com/zuhaibahmed
+- LinkedIn: https://linkedin.com/in/zuhaibahmed
+- X: https://x.com/zuhaibahmed
+- Email: hello@zuhaibahmed.com
+- WhatsApp: https://wa.me/923390349804
+
+## Pages
+
+- Home: https://zuhaibahmed.com/
+- Portfolio: https://zuhaibahmed.com/portfolio
+- Services: https://zuhaibahmed.com/services
+- About: https://zuhaibahmed.com/about
+- Blog: https://zuhaibahmed.com/blog
+- Contact: https://zuhaibahmed.com/contact

@@ -5,12 +5,12 @@ import { DesktopMockup } from "@/components/ui/DesktopMockup";
 import { PROJECTS } from "@/lib/constants";
 
 const projectImages: Record<string, string> = {
-  "ai-lead-engine": "/images/lead-engine/dashboard.png",
-  "aivized-agent-factory": "/images/agent-factory/dashboard.png",
-  "growth-os": "/images/growth-os/homepage.png",
-  "fiveos": "/images/fiveos/Homepage.png",
-  "talent-ai": "/images/talent-ai/Homepage.png",
-  "videodown": "/images/videodown/Youtube, insta, tiktok video downloader.png",
+  "ai-lead-engine": "/images/lead-engine/dashboard.webp",
+  "aivized-agent-factory": "/images/agent-factory/dashboard.webp",
+  "growth-os": "/images/growth-os/homepage.webp",
+  "fiveos": "/images/fiveos/Homepage.webp",
+  "talent-ai": "/images/talent-ai/Homepage.webp",
+  "videodown": "/images/videodown/Youtube, insta, tiktok video downloader.webp",
 };
 
 export const metadata: Metadata = {

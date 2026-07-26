@@ -47,14 +47,13 @@ export function HeroSection() {
           className="text-center"
         >
           <p className="text-white/70 text-sm font-mono mb-4 tracking-widest uppercase">
-            Full Stack Developer & AI Engineer
+            Zuhaib Ahmed Based in Sindh — Full Stack Developer & AI Engineer
           </p>
           <h1 className="text-3xl md:text-6xl font-bold text-white leading-tight">
-            Building <span className="text-white/90">Intelligent</span>{" "}
-            Digital <span className="text-white/90">Products</span>
+            AI-Powered Web Apps That <span className="text-white/90">Grow</span> Your Business
           </h1>
-          <p className="text-base md:text-lg text-white/60 max-w-md mt-4 mx-auto">
-            Let&apos;s build something intelligent
+          <p className="text-base md:text-lg text-white/60 max-w-lg mt-4 mx-auto">
+            Zuhaib Ahmed Based in Sindh, Pakistan — I build custom web applications, AI chatbots, and intelligent automation systems that deliver real results for businesses worldwide.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mt-8">
             <Button href="/portfolio" size="lg" className="bg-white text-black hover:bg-white/90">
