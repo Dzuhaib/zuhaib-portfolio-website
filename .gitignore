@@ -36,6 +36,19 @@ yarn-error.log*
 # vercel
 .vercel
 
+# raw image source folders (copied to public/images/)
+public/AI Lead Engine project/
+public/AIVIZED chatbot factory/
+public/FiveOS/
+public/Instagram Growth OS/
+public/Talent Scan AI/
+public/video downloader/
+
+# dev artifacts
+requirements.md
+shadcn-err.txt
+shadcn-out.txt
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

@@ -1,0 +1,60 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#000" />
+  <g fill="#fff" opacity="0.2" font-family="monospace" font-size="24" font-weight="bold">
+    <text x="20" y="30">&lt;/&gt;</text>
+    <text x="110" y="30">&lt;/&gt;</text>
+    <text x="200" y="30">&lt;/&gt;</text>
+    <text x="290" y="30">&lt;/&gt;</text>
+    <text x="20" y="80">&lt;/&gt;</text>
+    <text x="110" y="80">&lt;/&gt;</text>
+    <text x="200" y="80">&lt;/&gt;</text>
+    <text x="290" y="80">&lt;/&gt;</text>
+    <text x="20" y="130">&lt;/&gt;</text>
+    <text x="110" y="130">&lt;/&gt;</text>
+    <text x="200" y="130">&lt;/&gt;</text>
+    <text x="290" y="130">&lt;/&gt;</text>
+    <text x="20" y="180">&lt;/&gt;</text>
+    <text x="110" y="180">&lt;/&gt;</text>
+    <text x="200" y="180">&lt;/&gt;</text>
+    <text x="290" y="180">&lt;/&gt;</text>
+    <text x="20" y="230">&lt;/&gt;</text>
+    <text x="110" y="230">&lt;/&gt;</text>
+    <text x="200" y="230">&lt;/&gt;</text>
+    <text x="290" y="230">&lt;/&gt;</text>
+    <text x="20" y="280">&lt;/&gt;</text>
+    <text x="110" y="280">&lt;/&gt;</text>
+    <text x="200" y="280">&lt;/&gt;</text>
+    <text x="290" y="280">&lt;/&gt;</text>
+    <text x="20" y="330">&lt;/&gt;</text>
+    <text x="110" y="330">&lt;/&gt;</text>
+    <text x="200" y="330">&lt;/&gt;</text>
+    <text x="290" y="330">&lt;/&gt;</text>
+    <text x="20" y="380">&lt;/&gt;</text>
+    <text x="110" y="380">&lt;/&gt;</text>
+    <text x="200" y="380">&lt;/&gt;</text>
+    <text x="290" y="380">&lt;/&gt;</text>
+  </g>
+  <g fill="#fff" opacity="0.1" font-family="monospace" font-size="12">
+    <text x="65" y="50">{ }</text>
+    <text x="155" y="50">{ }</text>
+    <text x="245" y="50">{ }</text>
+    <text x="65" y="100">{ }</text>
+    <text x="155" y="100">{ }</text>
+    <text x="245" y="100">{ }</text>
+    <text x="65" y="150">{ }</text>
+    <text x="155" y="150">{ }</text>
+    <text x="245" y="150">{ }</text>
+    <text x="65" y="200">{ }</text>
+    <text x="155" y="200">{ }</text>
+    <text x="245" y="200">{ }</text>
+    <text x="65" y="250">{ }</text>
+    <text x="155" y="250">{ }</text>
+    <text x="245" y="250">{ }</text>
+    <text x="65" y="300">{ }</text>
+    <text x="155" y="300">{ }</text>
+    <text x="245" y="300">{ }</text>
+    <text x="65" y="350">{ }</text>
+    <text x="155" y="350">{ }</text>
+    <text x="245" y="350">{ }</text>
+  </g>
+</svg>
