@@ -1,24 +1,27 @@
 import type { MetadataRoute } from "next";
 
+const AI_AGENTS = [
+  "GPTBot",
+  "ClaudeBot",
+  "Claude-Web",
+  "PerplexityBot",
+  "Googlebot",
+  "Google-Extended",
+  "CCBot",
+  "anthropic-ai",
+  "Applebot-Extended",
+  "cohere-ai",
+  "OAI-SearchBot",
+  "FacebookBot",
+];
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      {
-        userAgent: "GPTBot",
+      ...AI_AGENTS.map((agent) => ({
+        userAgent: agent,
         allow: "/",
-      },
-      {
-        userAgent: "ClaudeBot",
-        allow: "/",
-      },
-      {
-        userAgent: "PerplexityBot",
-        allow: "/",
-      },
-      {
-        userAgent: "Googlebot",
-        allow: "/",
-      },
+      })),
       {
         userAgent: "*",
         allow: "/",
