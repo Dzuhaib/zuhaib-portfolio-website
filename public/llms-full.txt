@@ -140,6 +140,12 @@ AI + Automation multi-agent system. Tech: TypeScript, Next.js 15, React 19, Tail
 
 - Home: https://zuhaib.aivized.com/
 - Portfolio: https://zuhaib.aivized.com/portfolio
+- Portfolio — AIVIZED Agent Factory: https://zuhaib.aivized.com/portfolio/aivized-agent-factory
+- Portfolio — Instagram Growth OS: https://zuhaib.aivized.com/portfolio/growth-os
+- Portfolio — Talent AI: https://zuhaib.aivized.com/portfolio/talent-ai
+- Portfolio — FiveOS: https://zuhaib.aivized.com/portfolio/fiveos
+- Portfolio — VideoDown: https://zuhaib.aivized.com/portfolio/videodown
+- Portfolio — AI Lead Engine: https://zuhaib.aivized.com/portfolio/ai-lead-engine
 - Services: https://zuhaib.aivized.com/services
 - About: https://zuhaib.aivized.com/about
 - Blog: https://zuhaib.aivized.com/blog
