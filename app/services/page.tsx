@@ -87,7 +87,7 @@ function WhyMeSection() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-6 border border-neutral-200">
-              <p className="text-3xl font-bold text-green mb-2">6+</p>
+              <p className="text-3xl font-bold text-green mb-2">100+</p>
               <p className="text-sm text-neutral-500">Projects delivered</p>
             </div>
             <div className="p-6 border border-neutral-200">
