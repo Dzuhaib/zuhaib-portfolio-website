@@ -39,7 +39,7 @@ function WhatIDoSection() {
           </h2>
           <div className="space-y-5 text-neutral-500 leading-relaxed">
             <p className="text-lg text-neutral-600 leading-relaxed">
-              I&apos;m Zuhaib Ahmed, an AI Systems & Automation Engineer based in Sindh, Pakistan. 
+              I&apos;m Zuhaib Ahmed, a Full stack developer & AI Engineer based in Sindh, Pakistan. 
               I help businesses in the UK, US, and Pakistan build technology that actually moves their 
               business forward, custom AI systems that automate complex workflows, automation pipelines 
               that connect disconnected tools, high-performance websites that convert visitors into customers, 

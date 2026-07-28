@@ -55,11 +55,11 @@ export default function AboutHeroSection() {
                 About Me
               </p>
               <h1 className="heading-xl text-white mb-6">
-                I&apos;m Zuhaib Ahmed — an engineer who builds{" "}
-                <span className="text-green">intelligent</span> systems
+                About Zuhaib Ahmed - Full stack developer <span className="text-green">|</span> AI Engineer
               </h1>
               <p className="text-lg text-white/60 leading-relaxed max-w-xl mb-8">
-                Based in Sindh, Pakistan, I help businesses in the UK, US, and Pakistan
+                About Zuhaib Ahmed - Full stack developer, AI Engineer Based in Sindh Pakistan.
+                I help businesses in the UK, US, and Pakistan
                 build AI systems, automation pipelines, high-performance websites, and
                 marketing campaigns that generate measurable results.
               </p>
@@ -73,7 +73,7 @@ export default function AboutHeroSection() {
             <div className="lg:col-span-5 flex items-center justify-center">
               <ProfileCard
                 name="Zuhaib Ahmed"
-                title="AI Automation & AI Systems Engineer"
+                title="Full stack developer | AI Engineer"
                 handle="zuhaibahmed"
                 status="Available"
                 contactText="Let's Talk"
