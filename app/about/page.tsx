@@ -20,7 +20,6 @@ export default function AboutPage() {
       <AboutHeroSection />
       <WhatIDoSection />
       <ApproachSection />
-      <JourneySection />
       <SkillsSection />
       <CTASection />
     </>
@@ -103,48 +102,6 @@ function ApproachSection() {
                 <div className="w-8 h-px bg-green mb-4" />
                 <h3 className="text-xl font-bold text-black mb-3">{pillar.title}</h3>
                 <p className="text-neutral-500 leading-relaxed">{pillar.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function JourneySection() {
-  const milestones = [
-    { year: "2020", title: "Started Freelancing", description: "Built my first professional web applications and discovered my passion for full-stack development. Clients ranged from local businesses to international startups." },
-    { year: "2021", title: "First Enterprise AI Project", description: "Delivered a large-scale SaaS application for a US-based startup, integrating AI-powered features that automated manual workflows and reduced operational costs." },
-    { year: "2022", title: "Senior Developer & AI Focus", description: "Led development of 15+ major web projects while deepening expertise in LangChain, RAG pipelines, and multi-agent orchestration systems." },
-    { year: "2023", title: "Multi-Agent Systems", description: "Built autonomous 4-agent lead generation engine and began offering comprehensive AI-powered development services to clients across the UK and US." },
-    { year: "2024", title: "AI SaaS & Global Clients", description: "Launched multiple AI SaaS platforms including AI recruitment screening, Instagram growth intelligence, and Fiverr market analysis. Expanded client base across three continents." },
-  ];
-
-  return (
-    <section className="section-padding bg-white">
-      <div className="container-main">
-        <div className="max-w-3xl">
-          <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
-            Journey
-          </p>
-          <h2 className="heading-lg text-black mb-12">How I got here</h2>
-          <div className="space-y-0">
-            {milestones.map((m, i) => (
-              <div key={m.year} className="flex gap-6 group">
-                <div className="flex flex-col items-center">
-                  <div className="w-10 h-10 border border-neutral-200 flex items-center justify-center group-hover:border-green transition-colors duration-300">
-                    <div className="w-2 h-2 rounded-full bg-green" />
-                  </div>
-                  {i < milestones.length - 1 && (
-                    <div className="w-px flex-1 bg-neutral-200 mt-2" />
-                  )}
-                </div>
-                <div className="pb-10 pt-1.5">
-                  <span className="text-sm text-green font-mono">{m.year}</span>
-                  <h3 className="text-lg font-bold text-black mt-1">{m.title}</h3>
-                  <p className="text-neutral-500 text-sm mt-1">{m.description}</p>
-                </div>
               </div>
             ))}
           </div>
