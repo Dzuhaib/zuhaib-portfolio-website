@@ -1,21 +1,16 @@
-"use client";
-
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
-
 export default function AboutLoading() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen">
       {/* AboutHeroSection skeleton */}
       <section className="relative w-full min-h-[70vh] flex items-center bg-black px-4">
         <div className="container-main">
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <Skeleton height={120} width={120} borderRadius="50%" baseColor="#1a1a1a" highlightColor="#333" />
-            <div className="flex-1">
-              <Skeleton height={20} width={200} baseColor="#1a1a1a" highlightColor="#333" className="mb-4" />
-              <Skeleton height={48} width={500} baseColor="#1a1a1a" highlightColor="#333" className="mb-4" />
-              <Skeleton height={24} width={400} baseColor="#1a1a1a" highlightColor="#333" className="mb-6" />
-              <Skeleton height={24} width={300} baseColor="#1a1a1a" highlightColor="#333" />
+            <div className="h-[120px] w-[120px] bg-neutral-800 rounded-full shrink-0 animate-pulse" />
+            <div className="flex-1 space-y-4">
+              <div className="h-5 w-[200px] bg-neutral-800 rounded animate-pulse" />
+              <div className="h-12 w-[500px] bg-neutral-800 rounded animate-pulse" />
+              <div className="h-6 w-[400px] bg-neutral-800 rounded animate-pulse" />
+              <div className="h-6 w-[300px] bg-neutral-800 rounded animate-pulse" />
             </div>
           </div>
         </div>
@@ -24,10 +19,14 @@ export default function AboutLoading() {
       {/* WhatIDoSection skeleton */}
       <section className="section-padding bg-white">
         <div className="container-main">
-          <div className="max-w-3xl">
-            <Skeleton height={20} width={100} baseColor="#e5e7eb" highlightColor="#f3f4f6" className="mb-4" />
-            <Skeleton height={40} width={500} baseColor="#e5e7eb" highlightColor="#f3f4f6" className="mb-8" />
-            <Skeleton count={5} baseColor="#e5e7eb" highlightColor="#f3f4f6" />
+          <div className="max-w-3xl space-y-4">
+            <div className="h-5 w-[100px] bg-neutral-200 rounded animate-pulse" />
+            <div className="h-10 w-[500px] bg-neutral-200 rounded animate-pulse" />
+            <div className="space-y-3">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <div key={i} className="h-4 bg-neutral-200 rounded animate-pulse" />
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -36,15 +35,21 @@ export default function AboutLoading() {
       <section className="section-padding bg-neutral-50">
         <div className="container-main">
           <div className="max-w-3xl">
-            <Skeleton height={20} width={100} baseColor="#e5e7eb" highlightColor="#f3f4f6" className="mb-4" />
-            <Skeleton height={40} width={400} baseColor="#e5e7eb" highlightColor="#f3f4f6" className="mb-10" />
-            {Array.from({ length: 4 }).map((_, i) => (
-              <div key={i} className="border border-neutral-200 p-8 mb-6">
-                <Skeleton height={8} width={32} baseColor="#e5e7eb" highlightColor="#f3f4f6" className="mb-4" />
-                <Skeleton height={24} width={250} baseColor="#e5e7eb" highlightColor="#f3f4f6" className="mb-3" />
-                <Skeleton count={3} baseColor="#e5e7eb" highlightColor="#f3f4f6" />
-              </div>
-            ))}
+            <div className="h-5 w-[100px] bg-neutral-200 rounded mb-4 animate-pulse" />
+            <div className="h-10 w-[400px] bg-neutral-200 rounded mb-10 animate-pulse" />
+            <div className="space-y-6">
+              {Array.from({ length: 4 }).map((_, i) => (
+                <div key={i} className="border border-neutral-200 p-8 space-y-3">
+                  <div className="h-2 w-8 bg-neutral-200 rounded animate-pulse" />
+                  <div className="h-6 w-[250px] bg-neutral-200 rounded animate-pulse" />
+                  <div className="space-y-2">
+                    <div className="h-4 bg-neutral-200 rounded animate-pulse" />
+                    <div className="h-4 bg-neutral-200 rounded animate-pulse" />
+                    <div className="h-4 bg-neutral-200 rounded animate-pulse" />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -53,28 +58,30 @@ export default function AboutLoading() {
       <section className="section-padding bg-neutral-50">
         <div className="container-main">
           <div className="max-w-3xl">
-            <Skeleton height={20} width={60} baseColor="#e5e7eb" highlightColor="#f3f4f6" className="mb-4" />
-            <Skeleton height={40} width={300} baseColor="#e5e7eb" highlightColor="#f3f4f6" className="mb-8" />
-            {Array.from({ length: 5 }).map((_, i) => (
-              <div key={i} className="mb-7">
-                <Skeleton height={16} width={120} baseColor="#e5e7eb" highlightColor="#f3f4f6" className="mb-3" />
-                <div className="flex flex-wrap gap-2">
-                  {Array.from({ length: 4 }).map((_, j) => (
-                    <Skeleton key={j} height={32} width={100} baseColor="#e5e7eb" highlightColor="#f3f4f6" />
-                  ))}
+            <div className="h-5 w-[60px] bg-neutral-200 rounded mb-4 animate-pulse" />
+            <div className="h-10 w-[300px] bg-neutral-200 rounded mb-8 animate-pulse" />
+            <div className="space-y-7">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <div key={i} className="space-y-3">
+                  <div className="h-4 w-[120px] bg-neutral-200 rounded animate-pulse" />
+                  <div className="flex flex-wrap gap-2">
+                    {Array.from({ length: 4 }).map((_, j) => (
+                      <div key={j} className="h-8 w-[100px] bg-neutral-200 rounded animate-pulse" />
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTASection skeleton */}
       <section className="section-padding bg-black">
-        <div className="container-main text-center">
-          <Skeleton height={40} width={400} baseColor="#1a1a1a" highlightColor="#333" className="mx-auto mb-4" />
-          <Skeleton height={24} width={500} baseColor="#1a1a1a" highlightColor="#333" className="mx-auto mb-8" />
-          <Skeleton height={48} width={220} baseColor="#1a1a1a" highlightColor="#333" className="mx-auto" />
+        <div className="container-main text-center space-y-4">
+          <div className="h-10 w-[400px] bg-neutral-800 rounded mx-auto animate-pulse" />
+          <div className="h-6 w-[500px] bg-neutral-800 rounded mx-auto animate-pulse" />
+          <div className="h-12 w-[220px] bg-neutral-800 rounded mx-auto animate-pulse" />
         </div>
       </section>
     </div>
