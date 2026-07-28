@@ -123,7 +123,7 @@ function ProcessSection() {
           </p>
           <h2 className="heading-lg text-black">From idea to launch — a clear path forward</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-6">
           {steps.map((step, i) => (
             <div key={step.num} className="relative">
               <span className="text-5xl md:text-6xl font-bold text-neutral-200 block mb-4 leading-none">
@@ -158,6 +158,16 @@ function FAQSection() {
     },
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((f) => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a },
+    })),
+  };
+
   return (
     <section className="section-padding bg-white">
       <div className="container-main">
@@ -174,6 +184,10 @@ function FAQSection() {
           </div>
         </div>
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
     </section>
   );
 }

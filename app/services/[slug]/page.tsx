@@ -45,6 +45,7 @@ export default async function ServicePage({ params }: Props) {
       <FeaturesSection service={service} />
       <WhoSection service={service} />
       <FAQSection service={service} />
+      <OtherServicesSection service={service} />
       <CTASection service={service} />
     </>
   );
@@ -174,6 +175,16 @@ function WhoSection({ service }: { service: Service }) {
 }
 
 function FAQSection({ service }: { service: Service }) {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": service.faqs.map((f) => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a },
+    })),
+  };
+
   return (
     <section className="section-padding bg-neutral-50">
       <div className="container-main">
@@ -188,6 +199,42 @@ function FAQSection({ service }: { service: Service }) {
                 <p className="text-black font-bold mb-2">{faq.q}</p>
                 <p className="text-sm text-neutral-500 leading-relaxed">{faq.a}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+    </section>
+  );
+}
+
+function OtherServicesSection({ service }: { service: Service }) {
+  const otherServices = SERVICES.filter((s) => s.slug !== service.slug);
+  return (
+    <section className="section-padding bg-white">
+      <div className="container-main">
+        <div className="max-w-3xl">
+          <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
+            Other Services
+          </p>
+          <h2 className="heading-lg text-black mb-8">Explore more services</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {otherServices.map((s) => (
+              <a
+                key={s.slug}
+                href={"/services/" + s.slug}
+                className="group border border-neutral-200 p-6 hover:border-green transition-colors duration-300"
+              >
+                <p className="text-green text-xs font-mono tracking-widest uppercase mb-2">
+                  {s.title}
+                </p>
+                <p className="text-sm text-neutral-500 leading-relaxed">
+                  {s.tagline}
+                </p>
+              </a>
             ))}
           </div>
         </div>

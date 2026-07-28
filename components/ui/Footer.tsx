@@ -10,7 +10,7 @@ export function Footer() {
 
   return (
     <footer className="bg-black w-full">
-      <div className="w-full bg-black flex flex-col items-center overflow-hidden relative">
+      <div className="w-full bg-black flex flex-col items-center relative">
 
         <div className="w-full max-w-6xl mx-auto px-6 py-20">
           <div className="mb-12 text-center">
@@ -62,6 +62,23 @@ export function Footer() {
 
         <div className="w-full border-t border-neutral-800 py-6 px-6 flex flex-col md:flex-row items-center justify-between gap-4 z-20">
           <div className="flex items-center gap-6">
+            <a href="/services" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
+              Services
+            </a>
+            <a href="/portfolio" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
+              Portfolio
+            </a>
+            <a href="/about" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
+              About
+            </a>
+            <a href="/blog" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
+              Blog
+            </a>
+            <a href="/contact" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
+              Contact
+            </a>
+          </div>
+          <div className="flex items-center gap-6">
             <a href={`mailto:${SITE.email}`} className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
               Email
             </a>
@@ -70,6 +87,9 @@ export function Footer() {
             </a>
             <a href={SITE.social.github} target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
               GitHub
+            </a>
+            <a href="/sitemap.xml" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
+              Sitemap
             </a>
           </div>
           <p className="text-neutral-500 text-xs">
