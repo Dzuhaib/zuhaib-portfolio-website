@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/Button";
 import AboutHeroSection from "./HeroSection";
 
 export const metadata: Metadata = {
-  title: "About Zuhaib Ahmed — AI Systems & Automation Engineer",
+  title: "About Zuhaib Ahmed - full stack developer & AI Engineer",
   description:
-    "Zuhaib Ahmed Based in Sindh, Pakistan — an AI Systems & Automation Engineer building custom AI SaaS platforms, multi-agent pipelines, and high-performance web applications for clients in the UK, US, and Pakistan.",
+    "About Zuhaib Ahmed - full stack developer & AI Engineer based in Sindh, Pakistan, building custom AI systems, automation pipelines, and high-performance websites for clients in the UK, US, and Pakistan.",
   openGraph: {
-    title: "About Zuhaib Ahmed — AI Systems & Automation Engineer",
+    title: "About Zuhaib Ahmed - full stack developer & AI Engineer",
     description:
-      "Zuhaib Ahmed builds custom AI systems, automation pipelines, React & Next.js websites, backend APIs, frontend interfaces, WordPress solutions, Meta ad campaigns, and AI-driven SEO for global clients.",
+      "About Zuhaib Ahmed - full stack developer & AI Engineer based in Sindh, Pakistan, building custom AI systems, automation pipelines, and high-performance websites for global clients.",
   },
   alternates: { canonical: "/about" },
 };
