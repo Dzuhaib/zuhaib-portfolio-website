@@ -55,7 +55,8 @@ export default function AboutHeroSection() {
                 About Me
               </p>
               <h1 className="heading-xl text-white mb-6">
-                About Zuhaib Ahmed - full stack developer &amp; AI Engineer
+                I&apos;m Zuhaib Ahmed — an engineer who builds{" "}
+                <span className="text-green">intelligent</span> systems
               </h1>
               <p className="text-lg text-white/60 leading-relaxed max-w-xl mb-8">
                 Based in Sindh, Pakistan, I help businesses in the UK, US, and Pakistan
