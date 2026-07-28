@@ -929,7 +929,7 @@ export const BLOG_POSTS = [
     category: "Next.js",
     excerpt:
       "A deep dive into why Next.js continues to dominate the React framework landscape and how it can benefit your business.",
-    date: "December 15, 2025",
+    date: "August 12, 2026",
     readTime: "8 min read",
     content: `Next.js has evolved significantly over the years, and 2025 is shaping up to be its strongest year yet. With the App Router maturing, server components becoming the norm, and performance optimizations that push the boundaries of what is possible on the web, there has never been a better time to build with Next.js.
 
@@ -959,7 +959,7 @@ If you care about SEO, performance, and developer productivity, Next.js is the s
     category: "React",
     excerpt:
       "Learn how to build React components that work for everyone, with practical examples and WCAG best practices.",
-    date: "November 28, 2025",
+    date: "August 14, 2026",
     readTime: "10 min read",
     content: `Accessibility is not an afterthought. It is a fundamental part of good development. Building accessible React components means creating experiences that work for everyone, regardless of how they interact with the web.
 
@@ -988,7 +988,7 @@ Manual testing with screen readers like NVDA, VoiceOver, and JAWS reveals issues
     slug: "typescript-tips-every-developer",
     category: "TypeScript",
     excerpt: "Advanced TypeScript patterns and techniques that will make your code more robust and maintainable.",
-    date: "November 10, 2025",
+    date: "August 16, 2026",
     readTime: "6 min read",
     content: `TypeScript has become the standard for serious web development. Here are some advanced patterns and techniques that will help you write more robust and maintainable TypeScript code.
 
@@ -1022,7 +1022,7 @@ When working with unions and switch statements, you can use the never type to en
     category: "WordPress",
     excerpt:
       "An honest comparison of headless and traditional WordPress approaches to help you make the right decision.",
-    date: "October 22, 2025",
+    date: "August 18, 2026",
     readTime: "7 min read",
     content: `The debate between headless and traditional WordPress continues to evolve. Both approaches have their place, and the right choice depends on your specific needs, team skills, and project goals.
 
@@ -1052,7 +1052,7 @@ Traditional WordPress hosting is generally cheaper and simpler to manage. Manage
     category: "AI Tools",
     excerpt:
       "Exploring the practical applications of AI in web development and how to leverage them without compromising quality.",
-    date: "October 5, 2025",
+    date: "August 20, 2026",
     readTime: "5 min read",
     content: `AI is transforming web development, but not in the way many people fear. Instead of replacing developers, AI is augmenting our capabilities and changing how we approach problems.
 
@@ -1082,7 +1082,7 @@ AI generated code is not always correct or optimal. Always review, test, and ver
     category: "Freelancing",
     excerpt:
       "A transparent look at how to price your web development services from hourly rates to value-based pricing.",
-    date: "September 18, 2025",
+    date: "August 22, 2026",
     readTime: "9 min read",
     content: `Pricing is one of the hardest parts of freelancing. Charge too little and you burn out. Charge too much and you scare away clients. Here is how to find the right balance.
 
