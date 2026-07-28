@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Button } from "@/components/ui/Button";
+import AboutHeroSection from "./HeroSection";
 
 export const metadata: Metadata = {
-  title: "About Zuhaib Ahmed",
+  title: "About Zuhaib Ahmed — AI Systems & Automation Engineer",
   description:
-    "Learn about Zuhaib Ahmed — a Full Stack Developer & AI Engineer based in Pakistan.",
+    "Zuhaib Ahmed Based in Sindh, Pakistan — an AI Systems & Automation Engineer building custom AI SaaS platforms, multi-agent pipelines, and high-performance web applications for clients in the UK, US, and Pakistan.",
   openGraph: {
-    title: "About Zuhaib Ahmed",
+    title: "About Zuhaib Ahmed — AI Systems & Automation Engineer",
     description:
-      "Learn about Zuhaib Ahmed — a Full Stack Developer & AI Engineer based in Pakistan.",
+      "Zuhaib Ahmed builds custom AI systems, automation pipelines, React & Next.js websites, backend APIs, frontend interfaces, WordPress solutions, Meta ad campaigns, and AI-driven SEO for global clients.",
   },
   alternates: { canonical: "/about" },
 };
@@ -17,43 +17,49 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <HeroSection />
-      <StorySection />
+      <AboutHeroSection />
+      <WhatIDoSection />
+      <ApproachSection />
       <JourneySection />
-      <PhilosophySection />
       <SkillsSection />
+      <CTASection />
     </>
   );
 }
 
-function HeroSection() {
+function WhatIDoSection() {
   return (
-    <section className="relative pt-32 md:pt-40 pb-20 md:pb-28 bg-black">
+    <section className="section-padding bg-white">
       <div className="container-main">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-          <div className="lg:col-span-7">
-            <p className="text-green text-sm font-mono tracking-widest uppercase mb-6">
-              About Me
+        <div className="max-w-3xl">
+          <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
+            What I Do
+          </p>
+          <h2 className="heading-lg text-black mb-8">
+            I build systems that generate revenue, not just code that compiles
+          </h2>
+          <div className="space-y-5 text-neutral-500 leading-relaxed">
+            <p className="text-lg text-neutral-600 leading-relaxed">
+              I&apos;m Zuhaib Ahmed, an AI Systems & Automation Engineer based in Sindh, Pakistan. 
+              I help businesses in the UK, US, and Pakistan build technology that actually moves their 
+              business forward, custom AI systems that automate complex workflows, automation pipelines 
+              that connect disconnected tools, high-performance websites that convert visitors into customers, 
+              backend APIs that scale under real traffic, frontend interfaces that users actually enjoy, 
+              and digital marketing campaigns that generate measurable returns.
             </p>
-            <h1 className="heading-xl text-white mb-6">
-              I&apos;m Zuhaib Ahmed — an engineer who builds{" "}
-              <span className="text-green">intelligent</span> systems
-            </h1>
-            <p className="text-lg text-neutral-400 leading-relaxed max-w-xl">
-              Based in Pakistan, I help businesses build scalable web
-              applications and AI-powered solutions that drive real results.
+            <p>
+              My work spans two worlds. On one side, I build AI systems from the ground up, multi-agent 
+              pipelines that research, analyze, and act autonomously, RAG systems that retrieve information 
+              from your proprietary documents, and SaaS platforms where artificial intelligence is the core 
+              architecture, not a feature bolted on afterward. On the other side, I build the web applications, 
+              APIs, and frontend interfaces that make those AI systems accessible and useful to real users.
             </p>
-          </div>
-          <div className="lg:col-span-5">
-            <div className="aspect-[4/5] bg-neutral-800 rounded-sm overflow-hidden relative">
-              <Image
-                src="/images/og-image.svg"
-                alt="Zuhaib Ahmed"
-                fill
-                className="object-cover opacity-50"
-                sizes="(max-width: 1024px) 100vw, 40vw"
-              />
-            </div>
+            <p>
+              The combination matters. An AI system without a usable interface doesn't deliver value. A 
+              beautiful website without AI or automation leaves money on the table. I bridge both, building 
+              complete systems where the intelligence and the interface work together to produce business 
+              outcomes.
+            </p>
           </div>
         </div>
       </div>
@@ -61,32 +67,44 @@ function HeroSection() {
   );
 }
 
-function StorySection() {
+function ApproachSection() {
+  const pillars = [
+    {
+      title: "AI Systems & Automation",
+      desc: "Custom AI platforms, multi-agent orchestration pipelines, RAG systems over proprietary data, and workflow automations that connect the tools you already use. I build systems that work autonomously, not chatbots that need someone holding the prompt.",
+    },
+    {
+      title: "Web Development",
+      desc: "React and Next.js websites engineered for performance and SEO, backend APIs that scale under production traffic, frontend interfaces built for accessibility and conversion, and custom WordPress solutions beyond bloated page builders. Every project gets the same attention to architecture regardless of the stack.",
+    },
+    {
+      title: "Digital Marketing & SEO",
+      desc: "Meta ad campaigns built on audience research and systematic creative testing rather than guesswork, and AI-driven SEO that builds entity signals, structured data, and genuinely useful content instead of keyword-stuffed blog posts. Every campaign is measured against actual business results.",
+    },
+    {
+      title: "Maintenance & Support",
+      desc: "Proactive website maintenance that prevents problems instead of reacting to them, security updates, performance monitoring, content management, and technical audits that keep your digital presence running at peak efficiency without you needing to think about it.",
+    },
+  ];
+
   return (
     <section className="section-padding bg-neutral-50">
       <div className="container-main">
         <div className="max-w-3xl">
           <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
-            My Story
+            How I Work
           </p>
-          <div className="mt-8 space-y-5 text-neutral-500 leading-relaxed">
-            <p className="text-xl text-neutral-600 leading-relaxed">
-              My journey into development started with curiosity and a desire to
-              create — from tinkering with code to building full-scale AI
-              systems.
-            </p>
-            <p>
-              I remember the first time I built a website from scratch. It was
-              simple, but the feeling of bringing an idea to life through code
-              was addictive. That curiosity turned into a career, driving me to
-              master modern frameworks like Next.js and React while diving deep
-              into AI technologies.
-            </p>
-            <p>
-              Today, I combine my full-stack expertise with AI engineering to
-              deliver solutions that don&apos;t just look good — they think,
-              adapt, and scale with your business.
-            </p>
+          <h2 className="heading-lg text-black mb-10">
+            Four pillars, one standard of quality
+          </h2>
+          <div className="space-y-6">
+            {pillars.map((pillar) => (
+              <div key={pillar.title} className="border border-neutral-200 p-8">
+                <div className="w-8 h-px bg-green mb-4" />
+                <h3 className="text-xl font-bold text-black mb-3">{pillar.title}</h3>
+                <p className="text-neutral-500 leading-relaxed">{pillar.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -96,11 +114,11 @@ function StorySection() {
 
 function JourneySection() {
   const milestones = [
-    { year: "2020", title: "Started Freelancing", description: "Built my first professional web applications and discovered my passion for full-stack development." },
-    { year: "2021", title: "First Enterprise Project", description: "Delivered a large-scale SaaS application for a US-based startup." },
-    { year: "2022", title: "Senior Developer Role", description: "Led development of 15+ major web projects using Next.js and React." },
-    { year: "2023", title: "AI Engineering Focus", description: "Deepened expertise in LangChain, RAG, and AI automation systems." },
-    { year: "2024", title: "AI & Full Stack Integration", description: "Began offering comprehensive AI-powered development services globally." },
+    { year: "2020", title: "Started Freelancing", description: "Built my first professional web applications and discovered my passion for full-stack development. Clients ranged from local businesses to international startups." },
+    { year: "2021", title: "First Enterprise AI Project", description: "Delivered a large-scale SaaS application for a US-based startup, integrating AI-powered features that automated manual workflows and reduced operational costs." },
+    { year: "2022", title: "Senior Developer & AI Focus", description: "Led development of 15+ major web projects while deepening expertise in LangChain, RAG pipelines, and multi-agent orchestration systems." },
+    { year: "2023", title: "Multi-Agent Systems", description: "Built autonomous 4-agent lead generation engine and began offering comprehensive AI-powered development services to clients across the UK and US." },
+    { year: "2024", title: "AI SaaS & Global Clients", description: "Launched multiple AI SaaS platforms including AI recruitment screening, Instagram growth intelligence, and Fiverr market analysis. Expanded client base across three continents." },
   ];
 
   return (
@@ -136,60 +154,17 @@ function JourneySection() {
   );
 }
 
-function PhilosophySection() {
-  const items = [
-    {
-      title: "Quality Over Speed",
-      desc: "I don't rush. Every project deserves clean code, thorough testing, and attention to detail.",
-    },
-    {
-      title: "Communication First",
-      desc: "Regular updates and transparent communication are non-negotiable. You'll always know where things stand.",
-    },
-    {
-      title: "Business-Centered",
-      desc: "Every technical decision is measured against business goals. Code exists to serve the bottom line.",
-    },
-    {
-      title: "Continuous Learning",
-      desc: "The web evolves fast. I stay ahead so your project benefits from the latest in AI and development.",
-    },
+function SkillsSection() {
+  const categories = [
+    { title: "AI & Automation", skills: ["OpenAI", "LangChain", "RAG", "Multi-Agent Systems", "Vector Databases", "n8n"] },
+    { title: "Frontend", skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"] },
+    { title: "Backend", skills: ["Node.js", "Python", "FastAPI", "Express", "PostgreSQL", "MongoDB"] },
+    { title: "Infrastructure", skills: ["Docker", "Vercel", "AWS", "CI/CD", "Redis", "BullMQ"] },
+    { title: "Marketing", skills: ["Meta Ads", "AI SEO", "Entity Building", "Structured Data", "Conversion Tracking"] },
   ];
 
   return (
     <section className="section-padding bg-neutral-50">
-      <div className="container-main">
-        <div className="max-w-3xl">
-          <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
-            Philosophy
-          </p>
-          <h2 className="heading-lg text-black mb-10">
-            How I approach every project
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {items.map((item) => (
-              <div key={item.title} className="p-8 border border-neutral-200">
-                <div className="w-8 h-px bg-green mb-4" />
-                <h3 className="text-lg font-bold text-black mb-2">{item.title}</h3>
-                <p className="text-neutral-500 text-sm leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function SkillsSection() {
-  const skills = [
-    "Next.js", "React", "TypeScript", "Node.js", "Python",
-    "FastAPI", "LangChain", "OpenAI", "RAG", "PostgreSQL",
-    "MongoDB", "Docker", "Vercel", "Tailwind CSS", "Framer Motion",
-  ];
-
-  return (
-    <section className="section-padding bg-white">
       <div className="container-main">
         <div className="max-w-3xl">
           <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
@@ -198,14 +173,21 @@ function SkillsSection() {
           <h2 className="heading-lg text-black mb-8">
             Tools I use to build
           </h2>
-          <div className="flex flex-wrap gap-2">
-            {skills.map((skill) => (
-              <span
-                key={skill}
-                className="text-sm px-4 py-2 border border-neutral-200 text-neutral-600"
-              >
-                {skill}
-              </span>
+          <div className="space-y-7">
+            {categories.map((cat) => (
+              <div key={cat.title}>
+                <h3 className="text-xs font-mono tracking-widest uppercase text-neutral-400 mb-3">{cat.title}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {cat.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="text-sm px-4 py-2 border border-neutral-200 text-neutral-600"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
           <div className="mt-10">
@@ -214,6 +196,27 @@ function SkillsSection() {
             </Button>
           </div>
         </div>
+      </div>
+    </section>
+  );
+}
+
+function CTASection() {
+  return (
+    <section className="section-padding bg-black">
+      <div className="container-main text-center">
+        <h2 className="heading-lg text-white mb-4">Ready to build something that actually works?</h2>
+        <p className="text-neutral-400 text-lg max-w-xl mx-auto mb-8">
+          Whether you need an AI system, a website, or a marketing campaign, let&apos;s talk about what you&apos;re building and how I can help.
+        </p>
+        <a
+          href="https://wa.me/923390349804"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-green text-white font-medium px-8 py-4 text-sm tracking-wider uppercase hover:bg-green/90 transition-colors duration-200"
+        >
+          Start a Conversation
+        </a>
       </div>
     </section>
   );
