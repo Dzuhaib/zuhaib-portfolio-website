@@ -43,7 +43,7 @@ export function ServicesHero() {
               Services
             </p>
             <h1 className="heading-xl text-white mb-6">
-              Full-stack development and AI engineering &mdash; built for scale
+              Zuhaib Ahmed offers Full-stack development and AI engineering &mdash; built for scale
             </h1>
             <p className="text-lg text-white/60 leading-relaxed max-w-xl">
               From blazing-fast web applications to intelligent AI systems, every
