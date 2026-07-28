@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SERVICES } from "@/lib/constants";
+import { ServicesHero } from "@/components/ui/ServicesHero";
+import { iconComponents } from "@/components/ui/tech-icons";
 
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Full-stack development and AI engineering services including Next.js, React, Python, and AI automation.",
+    "Full-stack development, AI systems, automation, and digital marketing services by Zuhaib Ahmed, based in Sindh, Pakistan.",
   openGraph: {
     title: "Services | Zuhaib Ahmed",
     description:
-      "Full-stack development and AI engineering services.",
+      "AI systems, automation, web development, and digital marketing services.",
   },
   alternates: { canonical: "/services" },
 };
@@ -17,31 +19,13 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <HeroSection />
+      <ServicesHero />
       <AllServicesSection />
+      <WhyMeSection />
       <ProcessSection />
+      <FAQSection />
+      <CTASection />
     </>
-  );
-}
-
-function HeroSection() {
-  return (
-    <section className="relative pt-32 md:pt-40 pb-20 md:pb-28 bg-black">
-      <div className="container-main">
-        <div className="max-w-3xl">
-          <p className="text-green text-sm font-mono tracking-widest uppercase mb-6">
-            Services
-          </p>
-          <h1 className="heading-xl text-white mb-6">
-            Full-stack development and AI engineering — built for scale
-          </h1>
-          <p className="text-lg text-neutral-400 leading-relaxed max-w-xl">
-            From blazing-fast web applications to intelligent AI systems, every
-            service is designed to deliver measurable results.
-          </p>
-        </div>
-      </div>
-    </section>
   );
 }
 
@@ -49,13 +33,26 @@ function AllServicesSection() {
   return (
     <section className="section-padding bg-white">
       <div className="container-main">
+        <div className="mb-14">
+          <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
+            What I Offer
+          </p>
+          <h2 className="heading-lg text-black">Services tailored to your needs</h2>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {SERVICES.map((service) => (
             <Link
               key={service.slug}
-              href={`/services/${service.slug}`}
+              href={"/services/" + service.slug}
               className="group block border border-neutral-200 p-8 hover:border-green transition-colors duration-300"
             >
+              <div className="mb-5">
+                {iconComponents[service.icon] || (
+                  <div className="w-8 h-8 rounded bg-neutral-100 flex items-center justify-center text-xs font-bold text-neutral-500">
+                    {service.title.charAt(0)}
+                  </div>
+                )}
+              </div>
               <p className="text-green text-xs font-mono tracking-widest uppercase mb-3">
                 {service.title}
               </p>
@@ -73,6 +70,41 @@ function AllServicesSection() {
   );
 }
 
+function WhyMeSection() {
+  return (
+    <section className="section-padding bg-neutral-50">
+      <div className="container-main">
+        <div className="max-w-3xl">
+          <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
+            Why Work With Me
+          </p>
+          <h2 className="heading-lg text-black mb-6">Built by an engineer who understands both code and business</h2>
+          <p className="text-neutral-500 text-lg leading-relaxed mb-8">
+            Every project I take on gets the same treatment: clear communication, regular updates, and
+            a relentless focus on quality. I don't just write code. I solve problems. Whether you need
+            an AI system, a custom website, or a marketing campaign that actually converts,
+            I bring the same engineering discipline to every deliverable.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="p-6 border border-neutral-200">
+              <p className="text-3xl font-bold text-green mb-2">6+</p>
+              <p className="text-sm text-neutral-500">Projects delivered</p>
+            </div>
+            <div className="p-6 border border-neutral-200">
+              <p className="text-3xl font-bold text-green mb-2">100%</p>
+              <p className="text-sm text-neutral-500">Client satisfaction</p>
+            </div>
+            <div className="p-6 border border-neutral-200">
+              <p className="text-3xl font-bold text-green mb-2">24h</p>
+              <p className="text-sm text-neutral-500">Average response time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function ProcessSection() {
   const steps = [
     { num: "01", title: "Consultation", desc: "We discuss your goals, requirements, and expectations in detail." },
@@ -83,7 +115,7 @@ function ProcessSection() {
   ];
 
   return (
-    <section className="section-padding bg-neutral-50">
+    <section className="section-padding bg-white">
       <div className="container-main">
         <div className="mb-16">
           <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
@@ -105,6 +137,63 @@ function ProcessSection() {
             </div>
           ))}
         </div>
+      </div>
+    </section>
+  );
+}
+
+function FAQSection() {
+  const faqs = [
+    {
+      q: "Which countries does Zuhaib Ahmed offer services to?",
+      a: "Zuhaib Ahmed offers his services mainly to businesses in the United Kingdom and the United States, alongside select local clients in Pakistan."
+    },
+    {
+      q: "Do you work with US based clients?",
+      a: "Yes, US businesses regularly work with Zuhaib Ahmed for website development, AI systems, automations, and digital marketing services."
+    },
+    {
+      q: "Do you offer services in the UK?",
+      a: "Yes, the UK is one of the core markets, and much of the pricing and onboarding is built specifically around UK client needs."
+    },
+  ];
+
+  return (
+    <section className="section-padding bg-white">
+      <div className="container-main">
+        <div className="max-w-3xl">
+          <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">FAQ</p>
+          <h2 className="heading-lg text-black mb-8">Frequently asked questions</h2>
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <div key={i} className="border border-neutral-200 p-6">
+                <p className="text-black font-bold mb-2">{faq.q}</p>
+                <p className="text-sm text-neutral-500 leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CTASection() {
+  return (
+    <section className="section-padding bg-black">
+      <div className="container-main text-center">
+        <h2 className="heading-lg text-white mb-4">Ready to build something great?</h2>
+        <p className="text-neutral-400 text-lg max-w-xl mx-auto mb-8">
+          Let's talk about your project. No commitment required.
+        </p>
+        <a
+          href="https://wa.me/923390349804"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-green text-white font-medium px-8 py-4 text-sm tracking-wider uppercase hover:bg-green/90 transition-colors duration-200"
+        >
+          Start a Conversation
+        </a>
       </div>
     </section>
   );

@@ -152,4 +152,68 @@ export const iconComponents: Record<string, React.ReactNode> = {
       <path d="M8 14l4 4 4-4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   ),
+  AIIcon: (
+    <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-violet-500">
+      <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z" stroke="currentColor" strokeWidth="1.2" fill="none" />
+      <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="12" cy="12" r="2" fill="currentColor" opacity="0.2" />
+      <path d="M12 6v2M12 16v2M6 12h2M16 12h2" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.5" />
+    </svg>
+  ),
+  AutomationIcon: (
+    <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-cyan-500">
+      <circle cx="5" cy="6" r="2.5" stroke="currentColor" strokeWidth="1.2" fill="none" />
+      <circle cx="19" cy="6" r="2.5" stroke="currentColor" strokeWidth="1.2" fill="none" />
+      <circle cx="12" cy="18" r="2.5" stroke="currentColor" strokeWidth="1.2" fill="none" />
+      <path d="M7.5 7.5L10.5 16" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+      <path d="M16.5 7.5L13.5 16" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+      <path d="M5 8.5v3a2 2 0 002 2h10a2 2 0 002-2v-3" stroke="currentColor" strokeWidth="1.2" fill="none" />
+      <path d="M12 13v2.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+    </svg>
+  ),
+  ReactNextIcon: (
+    <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-sky-500">
+      <ellipse cx="12" cy="12" rx="9" ry="3" stroke="currentColor" strokeWidth="1.2" fill="none" />
+      <ellipse cx="12" cy="12" rx="9" ry="3" stroke="currentColor" strokeWidth="1.2" fill="none" transform="rotate(60 12 12)" />
+      <ellipse cx="12" cy="12" rx="9" ry="3" stroke="currentColor" strokeWidth="1.2" fill="none" transform="rotate(-60 12 12)" />
+      <circle cx="12" cy="12" r="2" fill="currentColor" />
+      <path d="M17 5l2 2M19 5l-2 2" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.4" />
+      <text x="12" y="14.5" textAnchor="middle" fill="currentColor" fontSize="4" fontWeight="bold" fontFamily="system-ui">R</text>
+    </svg>
+  ),
+  BackendIcon: (
+    <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-amber-600">
+      <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="1.2" fill="none" />
+      <path d="M3 8h18" stroke="currentColor" strokeWidth="1.2" />
+      <path d="M7 12h3M7 15h2" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+      <circle cx="17" cy="13" r="3" stroke="currentColor" strokeWidth="1.2" fill="none" />
+      <path d="M17 11v2l1 1" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.6" />
+    </svg>
+  ),
+  FrontendIcon: (
+    <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-indigo-500">
+      <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="1.2" fill="none" />
+      <path d="M3 9h18" stroke="currentColor" strokeWidth="1.2" />
+      <path d="M7 6v1M10 6v1" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.5" />
+      <path d="M7 13l3 2.5L7 18" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M13 17h4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+    </svg>
+  ),
+  MarketingIcon: (
+    <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-rose-500">
+      <path d="M2 20h20" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+      <rect x="4" y="12" width="3" height="8" rx="0.5" fill="currentColor" opacity="0.3" />
+      <rect x="10.5" y="8" width="3" height="12" rx="0.5" fill="currentColor" opacity="0.5" />
+      <rect x="17" y="4" width="3" height="16" rx="0.5" fill="currentColor" opacity="0.7" />
+      <path d="M22 4l-5 4M22 4l-4-2" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.5" />
+    </svg>
+  ),
+  MaintenanceIcon: (
+    <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-emerald-500">
+      <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.2" fill="none" />
+      <path d="M12 6v6l4 2" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M16 16l2 2" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.5" />
+      <path d="M8 8l-2-2" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.5" />
+    </svg>
+  ),
 };

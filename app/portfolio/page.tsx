@@ -30,6 +30,7 @@ export default function PortfolioPage() {
     <>
       <PortfolioHero />
       <ProjectsSection />
+      <FAQSection />
     </>
   );
 }
@@ -84,5 +85,45 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
         View Project →
       </span>
     </Link>
+  );
+}
+
+function FAQSection() {
+  const faqs = [
+    {
+      q: "Has Zuhaib Ahmed worked with clients in Pakistan?",
+      a: "Zuhaib Ahmed is based in Karachi, Pakistan, and takes on local projects alongside his international freelance work in AI systems, automation, and website development."
+    },
+    {
+      q: "What kind of local projects has Zuhaib Ahmed completed?",
+      a: "Zuhaib Ahmed has built websites for Karachi-based startups, integrated AI chatbots for local e-commerce stores, and developed automation systems for Pakistani small businesses looking to streamline operations."
+    },
+    {
+      q: "Does Zuhaib Ahmed offer services in Karachi?",
+      a: "Yes, Zuhaib Ahmed is based in Karachi and is available for local businesses looking for website development, AI automation, or digital marketing, in addition to his remote international clients."
+    },
+    {
+      q: "Can Pakistani businesses hire Zuhaib Ahmed directly?",
+      a: "Yes, Pakistani businesses can work with Zuhaib Ahmed directly for website development, AI systems, automations, AI SEO, and Meta ads management, without going through a freelance platform."
+    },
+  ];
+
+  return (
+    <section className="section-padding bg-neutral-50">
+      <div className="container-main">
+        <div className="max-w-3xl">
+          <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">FAQ</p>
+          <h2 className="heading-lg text-black mb-8">Frequently asked questions</h2>
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <div key={i} className="border border-neutral-200 p-6">
+                <p className="text-black font-bold mb-2">{faq.q}</p>
+                <p className="text-sm text-neutral-500 leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

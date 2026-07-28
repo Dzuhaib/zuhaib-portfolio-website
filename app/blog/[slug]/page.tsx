@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BLOG_POSTS } from "@/lib/constants";
+import { BlogPostHero } from "@/components/ui/BlogPostHero";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -113,45 +114,103 @@ function renderInline(text: string) {
   });
 }
 
+function getTakeaways(content: string): string[] {
+  const blocks = content.split("\n\n");
+  const takeaways: string[] = [];
+  for (const block of blocks) {
+    if (block.startsWith("## ")) {
+      takeaways.push(block.replace("## ", "").trim());
+    }
+  }
+  return takeaways.slice(0, 5);
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = BLOG_POSTS.find((p) => p.slug === slug);
   if (!post) notFound();
 
+  const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== slug && p.category === post.category).slice(0, 2);
+
+  const takeaways = getTakeaways(post.content);
+
   return (
-    <article className="pt-32 md:pt-40 pb-20 md:pb-28 bg-white">
-      <div className="container-main">
-        <div className="max-w-2xl mx-auto">
-          <Link
-            href="/blog"
-            className="text-xs tracking-wider uppercase text-neutral-400 hover:text-green transition-colors duration-200 mb-8 inline-flex items-center gap-2"
-          >
-            ← Back to Blog
-          </Link>
+    <>
+      <BlogPostHero
+        title={post.title}
+        category={post.category}
+        date={post.date}
+        readTime={post.readTime}
+      />
 
-          <div className="flex items-center gap-4 mb-6 mt-8">
-            <span className="text-green text-xs font-mono tracking-widest uppercase">{post.category}</span>
-            <span className="text-sm text-neutral-400">{post.date}</span>
-            <span className="text-sm text-neutral-400">{post.readTime}</span>
+      <article className="section-padding bg-white">
+        <div className="container-main">
+          <div className="max-w-2xl mx-auto">
+            <div>{renderContent(post.content)}</div>
           </div>
-
-          <h1 className="heading-xl text-black mb-6">
-            {post.title}
-          </h1>
-
-          <div className="flex items-center gap-4 pb-8 mb-12 border-b border-neutral-200">
-            <div className="w-12 h-12 rounded-full bg-neutral-100 flex items-center justify-center text-sm font-medium text-black">
-              ZA
-            </div>
-            <div>
-              <span className="block text-sm font-medium text-black">Zuhaib Ahmed</span>
-              <span className="text-xs text-neutral-400">Full Stack Developer & AI Engineer</span>
-            </div>
-          </div>
-
-          <div>{renderContent(post.content)}</div>
         </div>
-      </div>
-    </article>
+      </article>
+
+      {takeaways.length > 0 && (
+        <section className="section-padding bg-neutral-50">
+          <div className="container-main">
+            <div className="max-w-2xl mx-auto">
+              <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
+                Key Takeaways
+              </p>
+              <h2 className="heading-lg text-black mb-8">What you will learn from this article</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {takeaways.map((takeaway, i) => (
+                  <div
+                    key={i}
+                    className="flex items-start gap-4 p-5 border border-neutral-200"
+                  >
+                    <span className="shrink-0 w-6 h-6 rounded-full bg-green flex items-center justify-center text-white text-xs font-bold">
+                      {i + 1}
+                    </span>
+                    <span className="text-neutral-600 text-sm">{takeaway}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {relatedPosts.length > 0 && (
+        <section className="section-padding bg-white">
+          <div className="container-main">
+            <div className="max-w-2xl mx-auto">
+              <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
+                Related Articles
+              </p>
+              <h2 className="heading-lg text-black mb-8">Continue reading</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {relatedPosts.map((rp) => (
+                  <Link
+                    key={rp.slug}
+                    href={`/blog/${rp.slug}`}
+                    className="group block border border-neutral-200 p-6 hover:border-green transition-colors duration-300"
+                  >
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-green text-xs font-mono tracking-widest uppercase">
+                        {rp.category}
+                      </span>
+                      <span className="text-xs text-neutral-400">{rp.readTime}</span>
+                    </div>
+                    <h3 className="text-base font-bold text-black mb-2 group-hover:text-green transition-colors duration-200">
+                      {rp.title}
+                    </h3>
+                    <p className="text-sm text-neutral-500 leading-relaxed line-clamp-2">
+                      {rp.excerpt}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+    </>
   );
 }

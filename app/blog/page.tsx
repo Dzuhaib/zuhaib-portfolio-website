@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BLOG_POSTS } from "@/lib/constants";
+import { BlogHero } from "@/components/ui/BlogHero";
 
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Insights and tutorials on web development, AI, and engineering from Zuhaib Ahmed.",
+    "Insights and tutorials on web development, AI, and engineering from Zuhaib Ahmed, a Full Stack Developer and AI Engineer based in Sindh, Pakistan.",
   openGraph: {
-    title: "Blog | Zuhaib Ahmed",
+    title: "Blog | Zuhaib Ahmed Based in Sindh",
     description:
-      "Insights and tutorials on web development, AI, and engineering from Zuhaib Ahmed.",
+      "Insights and tutorials on web development, AI, and engineering from Zuhaib Ahmed, a Full Stack Developer and AI Engineer based in Sindh, Pakistan.",
   },
   alternates: { canonical: "/blog" },
 };
@@ -17,30 +18,10 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <>
-      <HeroSection />
+      <BlogHero />
       <PostsSection />
+      <FAQSection />
     </>
-  );
-}
-
-function HeroSection() {
-  return (
-    <section className="relative pt-32 md:pt-40 pb-20 md:pb-28 bg-black">
-      <div className="container-main">
-        <div className="max-w-3xl">
-          <p className="text-green text-sm font-mono tracking-widest uppercase mb-6">
-            Blog
-          </p>
-          <h1 className="heading-xl text-white mb-6">
-            Insights on development, AI, and engineering
-          </h1>
-          <p className="text-lg text-neutral-400 leading-relaxed max-w-xl">
-            Practical articles on web development, AI systems, and freelancing
-            — written from real experience.
-          </p>
-        </div>
-      </div>
-    </section>
   );
 }
 
@@ -75,6 +56,54 @@ function PostsSection() {
               </div>
             </Link>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FAQSection() {
+  const faqs = [
+    {
+      q: "Why is Next.js the best choice for modern web applications?",
+      a: "Zuhaib Ahmed explains why Next.js outperforms traditional frameworks with its App Router, Server Components, and built-in performance optimizations that deliver faster load times and better SEO."
+    },
+    {
+      q: "How do you build accessible React components?",
+      a: "Zuhaib Ahmed breaks down how semantic HTML, WCAG 2.2 principles, and proper keyboard navigation create React components that work for all users."
+    },
+    {
+      q: "What TypeScript patterns improve code maintainability?",
+      a: "Zuhaib Ahmed shares TypeScript patterns including generic constraints, discriminated unions, and branded types that make codebases more robust and maintainable."
+    },
+    {
+      q: "Should I choose headless or traditional WordPress?",
+      a: "Zuhaib Ahmed compares headless and traditional WordPress across performance, SEO, cost, and developer experience to help you decide the right approach."
+    },
+    {
+      q: "How is AI changing web development workflows?",
+      a: "Zuhaib Ahmed explores how AI coding assistants, automated code review, and AI API integration augment developer productivity without sacrificing quality."
+    },
+    {
+      q: "How should freelancers price web development projects?",
+      a: "Zuhaib Ahmed reveals his approach to moving from hourly to value-based pricing, handling scope creep, and raising rates profitably as a freelance developer."
+    },
+  ];
+
+  return (
+    <section className="section-padding bg-neutral-50">
+      <div className="container-main">
+        <div className="max-w-3xl">
+          <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">FAQ</p>
+          <h2 className="heading-lg text-black mb-8">Frequently asked questions</h2>
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <div key={i} className="border border-neutral-200 p-6">
+                <p className="text-black font-bold mb-2">{faq.q}</p>
+                <p className="text-sm text-neutral-500 leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
