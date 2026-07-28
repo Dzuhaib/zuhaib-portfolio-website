@@ -63,6 +63,7 @@ function OverviewSection({ service }: { service: Service }) {
           <h2 className="heading-lg text-black mb-6">
             {service.overviewH2 || `What ${service.title} means for your business`}
           </h2>
+          <p className="text-green text-xl font-semibold mb-8">{service.h1}</p>
           <div className="text-neutral-500 leading-relaxed space-y-4">
             {service.description.split("\n").filter(Boolean).map((para, i) => (
               <p key={i} className="text-lg">{para}</p>
