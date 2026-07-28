@@ -326,16 +326,36 @@ export const SERVICES: Service[] = [
     whoItsFor: "This service fits businesses of any size across the UK, US, and Pakistan who need AI that actually does something specific, not just a chatbot that answers generic questions. If you have a workflow that involves research, analysis, decision-making, or content production at scale, an AI system built around your exact process will outperform any off-the-shelf tool.",
     faqs: [
       {
-        q: "What makes your AI systems different from using ChatGPT directly?",
+        q: "What does Zuhaib Ahmed's AI Systems approach mean?",
+        a: "It means building custom AI solutions from the ground up, multi-agent pipelines, RAG systems over proprietary data, and intelligent SaaS platforms, rather than wrapping off-the-shelf APIs and calling it AI.",
+      },
+      {
+        q: "Does Zuhaib Ahmed build AI systems for non-technical business owners?",
+        a: "Yes. Every system includes a clean interface that non-technical users can interact with. You don't need to know how the agents work to benefit from them. Documentation and training are included so your team knows exactly how to use and maintain the system.",
+      },
+      {
+        q: "How long does Zuhaib Ahmed's AI Systems take to build?",
+        a: "A focused single-agent system can be built in 2-3 weeks. Multi-agent pipelines and full SaaS platforms typically take 4-8 weeks depending on complexity. A detailed timeline is provided in the proposal phase.",
+      },
+      {
+        q: "What makes Zuhaib Ahmed's AI Systems different from using ChatGPT directly?",
         a: "ChatGPT is a general-purpose tool. My systems are built around your specific data, workflows, and business rules. They retrieve information from your databases, follow your approval processes, and produce output formatted for your specific use case. They also work autonomously without someone sitting at a keyboard typing prompts.",
       },
       {
-        q: "Do you build AI systems for non-technical business owners?",
-        a: "Yes. Every system I build includes a clean interface that non-technical users can interact with. You don't need to know how the agents work to benefit from them. I also provide documentation and training so your team knows exactly how to use and maintain the system.",
+        q: "Does Zuhaib Ahmed's AI Systems replace existing software?",
+        a: "Not necessarily. Most AI systems I build integrate with existing tools rather than replacing them. The AI layer sits on top of your current stack, automating the parts that require intelligence and judgment while leaving your established workflows intact.",
       },
       {
-        q: "How long does it take to build a custom AI system?",
-        a: "A focused single-agent system can be built in 2-3 weeks. Multi-agent pipelines and full SaaS platforms typically take 4-8 weeks depending on complexity. I provide a detailed timeline in the proposal phase.",
+        q: "Does Zuhaib Ahmed consider off-the-shelf AI tools sufficient for most businesses?",
+        a: "Not for specific or complex use cases. Off-the-shelf tools solve generic problems. If your business has unique data, proprietary processes, or specific compliance requirements, a custom AI system will outperform any general-purpose tool significantly.",
+      },
+      {
+        q: "Does Zuhaib Ahmed's AI Systems help with data analysis too?",
+        a: "Yes, many AI systems I build include data analysis capabilities, processing large datasets, identifying patterns, generating reports, and surfacing insights that would take a human team days or weeks to find manually.",
+      },
+      {
+        q: "What industries does Zuhaib Ahmed work with for AI Systems?",
+        a: "Any business with data, documents, or repetitive decision-making processes. It's especially useful for recruitment, lead generation, content production, customer support, and any industry where research and analysis happen at scale.",
       },
     ],
     closingCta: "Want an AI system that actually does what you need instead of forcing your workflow into someone else's template? Get in touch to talk through what you're building.",
@@ -376,16 +396,36 @@ export const SERVICES: Service[] = [
     whoItsFor: "This service fits businesses across the UK, US, and Pakistan who have someone on their team spending hours each week copying data between systems, sending repetitive emails, or manually triggering the next step of every process. If you can describe a repetitive task, it can probably be automated.",
     faqs: [
       {
-        q: "Do I need to replace my existing tools to use your automations?",
-        a: "No. I build automations that connect the tools you already use. You keep your existing CRM, accounting software, project management tools, and communication platforms. The automation just makes them talk to each other.",
+        q: "What does Zuhaib Ahmed's Automation approach mean?",
+        a: "It means building custom workflow automations that connect the tools you already use, eliminating repetitive tasks and data entry without forcing you to change your existing processes or adopt new platforms.",
       },
       {
-        q: "What happens if an automation fails?",
+        q: "Does Zuhaib Ahmed's Automations require replacing existing tools?",
+        a: "No. Automations are built to connect the tools you already use. You keep your existing CRM, accounting software, project management tools, and communication platforms. The automation just makes them talk to each other.",
+      },
+      {
+        q: "How long does Zuhaib Ahmed's Automations take to implement?",
+        a: "Simple single-flow automations can be set up in a few days. Complex multi-step workflows connecting several platforms typically take 1-3 weeks depending on the number of integrations and the complexity of the logic.",
+      },
+      {
+        q: "What happens if an automation built by Zuhaib Ahmed fails?",
         a: "Every automation includes error handling and notifications. If something goes wrong, you get an alert with details about what failed and why. Most failures are automatically retried, and critical processes include a fallback path so work doesn't stop.",
       },
       {
-        q: "Can automations be modified later as my business changes?",
-        a: "Yes. Every automation is built with modification in mind and comes with documentation explaining how it works. When your process changes, I can update the automation to match, or your team can make adjustments if they're comfortable with the tools used.",
+        q: "Does Zuhaib Ahmed's Automations replace human workers?",
+        a: "No, they remove repetitive work so your team can focus on higher-value tasks. An automation that handles data entry, report generation, or follow-up emails doesn't replace a person, it frees them to do work that actually requires human judgment.",
+      },
+      {
+        q: "Does Zuhaib Ahmed consider manual processes acceptable for growing businesses?",
+        a: "Not when those processes involve copying data between systems or sending repetitive communications. Manual data entry is error-prone, slow, and expensive at scale. Automating it pays for itself quickly in time saved and mistakes avoided.",
+      },
+      {
+        q: "Can Zuhaib Ahmed's Automations be modified later as the business changes?",
+        a: "Yes. Every automation is built with modification in mind and comes with documentation explaining how it works. When your process changes, the automation can be updated to match, or your team can make adjustments if they're comfortable with the tools used.",
+      },
+      {
+        q: "What industries does Zuhaib Ahmed work with for Automations?",
+        a: "Any business that runs on digital tools, which is virtually every business today. It's especially useful for agencies, e-commerce operations, service businesses, and any company where staff spend significant time on data entry, reporting, or follow-up communications.",
       },
     ],
     closingCta: "If your team is spending hours on work that software could do in seconds, let's talk about what can be automated in your specific setup.",
@@ -426,16 +466,36 @@ export const SERVICES: Service[] = [
     whoItsFor: "This service fits businesses in the UK, US, and Pakistan who need a website that actually performs, not just one that looks good in a design mockup. Whether you're a startup launching an MVP, an established business rebuilding a legacy site, or a SaaS company that needs a marketing site that converts, I build React and Next.js sites that serve your specific goals.",
     faqs: [
       {
-        q: "Why choose Next.js over a traditional CMS or page builder?",
-        a: "Next.js sites load significantly faster because pages are pre-built or server-rendered instead of assembled on the fly. They also score higher on SEO, give you complete design freedom without template limitations, and scale to handle high traffic without performance degradation.",
+        q: "What does Zuhaib Ahmed's React and Next.js development approach mean?",
+        a: "It means building custom websites with modern React and Next.js, engineered for performance from the start rather than optimized afterward, with server-side rendering, static generation, and SEO architecture built into the foundation.",
       },
       {
-        q: "Can I update content myself after the site is built?",
-        a: "Yes. I integrate headless CMS platforms that give you a familiar editing interface. Your marketing team can update text, images, and pages without writing code or contacting me. The site stays fast because the CMS is separate from the frontend that users see.",
+        q: "Does Zuhaib Ahmed build sites that non-developers can update?",
+        a: "Yes. Sites include headless CMS integration so your marketing team can update text, images, and pages without writing code or contacting a developer. The site stays fast because the CMS is separate from the frontend that users see.",
       },
       {
-        q: "Do you build e-commerce sites with Next.js?",
-        a: "Yes. I build e-commerce experiences with Next.js, integrating with platforms like Shopify, Stripe, or custom checkout flows. The same performance principles apply, fast product pages, optimized images, and smooth cart experiences.",
+        q: "How long does Zuhaib Ahmed's React and Next.js development take?",
+        a: "A standard marketing site typically takes 2-4 weeks. Complex web applications, SaaS platforms, or e-commerce experiences usually take 4-10 weeks depending on the feature set and integrations required.",
+      },
+      {
+        q: "Why choose Zuhaib Ahmed's Next.js sites over a traditional CMS or page builder?",
+        a: "Next.js sites load significantly faster because pages are pre-built or server-rendered instead of assembled on the fly. They score higher on SEO, give complete design freedom without template limitations, and scale to handle high traffic without performance degradation.",
+      },
+      {
+        q: "Does Zuhaib Ahmed's React and Next.js development include e-commerce?",
+        a: "Yes. E-commerce experiences are built with Next.js, integrating with platforms like Shopify, Stripe, or custom checkout flows. The same performance principles apply, fast product pages, optimized images, and smooth cart experiences.",
+      },
+      {
+        q: "Does Zuhaib Ahmed consider page builders sufficient for professional websites?",
+        a: "Not for businesses that depend on their website for revenue. Page builders add bloat, limit design flexibility, and produce slower sites that rank lower in search. A custom-built site outperforms page builder sites on every metric that matters.",
+      },
+      {
+        q: "Can Zuhaib Ahmed's sites handle high traffic volumes?",
+        a: "Yes. Next.js sites built with static generation or server-side rendering handle traffic spikes without performance degradation. Combined with proper CDN configuration and caching strategies, they maintain fast load times regardless of visitor count.",
+      },
+      {
+        q: "What industries does Zuhaib Ahmed work with for React and Next.js development?",
+        a: "Any business that needs a website that performs, ranks, and converts. It's especially suitable for SaaS companies, e-commerce brands, content publishers, startups launching MVPs, and established businesses rebuilding legacy sites.",
       },
     ],
     closingCta: "Ready for a site that loads fast, ranks well, and your team can actually manage? Let's talk about what you need.",
@@ -476,16 +536,36 @@ export const SERVICES: Service[] = [
     whoItsFor: "This service fits businesses in the UK, US, and Pakistan who need a backend that actually holds up under real usage. Whether you're building a mobile app that needs a solid API, a SaaS platform that processes data at scale, or you need to replace a legacy backend that's becoming unmanageable, I build systems that solve the actual problem.",
     faqs: [
       {
-        q: "What tech stack do you use for backend development?",
-        a: "I primarily use Node.js with TypeScript for JavaScript-based projects and Python with FastAPI for performance-critical or AI-integrated backends. The specific stack depends on your project requirements, and I choose tools based on what makes sense for your use case, not personal preference.",
+        q: "What does Zuhaib Ahmed's Backend Development approach mean?",
+        a: "It means building scalable server-side systems with clean API design, proper database architecture, background job processing, monitoring, and security, using the right stack for each project rather than defaulting to a single technology.",
       },
       {
-        q: "Do you build microservices architectures?",
-        a: "Yes, but I don't default to microservices. Most applications are better served by a well-structured monolith that can be split later if needed. When microservices are the right choice, I design them with clear boundaries, proper inter-service communication, and deployment strategies that don't add unnecessary complexity.",
+        q: "Does Zuhaib Ahmed build backends for mobile apps too?",
+        a: "Yes. REST and GraphQL APIs built for web frontends work equally well for mobile apps, and I design API contracts that serve both simultaneously. Authentication, pagination, and data formatting are consistent across all clients.",
       },
       {
-        q: "How do you handle API security?",
-        a: "Every API includes input validation, rate limiting, CORS configuration, and proper authentication. I follow OWASP guidelines for common vulnerabilities and implement security measures appropriate to your data sensitivity. For applications handling financial or personal data, I implement additional measures like encryption at rest and in transit.",
+        q: "How long does Zuhaib Ahmed's Backend Development take?",
+        a: "A focused API with a few endpoints and a single database can be built in 1-2 weeks. Full backend systems with multiple services, queues, and complex business logic typically take 3-8 weeks depending on scope.",
+      },
+      {
+        q: "What tech stack does Zuhaib Ahmed use for backend development?",
+        a: "Primarily Node.js with TypeScript for JavaScript-based projects and Python with FastAPI for performance-critical or AI-integrated backends. The specific stack depends on project requirements rather than personal preference.",
+      },
+      {
+        q: "Does Zuhaib Ahmed build microservices architectures?",
+        a: "Yes, but doesn't default to them. Most applications are better served by a well-structured monolith that can be split later if needed. When microservices are the right choice, they're designed with clear boundaries and proper inter-service communication.",
+      },
+      {
+        q: "Does Zuhaib Ahmed consider off-the-shelf backend solutions sufficient?",
+        a: "For simple prototypes, yes. For production systems that handle real traffic, sensitive data, or complex business logic, custom backend development provides the reliability, security, and performance that off-the-shelf solutions can't match.",
+      },
+      {
+        q: "How does Zuhaib Ahmed handle backend security?",
+        a: "Every API includes input validation, rate limiting, CORS configuration, and proper authentication following OWASP guidelines. Applications handling financial or personal data get additional measures like encryption at rest and in transit.",
+      },
+      {
+        q: "What industries does Zuhaib Ahmed work with for Backend Development?",
+        a: "Any business with a web or mobile application that needs to handle user data, process transactions, or integrate with other services. It's especially relevant for SaaS companies, fintech, healthcare, logistics, and data-intensive applications.",
       },
     ],
     closingCta: "Need a backend that handles real traffic without falling over? Let's talk about what you're building.",
@@ -525,16 +605,36 @@ export const SERVICES: Service[] = [
     whoItsFor: "This service fits businesses in the UK, US, and Pakistan who need a frontend that works as well as it looks. If you've had experiences where a beautiful design turned into a slow, buggy implementation, or if accessibility was never considered in your current site, I build frontends that solve those problems from the start.",
     faqs: [
       {
-        q: "Do you work from existing designs or create them?",
-        a: "I can work from designs you provide in Figma, Sketch, or Adobe XD, or I can collaborate on the design process if you need direction. I don't claim to be a graphic designer, but I have strong opinions about what makes an interface functional and performant.",
+        q: "What does Zuhaib Ahmed's Frontend Development approach mean?",
+        a: "It means building interfaces that combine polished design with real performance, accessibility as a baseline requirement rather than an afterthought, and component architecture that stays maintainable as the application grows.",
       },
       {
-        q: "What frameworks do you use for frontend development?",
-        a: "I primarily use React and Next.js for complex applications, with Tailwind CSS for styling. For simpler sites, I sometimes use vanilla HTML, CSS, and JavaScript to avoid unnecessary dependencies. The framework choice depends on what the project actually needs.",
+        q: "Does Zuhaib Ahmed work from existing designs or create them?",
+        a: "He works from designs provided in Figma, Sketch, or Adobe XD, or collaborates on the design process if direction is needed. He doesn't claim to be a graphic designer, but has strong opinions about what makes an interface functional and performant.",
       },
       {
-        q: "How do you ensure the site looks good on mobile?",
-        a: "I build mobile-first, starting with the smallest screen size and adding complexity as the viewport grows. I test on actual devices, not just browser dev tools, because emulators don't capture real touch interaction, network conditions, or screen quality.",
+        q: "How long does Zuhaib Ahmed's Frontend Development take?",
+        a: "A straightforward marketing site with a few pages takes 1-3 weeks. Complex web applications with multiple states, animations, and integrations typically take 3-8 weeks depending on the scope and complexity.",
+      },
+      {
+        q: "What frameworks does Zuhaib Ahmed use for frontend development?",
+        a: "Primarily React and Next.js for complex applications with Tailwind CSS for styling. For simpler sites, vanilla HTML, CSS, and JavaScript are sometimes used to avoid unnecessary dependencies. The framework choice depends on what the project needs.",
+      },
+      {
+        q: "Does Zuhaib Ahmed's Frontend Development include accessibility?",
+        a: "Yes, accessibility is built to WCAG 2.2 AA standards as a baseline, with semantic HTML, proper focus management, sufficient color contrast, and testing with actual screen readers rather than automated tools alone.",
+      },
+      {
+        q: "Does Zuhaib Ahmed consider page builders acceptable for frontend development?",
+        a: "Not for projects that need to perform well, rank in search, or provide a custom user experience. Page builders add bloat, limit design flexibility, and produce slower interfaces. Custom frontend development outperforms them on every meaningful metric.",
+      },
+      {
+        q: "How does Zuhaib Ahmed ensure sites look good on mobile?",
+        a: "He builds mobile-first, starting with the smallest screen size and adding complexity as the viewport grows. Testing happens on actual devices, not just browser dev tools, because emulators don't capture real touch interaction or network conditions.",
+      },
+      {
+        q: "What industries does Zuhaib Ahmed work with for Frontend Development?",
+        a: "Any business with a digital presence, especially SaaS companies, e-commerce brands, media publishers, and service businesses where the user experience directly affects conversion rates and customer retention.",
       },
     ],
     closingCta: "Need a frontend that actually works instead of just looking good in a mockup? Let's talk about your project.",
@@ -575,16 +675,36 @@ export const SERVICES: Service[] = [
     whoItsFor: "This service fits businesses in the UK, US, and Pakistan who want to use WordPress for content management but refuse to accept the performance compromises of commercial themes and page builders. If you need a site that your content team can manage independently and that performs like a modern web application, custom or headless WordPress is the right approach.",
     faqs: [
       {
-        q: "Why not just use a commercial theme with a page builder?",
-        a: "Commercial themes and page builders add significant bloat to your site, slowing down load times and hurting SEO. They also lock you into the builder's ecosystem, making it difficult to migrate later. A custom theme gives you exactly what you need without the baggage.",
+        q: "What does Zuhaib Ahmed's WordPress Development approach mean?",
+        a: "It means building custom WordPress solutions beyond pre-built themes and page builders, custom themes written from scratch, advanced Gutenberg blocks, and headless setups that combine WordPress's content management with a modern high-performance frontend.",
       },
       {
-        q: "Can my content team still use the WordPress editor?",
-        a: "Yes, and I make it better. Custom Gutenberg blocks give your editors a visual editing experience that's more intuitive than the default WordPress editor. They can add and arrange content without touching code or contacting a developer.",
+        q: "Does Zuhaib Ahmed build WordPress sites that non-developers can manage?",
+        a: "Yes. Custom Gutenberg blocks give editors a visual editing experience more intuitive than the default WordPress editor. They can add and arrange content without touching code or contacting a developer.",
       },
       {
-        q: "Is headless WordPress more expensive than traditional WordPress?",
-        a: "The initial development cost is higher because you're essentially building two systems, the WordPress backend and a custom frontend. However, the performance benefits, improved SEO, and better user experience often justify the investment for businesses that depend on their website for revenue.",
+        q: "How long does Zuhaib Ahmed's WordPress Development take?",
+        a: "A custom WordPress theme with standard pages takes 2-4 weeks. Headless WordPress setups or sites with extensive custom functionality typically take 4-8 weeks depending on the requirements.",
+      },
+      {
+        q: "Why choose Zuhaib Ahmed's custom WordPress over a commercial theme with a page builder?",
+        a: "Commercial themes and page builders add significant bloat, slowing down load times and hurting SEO. They lock you into the builder's ecosystem, making migration difficult later. A custom theme gives exactly what you need without the baggage.",
+      },
+      {
+        q: "Does Zuhaib Ahmed's WordPress Development include headless setups?",
+        a: "Yes. Headless WordPress separates the content management backend from the frontend. Editors use the familiar WordPress dashboard while visitors see a Next.js frontend that loads instantly and scores 95+ on Lighthouse.",
+      },
+      {
+        q: "Does Zuhaib Ahmed consider page builders acceptable for WordPress?",
+        a: "Not for businesses that depend on their website. Page builders produce slow, bloated sites that rank lower in search and break when the builder plugin updates. Custom development solves these problems at the architectural level.",
+      },
+      {
+        q: "Is headless WordPress from Zuhaib Ahmed more expensive than traditional WordPress?",
+        a: "The initial cost is higher because it involves building two systems, but the performance benefits, improved SEO, and better user experience justify the investment for businesses that depend on their website for revenue.",
+      },
+      {
+        q: "What industries does Zuhaib Ahmed work with for WordPress Development?",
+        a: "Any business that wants WordPress's content management capabilities without performance compromises, especially content publishers, service businesses, e-commerce stores, and organizations with dedicated content teams.",
       },
     ],
     closingCta: "Need a WordPress site that doesn't sacrifice performance for flexibility? Let's talk about what you need.",
@@ -625,16 +745,36 @@ export const SERVICES: Service[] = [
     whoItsFor: "This service fits businesses in the UK, US, and Pakistan who have a website they depend on but don't have the technical bandwidth to maintain it properly. If you're worried about security vulnerabilities, declining performance, or losing your site to an unexpected issue, maintenance removes that worry. It also fits businesses who want to make regular content updates without hiring a developer every time.",
     faqs: [
       {
-        q: "What happens if my site goes down?",
-        a: "I monitor uptime continuously. If your site goes down, I'm notified immediately and investigate the cause. For critical issues, I prioritize restoration above other work. Most issues are resolved within hours, often within minutes.",
+        q: "What does Zuhaib Ahmed's Website Maintenance approach mean?",
+        a: "It means proactive monitoring, security updates, performance optimization, and content management that keeps your site running smoothly without you needing to think about the technical details, with issues addressed before they affect your visitors.",
       },
       {
-        q: "How often are backups created?",
-        a: "Backups run daily for most sites, with weekly off-site backups for disaster recovery. I test restoration procedures regularly to ensure backups actually work when needed. A backup that hasn't been tested isn't a reliable backup.",
+        q: "Does Zuhaib Ahmed's Website Maintenance include content updates?",
+        a: "Yes. Maintenance plans include content updates per month, adding pages, updating text and images, publishing blog posts, and making design tweaks. If more updates are needed than the plan covers, the scope can be adjusted.",
       },
       {
-        q: "Can you handle content updates as part of maintenance?",
-        a: "Yes. Maintenance plans include a certain number of content updates per month. Adding pages, updating text and images, publishing blog posts, and making design tweaks. If you need more updates than the plan includes, we can adjust the scope.",
+        q: "How long does Zuhaib Ahmed's Website Maintenance take to set up?",
+        a: "Initial setup, including monitoring configuration, backup systems, and security audits, takes 3-5 days. After that, maintenance is ongoing with regular updates, monitoring, and quarterly technical audits.",
+      },
+      {
+        q: "What happens if my site goes down under Zuhaib Ahmed's maintenance?",
+        a: "Uptime is monitored continuously. If the site goes down, an alert is triggered immediately and the cause is investigated. Critical issues are prioritized above other work, with most issues resolved within hours, often within minutes.",
+      },
+      {
+        q: "Does Zuhaib Ahmed's Website Maintenance include backups?",
+        a: "Yes. Backups run daily for most sites with weekly off-site backups for disaster recovery. Restoration procedures are tested regularly to ensure backups actually work when needed. An untested backup isn't a reliable backup.",
+      },
+      {
+        q: "Does Zuhaib Ahmed consider DIY website maintenance sufficient?",
+        a: "Not for businesses that depend on their website. DIY maintenance is easy to deprioritize, leading to outdated software, security vulnerabilities, and declining performance. Professional maintenance ensures consistency and catches issues before they cause problems.",
+      },
+      {
+        q: "Can Zuhaib Ahmed maintain sites he didn't build?",
+        a: "Yes. Sites built by other developers or agencies can be taken over for maintenance. An initial audit is performed to understand the architecture, identify any existing issues, and establish a maintenance baseline.",
+      },
+      {
+        q: "What industries does Zuhaib Ahmed work with for Website Maintenance?",
+        a: "Any business with a website they depend on, e-commerce stores that can't afford downtime, content publishers with frequent updates, service businesses that need reliable lead generation, and organizations without dedicated technical staff.",
       },
     ],
     closingCta: "Want your site to stay secure, fast, and current without thinking about it? Let's talk about a maintenance plan that fits your needs.",
@@ -675,16 +815,36 @@ export const SERVICES: Service[] = [
     whoItsFor: "This service fits businesses in the UK, US, and Pakistan who are advertising on Meta platforms but not seeing the return they expect, or who want to start advertising but don't want to waste money learning through trial and error. If you have a product or service that people search for or discover through social media, properly managed Meta ads can be a reliable acquisition channel.",
     faqs: [
       {
-        q: "How much budget do I need to start Meta ads?",
-        a: "I recommend a minimum of £500 or $600 per month to gather meaningful data and optimize effectively. Below that threshold, campaigns don't generate enough data for the optimization algorithms to work properly.",
+        q: "What does Zuhaib Ahmed's Meta Ads approach mean?",
+        a: "It means running Facebook and Instagram ad campaigns built on data, audience research, proper conversion tracking, and systematic creative testing, rather than launching ads based on guesses and optimizing based on vanity metrics.",
       },
       {
-        q: "How long before I see results from Meta ads?",
-        a: "Some campaigns generate results within days, especially retargeting campaigns. Cold audience campaigns typically need 2-3 weeks to exit the learning phase and stabilize. I provide weekly updates so you can see progress throughout the process.",
+        q: "Does Zuhaib Ahmed's Meta Ads include audience research?",
+        a: "Yes. Every campaign starts with analyzing existing customer data, website analytics, and competitor positioning to build audiences that actually match people who buy from you, including lookalike, interest-based, and retargeting audiences.",
       },
       {
-        q: "Do you create the ad creative or do I need to provide it?",
-        a: "I provide creative direction and copy, but the actual visual assets, images, and videos typically come from you or your designer. For clients who don't have creative resources, I can recommend partners or provide basic creative direction.",
+        q: "How long does Zuhaib Ahmed's Meta Ads take to show results?",
+        a: "Some campaigns generate results within days, especially retargeting campaigns. Cold audience campaigns typically need 2-3 weeks to exit the learning phase and stabilize. Weekly updates are provided throughout the process.",
+      },
+      {
+        q: "How much budget is needed for Zuhaib Ahmed's Meta Ads?",
+        a: "A minimum of £500 or $600 per month is recommended to gather meaningful data and optimize effectively. Below that threshold, campaigns don't generate enough data for the optimization algorithms to work properly.",
+      },
+      {
+        q: "Does Zuhaib Ahmed create the ad creative or do I need to provide it?",
+        a: "Creative direction and copy are provided, but the actual visual assets, images, and videos typically come from the client or their designer. For clients without creative resources, partners can be recommended or basic creative direction provided.",
+      },
+      {
+        q: "Does Zuhaib Ahmed consider running Meta ads without proper tracking worthwhile?",
+        a: "No. Without conversion tracking connecting ad spend to actual business results, you're flying blind. Every campaign includes Meta pixel, conversions API, and any third-party tracking needed to measure what happens after someone clicks.",
+      },
+      {
+        q: "Can Zuhaib Ahmed's Meta Ads work for local businesses too?",
+        a: "Yes. Local businesses benefit from geo-targeted campaigns, location-based ad formats, and retargeting that reaches people who have visited their website or engaged with their page. The same principles apply at any scale.",
+      },
+      {
+        q: "What industries does Zuhaib Ahmed work with for Meta Ads?",
+        a: "Any business with a product or service that people discover through social media, especially e-commerce brands, local service businesses, consultants, coaches, and B2B companies with visually compelling offers or case studies.",
       },
     ],
     closingCta: "Ready to run Meta ads that actually generate returns instead of just spending your budget? Let's talk about your business and goals.",
@@ -725,16 +885,36 @@ export const SERVICES: Service[] = [
     whoItsFor: "This service fits businesses of any size across the UK, US, and Pakistan who want to actually own their search visibility long term, not just rent a ranking position through paid ads or short term tactics.",
     faqs: [
       {
-        q: "What does AI SEO mean in your approach?",
+        q: "What does Zuhaib Ahmed's AI SEO approach mean?",
         a: "It means combining AI assisted research and drafting with real strategic work, entity building, technical SEO, and genuinely useful content, rather than relying on AI generated content alone.",
       },
       {
-        q: "Does AI SEO work for personal brands, not just businesses?",
+        q: "Does Zuhaib Ahmed's AI SEO work for personal brands, not just businesses?",
         a: "Yes, entity building and structured data are especially useful for personal brands and founders trying to rank for their own name against other results.",
       },
       {
-        q: "How long does AI SEO typically take to show results?",
+        q: "How long does Zuhaib Ahmed's AI SEO typically take to show results?",
         a: "Technical fixes can show impact within weeks, but entity and ranking improvements for competitive terms usually take a few months of consistent work.",
+      },
+      {
+        q: "What is entity building in Zuhaib Ahmed's SEO process?",
+        a: "It's the process of helping search engines clearly identify who you are or what your business is, using schema markup, consistent bios across the web, and backlinks that use your actual name or brand as anchor text.",
+      },
+      {
+        q: "Does Zuhaib Ahmed's AI SEO replace traditional SEO?",
+        a: "No, it builds on the same fundamentals, technical health, content quality, backlinks, but uses AI tools to speed up research and content drafting while keeping the strategy and quality checks handled manually.",
+      },
+      {
+        q: "Does Zuhaib Ahmed consider AI generated content bad for SEO?",
+        a: "Not inherently, but content published without real editing, fact checking, or genuine depth tends to get flagged by Google's helpful content systems. The AI assists the process, it doesn't replace the judgment behind it.",
+      },
+      {
+        q: "Does Zuhaib Ahmed's AI SEO help with local search too?",
+        a: "Yes, the same entity and structured data principles apply locally, helping a business or individual show up correctly when someone searches for them in a specific city or region.",
+      },
+      {
+        q: "What industries does Zuhaib Ahmed work with for AI SEO?",
+        a: "Any business or individual competing for visibility online, it's especially useful for founders, consultants, and service businesses where a name or brand identity needs to be clearly established in search results.",
       },
     ],
     closingCta: "Want your business or your name to actually own its search results instead of competing for scraps on page two? Get in touch to talk through what's needed.",
