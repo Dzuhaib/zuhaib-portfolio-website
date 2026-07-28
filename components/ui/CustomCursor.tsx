@@ -1,27 +1,29 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, useSpring, useMotionValue } from "framer-motion";
 
 export function CustomCursor() {
-  const [isHovering, setIsHovering] = useState(false);
-  const [visible, setVisible] = useState(false);
   const [mounted, setMounted] = useState(false);
-
-  const cursorX = useMotionValue(-100);
-  const cursorY = useMotionValue(-100);
-
-  const springX = useSpring(cursorX, { stiffness: 200, damping: 30 });
-  const springY = useSpring(cursorY, { stiffness: 200, damping: 30 });
+  const [isTouch, setIsTouch] = useState(true);
 
   useEffect(() => {
     setMounted(true);
+    setIsTouch(window.matchMedia("(pointer: coarse)").matches);
+  }, []);
 
-    if (window.matchMedia("(pointer: coarse)").matches) return;
+  if (!mounted || isTouch) return null;
 
+  return <CursorWithMotion />;
+}
+
+function CursorWithMotion() {
+  const [isHovering, setIsHovering] = useState(false);
+  const [visible, setVisible] = useState(false);
+  const [pos, setPos] = useState({ x: -100, y: -100 });
+
+  useEffect(() => {
     const move = (e: MouseEvent) => {
-      cursorX.set(e.clientX);
-      cursorY.set(e.clientY);
+      setPos({ x: e.clientX, y: e.clientY });
       if (!visible) setVisible(true);
     };
 
@@ -46,27 +48,20 @@ export function CustomCursor() {
       window.removeEventListener("mousemove", move);
       window.removeEventListener("mouseover", handleMouseOver);
     };
-  }, [cursorX, cursorY, visible]);
-
-  if (!mounted) return null;
+  }, [visible]);
 
   return (
-    <motion.div
+    <div
       className="fixed top-0 left-0 pointer-events-none z-[9999] mix-blend-difference"
       style={{
-        x: springX,
-        y: springY,
-        translateX: "-50%",
-        translateY: "-50%",
-      }}
-      animate={{
+        transform: `translate(calc(${pos.x}px - 50%), calc(${pos.y}px - 50%))`,
         width: isHovering ? 48 : 24,
         height: isHovering ? 48 : 24,
         opacity: visible ? 1 : 0,
+        transition: "width 0.2s, height 0.2s, opacity 0.2s",
       }}
-      transition={{ duration: 0.2 }}
     >
       <div className="w-full h-full rounded-full border border-green" />
-    </motion.div>
+    </div>
   );
 }

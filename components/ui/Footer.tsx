@@ -1,9 +1,11 @@
 "use client";
 
-import { SparklesCore } from "./sparkles";
+import dynamic from "next/dynamic";
 import { Highlight } from "./Highlight";
 import { SITE } from "@/lib/constants";
-import WorldMap from "./world-map";
+
+const SparklesCore = dynamic(() => import("./sparkles").then(m => ({ default: m.SparklesCore })), { ssr: false });
+const WorldMap = dynamic(() => import("./world-map"), { ssr: false });
 
 export function Footer() {
   const year = new Date().getFullYear();
