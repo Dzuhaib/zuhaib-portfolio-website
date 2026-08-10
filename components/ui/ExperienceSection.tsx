@@ -5,9 +5,8 @@ import { EXPERIENCES } from "@/lib/constants";
 import { Highlight } from "./Highlight";
 
 const companyLogos: Record<string, string> = {
+  "AIVIZED": "AV",
   "Freelance": "F",
-  "Tech Agency": "TA",
-  "Digital Solutions Inc": "DS",
 };
 
 export function ExperienceSection() {
@@ -29,7 +28,7 @@ export function ExperienceSection() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {EXPERIENCES.map((exp, i) => (
             <motion.div
               key={exp.company}

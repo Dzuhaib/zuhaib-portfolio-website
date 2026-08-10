@@ -1,13 +1,27 @@
 export const SITE = {
   name: "Zuhaib Ahmed",
-  title: "Zuhaib Ahmed — AI Automation & AI Systems Engineer",
+  title: "Zuhaib Ahmed — Full Stack Developer & AI Engineer in Sindh",
   description:
-    "Zuhaib Ahmed Based in Sindh, Pakistan — AI Systems & Automation Engineer building scalable AI SaaS platforms, multi-agent automation engines, and intelligent web applications for global clients.",
+    "Zuhaib Ahmed is a Full Stack Developer and AI Engineer based in Sindh, Pakistan, building AI systems, multi-agent automation pipelines, and high-performance web applications for clients in the UK, US, and Pakistan.",
   url: "https://zuhaib.aivized.com",
   locale: "en_US",
   author: "Zuhaib Ahmed",
   email: "myselfzuhaib@gmail.com",
-  location: "Sindh, Pakistan",
+  phone: "+923390349804",
+  whatsapp: "https://wa.me/923390349804",
+  // Karachi is the city; Sindh is the province containing it. Keeping both
+  // tokens everywhere keeps the entity consistent for "Zuhaib Ahmed Sindh"
+  // and "Zuhaib Ahmed Karachi" without the site contradicting itself.
+  location: "Karachi, Sindh, Pakistan",
+  city: "Karachi",
+  region: "Sindh",
+  country: "Pakistan",
+  countryCode: "PK",
+  jobTitles: [
+    "Full Stack Developer",
+    "AI Engineer",
+  ],
+  servesAreas: ["Pakistan", "United Kingdom", "United States"],
   availability: true,
   social: {
     github: "https://github.com/Dzuhaib",
@@ -196,35 +210,28 @@ export const SKILL_CATEGORIES = [
   },
 ] as const;
 
+// Kept in sync with the Experience section of public/llms-full.txt — that file is
+// read by AI crawlers as ground truth about Zuhaib Ahmed, so an employer or a
+// date range that appears in one and not the other weakens the entity.
 export const EXPERIENCES = [
+  {
+    company: "AIVIZED",
+    position: "Founder — AI Chatbots & Automation",
+    duration: "2024 — Present",
+    achievements: [
+      "Founded AIVIZED, an AI chatbot and automation company based in Sindh, Pakistan",
+      "Built the Agent Factory, a no-code platform that deploys production chatbots in under 10 minutes",
+      "Ships AI SaaS products for small and mid-sized businesses in the UK, US, and Pakistan",
+    ],
+  },
   {
     company: "Freelance",
     position: "Full Stack Developer & AI Engineer",
     duration: "2020 — Present",
     achievements: [
-      "Delivered 50+ web applications and AI solutions for clients globally",
-      "Built custom AI automation systems reducing operational costs by 40%",
-      "Achieved 99% client satisfaction rate across all projects",
-    ],
-  },
-  {
-    company: "Tech Agency",
-    position: "Senior Full Stack Developer",
-    duration: "2022 — 2024",
-    achievements: [
-      "Led development of 15+ major web projects using Next.js and React",
-      "Implemented CI/CD pipelines reducing deployment time by 70%",
-      "Mentored junior developers and established code review practices",
-    ],
-  },
-  {
-    company: "Digital Solutions Inc",
-    position: "Web Developer",
-    duration: "2020 — 2022",
-    achievements: [
-      "Built responsive web applications serving 100k+ monthly users",
-      "Migrated legacy PHP applications to modern React architecture",
-      "Optimized Core Web Vitals achieving 95+ Lighthouse scores",
+      "Around five years building web applications and AI systems for clients in the UK, US, and Pakistan",
+      "Built the AI Lead Engine, a four-agent outreach pipeline processing 100 leads per job",
+      "Delivers Next.js and React applications, FastAPI and Node.js backends, and RAG systems",
     ],
   },
 ] as const;
@@ -929,7 +936,8 @@ export const BLOG_POSTS = [
     category: "Next.js",
     excerpt:
       "A deep dive into why Next.js continues to dominate the React framework landscape and how it can benefit your business.",
-    date: "August 12, 2026",
+    date: "2026-02-18",
+    updated: "2026-06-24",
     readTime: "8 min read",
     content: `Next.js has evolved significantly over the years, and 2025 is shaping up to be its strongest year yet. With the App Router maturing, server components becoming the norm, and performance optimizations that push the boundaries of what is possible on the web, there has never been a better time to build with Next.js.
 
@@ -959,7 +967,8 @@ If you care about SEO, performance, and developer productivity, Next.js is the s
     category: "React",
     excerpt:
       "Learn how to build React components that work for everyone, with practical examples and WCAG best practices.",
-    date: "August 14, 2026",
+    date: "2026-03-11",
+    updated: "2026-05-19",
     readTime: "10 min read",
     content: `Accessibility is not an afterthought. It is a fundamental part of good development. Building accessible React components means creating experiences that work for everyone, regardless of how they interact with the web.
 
@@ -988,7 +997,8 @@ Manual testing with screen readers like NVDA, VoiceOver, and JAWS reveals issues
     slug: "typescript-tips-every-developer",
     category: "TypeScript",
     excerpt: "Advanced TypeScript patterns and techniques that will make your code more robust and maintainable.",
-    date: "August 16, 2026",
+    date: "2026-04-07",
+    updated: "2026-04-07",
     readTime: "6 min read",
     content: `TypeScript has become the standard for serious web development. Here are some advanced patterns and techniques that will help you write more robust and maintainable TypeScript code.
 
@@ -1022,7 +1032,8 @@ When working with unions and switch statements, you can use the never type to en
     category: "WordPress",
     excerpt:
       "An honest comparison of headless and traditional WordPress approaches to help you make the right decision.",
-    date: "August 18, 2026",
+    date: "2026-05-05",
+    updated: "2026-07-02",
     readTime: "7 min read",
     content: `The debate between headless and traditional WordPress continues to evolve. Both approaches have their place, and the right choice depends on your specific needs, team skills, and project goals.
 
@@ -1052,7 +1063,8 @@ Traditional WordPress hosting is generally cheaper and simpler to manage. Manage
     category: "AI Tools",
     excerpt:
       "Exploring the practical applications of AI in web development and how to leverage them without compromising quality.",
-    date: "August 20, 2026",
+    date: "2026-06-16",
+    updated: "2026-06-16",
     readTime: "5 min read",
     content: `AI is transforming web development, but not in the way many people fear. Instead of replacing developers, AI is augmenting our capabilities and changing how we approach problems.
 
@@ -1082,7 +1094,8 @@ AI generated code is not always correct or optimal. Always review, test, and ver
     category: "Freelancing",
     excerpt:
       "A transparent look at how to price your web development services from hourly rates to value-based pricing.",
-    date: "August 22, 2026",
+    date: "2026-07-21",
+    updated: "2026-07-21",
     readTime: "9 min read",
     content: `Pricing is one of the hardest parts of freelancing. Charge too little and you burn out. Charge too much and you scare away clients. Here is how to find the right balance.
 

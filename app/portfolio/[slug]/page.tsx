@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/Button";
 import { ProjectHero } from "@/components/ui/ProjectHero";
 import { SarahSlider } from "@/components/ui/SarahSlider";
 import { DesktopMockup } from "@/components/ui/DesktopMockup";
-import { PROJECTS } from "@/lib/constants";
+import { PROJECTS, SITE } from "@/lib/constants";
+import { ID, JsonLd, breadcrumbSchema, graph } from "@/lib/schema";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -37,8 +38,29 @@ export default async function ProjectPage({ params }: Props) {
 
   const otherProjects = PROJECTS.filter((p) => p.slug !== slug);
 
+  const creativeWorkSchema = {
+    "@type": "SoftwareApplication",
+    "@id": `${SITE.url}/portfolio/${slug}#project`,
+    name: project.title,
+    description: project.description,
+    url: `${SITE.url}/portfolio/${slug}`,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    author: { "@id": ID.person },
+    creator: { "@id": ID.person },
+    publisher: { "@id": ID.organization },
+    isPartOf: { "@id": ID.website },
+  };
+
+  const crumbs = breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: project.title, path: `/portfolio/${slug}` },
+  ]);
+
   return (
     <>
+      <JsonLd schema={graph(creativeWorkSchema, crumbs)} />
       <ProjectHero project={project} />
       <OverviewSection project={project} />
       {slug === "ai-lead-engine" && <ArchitectureSection />}

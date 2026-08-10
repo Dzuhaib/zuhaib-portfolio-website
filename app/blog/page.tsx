@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BLOG_POSTS } from "@/lib/constants";
+import { BLOG_POSTS, SITE } from "@/lib/constants";
+import { formatPostDate } from "@/lib/utils";
+import { ID, JsonLd, breadcrumbSchema, graph } from "@/lib/schema";
 import { BlogHero } from "@/components/ui/BlogHero";
 
 export const metadata: Metadata = {
@@ -16,8 +18,27 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
+  const blogSchema = {
+    "@type": "Blog",
+    "@id": `${SITE.url}/blog#blog`,
+    url: `${SITE.url}/blog`,
+    name: "Zuhaib Ahmed's Blog",
+    description:
+      "Technical writing on Next.js, React, TypeScript, and AI engineering by Zuhaib Ahmed.",
+    author: { "@id": ID.person },
+    publisher: { "@id": ID.person },
+    isPartOf: { "@id": ID.website },
+    inLanguage: "en",
+  };
+
+  const crumbs = breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog" },
+  ]);
+
   return (
     <>
+      <JsonLd schema={graph(blogSchema, crumbs)} />
       <BlogHero />
       <PostsSection />
       <FAQSection />
@@ -49,7 +70,9 @@ function PostsSection() {
                 {post.excerpt}
               </p>
               <div className="flex items-center justify-between mt-8 pt-5 border-t border-neutral-100">
-                <span className="text-xs text-neutral-400">{post.date}</span>
+                <time dateTime={post.date} className="text-xs text-neutral-400">
+                  {formatPostDate(post.date)}
+                </time>
                 <span className="text-xs text-neutral-600 group-hover:text-green transition-colors duration-200">
                   Read →
                 </span>

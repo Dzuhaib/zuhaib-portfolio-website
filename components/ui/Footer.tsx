@@ -40,9 +40,15 @@ export function Footer() {
         </div>
 
         <div className="pt-10 pb-10 flex flex-col items-center border-t border-neutral-800 w-full">
-          <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
+          {/* Decorative wordmark — must not be a heading. The footer lives in the
+              root layout, so any heading here would repeat on all 27 routes and
+              compete with each page's real H1. */}
+          <div
+            aria-hidden="true"
+            className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20"
+          >
             Zuhaib
-          </h1>
+          </div>
           <div className="w-[40rem] h-40 relative">
             <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-green-500 to-transparent h-[2px] w-3/4 blur-sm" />
             <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-green-500 to-transparent h-px w-3/4" />

@@ -55,13 +55,14 @@ export default function AboutHeroSection() {
                 About Me
               </p>
               <h1 className="heading-xl text-white mb-6">
-                About Zuhaib Ahmed - Full stack developer <span className="text-green">|</span> AI Engineer
+                Zuhaib Ahmed — Full Stack Developer <span className="text-green">|</span> AI Engineer
               </h1>
               <p className="text-lg text-white/60 leading-relaxed max-w-xl mb-8">
-                About Zuhaib Ahmed - Full stack developer, AI Engineer Based in Sindh Pakistan.
-                I help businesses in the UK, US, and Pakistan
-                build AI systems, automation pipelines, high-performance websites, and
-                marketing campaigns that generate measurable results.
+                Zuhaib Ahmed is a Full Stack Developer and AI Engineer based in
+                Sindh, Pakistan, and the founder of AIVIZED. He helps businesses in
+                the UK, US, and Pakistan build AI systems, automation pipelines,
+                high-performance websites, and marketing campaigns that generate
+                measurable results.
               </p>
               <Button
                 href="https://wa.me/923390349804"

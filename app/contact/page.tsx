@@ -1,22 +1,38 @@
 import type { Metadata } from "next";
 import ContactHeroSection from "./HeroSection";
 import { SITE } from "@/lib/constants";
+import { ID, JsonLd, breadcrumbSchema, graph } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Contact Zuhaib Ahmed - Full Stack Developer & AI Engineer",
+  title: "Contact Zuhaib Ahmed — Full Stack Developer & AI Engineer",
   description:
-    "Get in touch with Zuhaib Ahmed - Full Stack Developer & AI Engineer Based in Sindh, Pakistan. Free consultation available.",
+    "Get in touch with Zuhaib Ahmed, a Full Stack Developer and AI Engineer based in Sindh, Pakistan. Available for AI systems, automation, and web development projects in the UK, US, and Pakistan.",
   openGraph: {
-    title: "Contact | Zuhaib Ahmed",
+    title: "Contact Zuhaib Ahmed — Full Stack Developer & AI Engineer",
     description:
-      "Get in touch with Zuhaib Ahmed - Full Stack Developer & AI Engineer.",
+      "Get in touch with Zuhaib Ahmed, a Full Stack Developer and AI Engineer based in Sindh, Pakistan.",
   },
   alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {
+  const contactSchema = {
+    "@type": "ContactPage",
+    "@id": `${SITE.url}/contact#contact`,
+    url: `${SITE.url}/contact`,
+    name: "Contact Zuhaib Ahmed",
+    mainEntity: { "@id": ID.person },
+    isPartOf: { "@id": ID.website },
+  };
+
+  const crumbs = breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Contact", path: "/contact" },
+  ]);
+
   return (
     <>
+      <JsonLd schema={graph(contactSchema, crumbs)} />
       <ContactHeroSection />
       <ContactInfoSection />
     </>

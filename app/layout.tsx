@@ -5,6 +5,13 @@ import { Footer } from "@/components/ui/Footer";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 import { LoadingScreen } from "@/components/ui/LoadingScreen";
 import { SITE } from "@/lib/constants";
+import {
+  JsonLd,
+  graph,
+  organizationSchema,
+  personSchema,
+  websiteSchema,
+} from "@/lib/schema";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -25,19 +32,46 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Zuhaib Ahmed Based in Sindh - Full Stack Developer & AI Engineer",
-    template: "%s | Zuhaib Ahmed Based in Sindh",
+    default: "Zuhaib Ahmed — Full Stack Developer & AI Engineer in Sindh",
+    template: "%s | Zuhaib Ahmed",
   },
-  description: "Zuhaib Ahmed Based in Sindh — a Full Stack Developer & AI Engineer building intelligent web apps, AI chatbots, and automation systems for global clients. Expert in Next.js, React, Python, and OpenAI. Based in Sindh, Pakistan.",
+  description:
+    "Zuhaib Ahmed is a Full Stack Developer and AI Engineer based in Sindh, Pakistan. He builds AI systems, multi-agent automation pipelines, AI chatbots, and high-performance Next.js web applications for clients in the UK, US, and Pakistan.",
+  applicationName: "Zuhaib Ahmed",
+  authors: [{ name: "Zuhaib Ahmed", url: SITE.url }],
+  creator: "Zuhaib Ahmed",
+  publisher: "Zuhaib Ahmed",
+  category: "technology",
   keywords: [
-    "Zuhaib Ahmed Based in Sindh", "Zuhaib Ahmed", "Full Stack Developer Sindh Pakistan",
-    "AI Engineer Sindh Pakistan", "Web Developer Based in Sindh",
-    "Next.js Developer Pakistan", "React Developer Sindh",
-    "AI Chatbot Development", "Web Application Development Sindh",
-    "TypeScript Developer Pakistan", "Freelance Web Developer Sindh",
-    "AI Automation Services", "Custom Web Development Pakistan",
+    "Zuhaib Ahmed",
+    "Zuhaib Ahmed Sindh",
+    "Zuhaib Ahmed based in Sindh",
+    "Zuhaib Ahmed Full Stack Developer",
+    "Zuhaib AI Engineer",
+    "Zuhaib Ahmed AI Engineer",
+    "Zuhaib Ahmed developer",
+    "Full Stack Developer",
+    "AI Engineer",
+    "Full Stack Developer Sindh",
+    "AI Engineer Sindh",
+    "Full Stack Developer Pakistan",
+    "AI Engineer Pakistan",
+    "Next.js Developer Sindh",
+    "React Developer Pakistan",
+    "AI Chatbot Development",
+    "AI Automation Services",
   ],
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -46,18 +80,19 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Zuhaib Ahmed",
-    title: "Zuhaib Ahmed Based in Sindh — Full Stack Developer & AI Engineer",
-    description: "Zuhaib Ahmed Based in Sindh, Pakistan — a Full Stack Developer & AI Engineer building intelligent web apps, AI chatbots, and automation systems for clients worldwide. Expertise in Next.js, React, Python, and OpenAI.",
+    title: "Zuhaib Ahmed — Full Stack Developer & AI Engineer in Sindh",
+    description:
+      "Zuhaib Ahmed is a Full Stack Developer and AI Engineer based in Sindh, Pakistan, building AI systems, automation pipelines, and high-performance web applications for clients worldwide.",
     url: SITE.url,
-    images: [{ url: "/images/og-image.svg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zuhaib Ahmed — Full Stack Developer & AI Engineer",
-    description: "Zuhaib Ahmed Based in Sindh — Full Stack Developer & AI Engineer. Web app development, AI chatbots, automation — serving clients worldwide from Sindh, Pakistan.",
-    images: ["/images/og-image.svg"],
+    title: "Zuhaib Ahmed — Full Stack Developer & AI Engineer in Sindh",
+    description:
+      "Zuhaib Ahmed is a Full Stack Developer and AI Engineer based in Sindh, Pakistan. AI systems, automation, and web applications for clients in the UK, US, and Pakistan.",
+    creator: "@zuhaibahmed",
   },
-  metadataBase: new URL("https://zuhaib.aivized.com"),
+  metadataBase: new URL(SITE.url),
   alternates: {
     canonical: "/",
   },
@@ -68,25 +103,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Zuhaib Ahmed",
-    url: "https://zuhaib.aivized.com",
-    image: "https://zuhaib.aivized.com/images/og-image.svg",
-    sameAs: [SITE.social.github, SITE.social.linkedin, SITE.social.twitter],
-    jobTitle: ["Full Stack Developer", "AI Engineer"],
-    description: SITE.description,
-    email: SITE.email,
-  };
+  const jsonLd = graph(personSchema, organizationSchema, websiteSchema);
 
   return (
     <html lang="en" className={`${plusJakarta.variable} ${jetbrainsMono.variable}`}>
       <body className="min-h-screen flex flex-col">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd schema={jsonLd} />
         <LoadingScreen />
         <CustomCursor />
         <Header />

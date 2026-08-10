@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { SERVICES } from "@/lib/constants";
+import { SERVICES, SITE } from "@/lib/constants";
 import type { Service } from "@/lib/constants";
+import { ID, JsonLd, breadcrumbSchema, graph } from "@/lib/schema";
 import { ServiceHero } from "@/components/ui/ServiceHero";
 
 interface Props {
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: service.keyword,
     description: service.metaDescription,
     openGraph: {
-      title: `${service.keyword}`,
+      title: `${service.keyword} | Zuhaib Ahmed`,
       description: service.metaDescription,
     },
     alternates: { canonical: `/services/${slug}` },
@@ -32,8 +33,30 @@ export default async function ServicePage({ params }: Props) {
   const service = SERVICES.find((s) => s.slug === slug);
   if (!service) notFound();
 
+  const serviceSchema = {
+    "@type": "Service",
+    "@id": `${SITE.url}/services/${slug}#service`,
+    name: service.keyword,
+    description: service.metaDescription,
+    url: `${SITE.url}/services/${slug}`,
+    serviceType: service.keyword,
+    provider: { "@id": ID.person },
+    areaServed: SITE.servesAreas.map((area) => ({
+      "@type": "Country",
+      name: area,
+    })),
+    isPartOf: { "@id": ID.website },
+  };
+
+  const crumbs = breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/services" },
+    { name: service.keyword, path: `/services/${slug}` },
+  ]);
+
   return (
     <>
+      <JsonLd schema={graph(serviceSchema, crumbs)} />
       <ServiceHero
         title={service.h1}
         tagline={service.tagline}
@@ -218,7 +241,7 @@ function FAQSection({ service }: { service: Service }) {
           <div className="space-y-6">
             {service.faqs.map((faq, i) => (
               <div key={i} className="border border-neutral-200 p-6">
-                <p className="text-black font-bold mb-2">{faq.q}</p>
+                <h3 className="text-black font-bold mb-2">{faq.q}</h3>
                 <p className="text-sm text-neutral-500 leading-relaxed">{faq.a}</p>
               </div>
             ))}

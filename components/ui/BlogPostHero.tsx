@@ -9,11 +9,13 @@ export function BlogPostHero({
   title,
   category,
   date,
+  displayDate,
   readTime,
 }: {
   title: string;
   category: string;
   date: string;
+  displayDate: string;
   readTime: string;
 }) {
   return (
@@ -62,7 +64,9 @@ export function BlogPostHero({
               <span className="text-white/70 text-xs font-mono tracking-widest uppercase">
                 {category}
               </span>
-              <span className="text-white/40 text-sm">{date}</span>
+              <time dateTime={date} className="text-white/40 text-sm">
+                {displayDate}
+              </time>
               <span className="text-white/40 text-sm">{readTime}</span>
             </div>
             <h1 className="heading-xl text-white mb-6">{title}</h1>
@@ -71,8 +75,16 @@ export function BlogPostHero({
                 ZA
               </div>
               <div>
-                <span className="block text-sm font-medium text-white">Zuhaib Ahmed</span>
-                <span className="text-xs text-white/60">Full Stack Developer &amp; AI Engineer</span>
+                <Link
+                  href="/about"
+                  rel="author"
+                  className="block text-sm font-medium text-white hover:text-green transition-colors duration-200"
+                >
+                  Zuhaib Ahmed
+                </Link>
+                <span className="text-xs text-white/60">
+                  Full Stack Developer &amp; AI Engineer in Sindh, Pakistan
+                </span>
               </div>
             </div>
           </div>

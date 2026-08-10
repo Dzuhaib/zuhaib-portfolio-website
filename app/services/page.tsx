@@ -1,24 +1,31 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SERVICES } from "@/lib/constants";
+import { JsonLd, breadcrumbSchema, graph } from "@/lib/schema";
 import { ServicesHero } from "@/components/ui/ServicesHero";
 import { iconComponents } from "@/components/ui/tech-icons";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Services — Full Stack Development, AI Systems & Automation",
   description:
-    "Full-stack development, AI systems, automation, and digital marketing services by Zuhaib Ahmed, based in Sindh, Pakistan.",
+    "Full-stack development, AI engineering, automation systems, and digital marketing services by Zuhaib Ahmed, a Full Stack Developer and AI Engineer based in Sindh, Pakistan.",
   openGraph: {
-    title: "Services | Zuhaib Ahmed",
+    title: "Services — Full Stack Development, AI Systems & Automation",
     description:
-      "AI systems, automation, web development, and digital marketing services.",
+      "AI systems, automation, web development, and digital marketing services by Zuhaib Ahmed.",
   },
   alternates: { canonical: "/services" },
 };
 
 export default function ServicesPage() {
+  const crumbs = breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/services" },
+  ]);
+
   return (
     <>
+      <JsonLd schema={graph(crumbs)} />
       <ServicesHero />
       <AllServicesSection />
       <WhyMeSection />

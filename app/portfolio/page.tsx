@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PortfolioHero } from "@/components/ui/PortfolioHero";
 import { DesktopMockup } from "@/components/ui/DesktopMockup";
 import { PROJECTS } from "@/lib/constants";
+import { JsonLd, breadcrumbSchema, graph } from "@/lib/schema";
 
 const projectImages: Record<string, string> = {
   "ai-lead-engine": "/images/lead-engine/dashboard.webp",
@@ -14,20 +15,26 @@ const projectImages: Record<string, string> = {
 };
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Portfolio — Zuhaib Ahmed's Web & AI Projects",
   description:
-    "Explore Zuhaib Ahmed's portfolio of web development and AI projects.",
+    "Explore Zuhaib Ahmed's portfolio of web development and AI projects: AI SaaS platforms, multi-agent automation systems, and Next.js applications built for clients worldwide.",
   openGraph: {
-    title: "Portfolio | Zuhaib Ahmed",
+    title: "Portfolio — Zuhaib Ahmed's Web & AI Projects",
     description:
-      "Explore Zuhaib Ahmed's portfolio of web development and AI projects.",
+      "AI SaaS platforms, multi-agent systems, and web applications built by Zuhaib Ahmed.",
   },
   alternates: { canonical: "/portfolio" },
 };
 
 export default function PortfolioPage() {
+  const crumbs = breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Portfolio", path: "/portfolio" },
+  ]);
+
   return (
     <>
+      <JsonLd schema={graph(crumbs)} />
       <PortfolioHero />
       <ProjectsSection />
       <FAQSection />

@@ -47,13 +47,15 @@ export function HeroSection() {
           className="text-center"
         >
           <p className="text-white/70 text-sm font-mono mb-4 tracking-widest uppercase">
-            Zuhaib Ahmed Based in Sindh — AI Automation & AI Systems Engineer
+            Zuhaib Ahmed — Full Stack Developer &amp; AI Engineer in Sindh
           </p>
           <h1 className="text-3xl md:text-6xl font-bold text-white leading-tight">
-            AI Systems & Autonomous Agents That <span className="text-white/90">Scale</span> Your Business
+            Zuhaib Ahmed — AI Systems &amp; Autonomous Agents That <span className="text-white/90">Scale</span> Your Business
           </h1>
           <p className="text-base md:text-lg text-white/60 max-w-lg mt-4 mx-auto">
-            Engineering production-ready AI SaaS platforms, multi-agent outreach pipelines, and intelligent automation systems for high-growth businesses.
+            Zuhaib Ahmed is a Full Stack Developer and AI Engineer based in Sindh,
+            Pakistan, engineering production-ready AI SaaS platforms, multi-agent
+            pipelines, and intelligent automation for clients in the UK and US.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mt-8">
             <Button href="/portfolio" size="lg" className="bg-white text-black hover:bg-white/90">

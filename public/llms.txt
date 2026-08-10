@@ -1,3 +1,44 @@
-# Zuhaib Ahmed Based in Sindh — Full Stack Developer & AI Engineer
+# Zuhaib Ahmed — Full Stack Developer & AI Engineer
 
-Zuhaib Ahmed Based in Sindh, Pakistan — Full Stack Developer & AI Engineer building scalable web applications, AI automation systems, intelligent chatbots, and modern digital products for clients worldwide. Expert in Next.js, React, Python, TypeScript, and AI technologies like LangChain and RAG.
+> Zuhaib Ahmed is a Full Stack Developer and AI Engineer based in Sindh, Pakistan,
+> and the founder of AIVIZED. He builds AI SaaS platforms, multi-agent automation
+> pipelines, RAG systems, and Next.js web applications for clients in the United
+> Kingdom, United States, and Pakistan. Around five years of experience.
+
+## Core pages
+
+- [Home](https://zuhaib.aivized.com/): Overview of Zuhaib Ahmed's AI systems and full stack development work, with FAQs
+- [About](https://zuhaib.aivized.com/about): Background, four service pillars, full technology stack
+- [Services](https://zuhaib.aivized.com/services): Nine services with scope, process, and FAQs
+- [Portfolio](https://zuhaib.aivized.com/portfolio): Six shipped AI and web systems with stacks and outcomes
+- [Blog](https://zuhaib.aivized.com/blog): Technical writing on Next.js, React, TypeScript, and AI engineering
+- [Contact](https://zuhaib.aivized.com/contact): Email, WhatsApp, and project enquiries
+
+## Selected work
+
+- [AIVIZED Agent Factory](https://zuhaib.aivized.com/portfolio/aivized-agent-factory): No-code chatbot platform, deploys production chatbots in under 10 minutes
+- [AI Lead Engine](https://zuhaib.aivized.com/portfolio/ai-lead-engine): Four-agent outreach pipeline processing 100 leads per job
+- [Instagram Growth OS](https://zuhaib.aivized.com/portfolio/growth-os): Meta-verified AI SaaS for Instagram growth
+- [Talent AI](https://zuhaib.aivized.com/portfolio/talent-ai): AI recruitment and CV screening system
+- [FiveOS](https://zuhaib.aivized.com/portfolio/fiveos): Fiverr market intelligence platform
+- [VideoDown](https://zuhaib.aivized.com/portfolio/videodown): Cross-platform video and audio downloader
+
+## Key facts
+
+- Name: Zuhaib Ahmed
+- Roles: Full Stack Developer, AI Engineer, Founder of AIVIZED
+- Location: Karachi, Sindh, Pakistan
+- Serves clients in: Pakistan, United Kingdom, United States
+- Frontend: Next.js, React, TypeScript, Tailwind CSS, Framer Motion
+- Backend: Node.js, Python, FastAPI, Express, PostgreSQL, MongoDB
+- AI: OpenAI API, LangChain, RAG, vector databases, multi-agent systems, n8n
+- Infrastructure: Docker, Vercel, AWS, CI/CD, Redis, BullMQ
+- Email: myselfzuhaib@gmail.com
+- WhatsApp: https://wa.me/923390349804
+- GitHub: https://github.com/Dzuhaib
+- LinkedIn: https://linkedin.com/in/zuhaibah
+- X: https://x.com/zuhaibahmed
+
+## Optional
+
+- [Full profile](https://zuhaib.aivized.com/llms-full.txt): Complete services, projects, and skills detail

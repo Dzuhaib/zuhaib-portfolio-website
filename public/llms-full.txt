@@ -1,10 +1,11 @@
-# Zuhaib Ahmed Based in Sindh — Full Stack Developer & AI Engineer
+# Zuhaib Ahmed — Full Stack Developer & AI Engineer
 
 ## About
 
-Zuhaib Ahmed Based in Sindh, Pakistan — a Full Stack Developer & AI Engineer helping businesses across the globe build scalable web applications and AI-powered systems that drive real results. With deep expertise in Next.js, React, Python, and AI technologies like LangChain and RAG. Specializing in AI chatbot development, custom web applications, and intelligent automation — delivering world-class solutions from Sindh, Pakistan.
+Zuhaib Ahmed is a Full Stack Developer and AI Engineer based in Sindh, Pakistan, and the founder of AIVIZED. He helps businesses build scalable web applications and AI-powered systems that drive real results, with deep expertise in Next.js, React, Python, and AI technologies like LangChain and RAG. He specializes in AI chatbot development, custom web applications, and intelligent automation, working with clients in the United Kingdom, United States, and Pakistan.
 
-**Location:** Sindh, Pakistan
+**Location:** Karachi, Sindh, Pakistan
+**Serves:** Pakistan, United Kingdom, United States
 **Email:** myselfzuhaib@gmail.com
 **Availability:** Open to projects
 
@@ -106,20 +107,15 @@ AI + Automation multi-agent system. Tech: TypeScript, Next.js 15, React 19, Tail
 
 ## Experience
 
+### Founder — AIVIZED (2024 — Present)
+- Founded AIVIZED, an AI chatbot and automation company based in Sindh, Pakistan
+- Built the Agent Factory, a no-code platform that deploys production chatbots in under 10 minutes
+- Ships AI SaaS products for small and mid-sized businesses in the UK, US, and Pakistan
+
 ### Freelance — Full Stack Developer & AI Engineer (2020 — Present)
-- Delivered 50+ web applications and AI solutions for clients globally
-- Built custom AI automation systems reducing operational costs by 40%
-- Achieved 99% client satisfaction rate
-
-### Tech Agency — Senior Full Stack Developer (2022 — 2024)
-- Led development of 15+ major web projects using Next.js and React
-- Implemented CI/CD pipelines reducing deployment time by 70%
-- Mentored junior developers
-
-### Digital Solutions Inc — Web Developer (2020 — 2022)
-- Built responsive web applications serving 100k+ monthly users
-- Migrated legacy PHP applications to modern React architecture
-- Optimized Core Web Vitals achieving 95+ Lighthouse scores
+- Around five years building web applications and AI systems for clients in the UK, US, and Pakistan
+- Built the AI Lead Engine, a four-agent outreach pipeline processing 100 leads per job
+- Delivers Next.js and React applications, FastAPI and Node.js backends, and RAG systems over client documents
 
 ## Skills
 

@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BLOG_POSTS } from "@/lib/constants";
+import { BLOG_POSTS, SITE } from "@/lib/constants";
+import { formatPostDate } from "@/lib/utils";
+import { ID, JsonLd, breadcrumbSchema, graph } from "@/lib/schema";
 import { BlogPostHero } from "@/components/ui/BlogPostHero";
 
 interface Props {
@@ -19,12 +21,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.excerpt,
+    authors: [{ name: "Zuhaib Ahmed", url: SITE.url }],
     openGraph: {
       title: `${post.title} | Zuhaib Ahmed`,
       description: post.excerpt,
       type: "article",
-      publishedTime: new Date(post.date).toISOString(),
+      publishedTime: `${post.date}T00:00:00Z`,
+      modifiedTime: `${post.updated}T00:00:00Z`,
       authors: ["Zuhaib Ahmed"],
+      section: post.category,
     },
     alternates: { canonical: `/blog/${slug}` },
   };
@@ -134,12 +139,38 @@ export default async function BlogPostPage({ params }: Props) {
 
   const takeaways = getTakeaways(post.content);
 
+  const articleSchema = {
+    "@type": "BlogPosting",
+    "@id": `${SITE.url}/blog/${slug}#article`,
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: `${post.date}T00:00:00Z`,
+    dateModified: `${post.updated}T00:00:00Z`,
+    author: { "@id": ID.person },
+    publisher: { "@id": ID.person },
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE.url}/blog/${slug}` },
+    articleSection: post.category,
+    wordCount: post.content.trim().split(/\s+/).length,
+    inLanguage: "en",
+    image: `${SITE.url}/opengraph-image`,
+    isPartOf: { "@id": ID.website },
+  };
+
+  const crumbs = breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog" },
+    { name: post.title, path: `/blog/${slug}` },
+  ]);
+
   return (
     <>
+      <JsonLd schema={graph(articleSchema, crumbs)} />
+
       <BlogPostHero
         title={post.title}
         category={post.category}
         date={post.date}
+        displayDate={formatPostDate(post.date)}
         readTime={post.readTime}
       />
 
