@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { DesktopMockup } from "./DesktopMockup";
 
@@ -14,10 +15,12 @@ export function SarahSlider() {
   return (
     <div className="relative group">
       <DesktopMockup>
-        <img
+        <Image
           src={images[current].src}
           alt={images[current].alt}
           className="w-full object-contain transition-opacity duration-300"
+          width={1200}
+          height={750}
         />
       </DesktopMockup>
       <div className="absolute inset-0 flex items-center justify-between px-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">

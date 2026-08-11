@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import { Highlight } from "./Highlight";
 import { SITE } from "@/lib/constants";
 
@@ -70,21 +71,21 @@ export function Footer() {
 
         <div className="w-full border-t border-neutral-800 py-6 px-6 flex flex-col md:flex-row items-center justify-between gap-4 z-20">
           <div className="flex items-center gap-6">
-            <a href="/services" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
+            <Link href="/services" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
               Services
-            </a>
-            <a href="/portfolio" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
+            </Link>
+            <Link href="/portfolio" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
               Portfolio
-            </a>
-            <a href="/about" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
+            </Link>
+            <Link href="/about" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
               About
-            </a>
-            <a href="/blog" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
+            </Link>
+            <Link href="/blog" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
               Blog
-            </a>
-            <a href="/contact" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
+            </Link>
+            <Link href="/contact" className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">
               Contact
-            </a>
+            </Link>
           </div>
           <div className="flex items-center gap-6">
             <a href={`mailto:${SITE.email}`} className="text-neutral-400 hover:text-green transition-colors duration-200 text-sm">

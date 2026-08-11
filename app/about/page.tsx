@@ -76,7 +76,7 @@ function WhatIDoSection() {
               APIs, and frontend interfaces that make those AI systems accessible and useful to real users.
             </p>
             <p>
-              The combination matters. An AI system without a usable interface doesn't deliver value. A 
+              The combination matters. An AI system without a usable interface doesn&apos;t deliver value. A 
               beautiful website without AI or automation leaves money on the table. I bridge both, building 
               complete systems where the intelligence and the interface work together to produce business 
               outcomes.

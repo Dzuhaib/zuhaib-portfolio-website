@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Button } from "./Button";
@@ -77,10 +78,12 @@ export function ProjectHero({ project }: { project: { slug: string; category: st
             <div className="lg:col-span-5">
               {img ? (
                 <DesktopMockup>
-                  <img
+                  <Image
                     src={img}
                     alt={project.title}
                     className="w-full h-auto max-h-[420px] object-contain"
+                    width={1200}
+                    height={750}
                   />
                 </DesktopMockup>
               ) : (

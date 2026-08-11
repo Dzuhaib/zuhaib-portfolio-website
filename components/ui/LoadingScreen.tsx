@@ -7,9 +7,14 @@ export function LoadingScreen() {
   const [isMobile, setIsMobile] = useState(true);
 
   useEffect(() => {
-    setIsMobile(window.matchMedia("(pointer: coarse)").matches);
+    const frame = window.requestAnimationFrame(() => {
+      setIsMobile(window.matchMedia("(pointer: coarse)").matches);
+    });
     const timer = setTimeout(() => setDone(true), 150);
-    return () => clearTimeout(timer);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      clearTimeout(timer);
+    };
   }, []);
 
   if (isMobile) return null;

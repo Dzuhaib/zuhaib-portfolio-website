@@ -88,7 +88,7 @@ function WhyMeSection() {
           <h2 className="heading-lg text-black mb-6">Built by an engineer who understands both code and business</h2>
           <p className="text-neutral-500 text-lg leading-relaxed mb-8">
             Every project I take on gets the same treatment: clear communication, regular updates, and
-            a relentless focus on quality. I don't just write code. I solve problems. Whether you need
+            a relentless focus on quality. I don&apos;t just write code. I solve problems. Whether you need
             an AI system, a custom website, or a marketing campaign that actually converts,
             I bring the same engineering discipline to every deliverable.
           </p>
@@ -205,7 +205,7 @@ function CTASection() {
       <div className="container-main text-center">
         <h2 className="heading-lg text-white mb-4">Ready to build something great?</h2>
         <p className="text-neutral-400 text-lg max-w-xl mx-auto mb-8">
-          Let's talk about your project. No commitment required.
+          Let&apos;s talk about your project. No commitment required.
         </p>
         <a
           href="https://wa.me/923390349804"

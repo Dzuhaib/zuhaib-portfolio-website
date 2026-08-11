@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import { Header } from "@/components/ui/Header";
 import { Footer } from "@/components/ui/Footer";
 import { CustomCursor } from "@/components/ui/CustomCursor";
@@ -20,15 +19,6 @@ export const viewport: Viewport = {
   themeColor: "#000000",
 };
 
-const plusJakarta = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta",
-  subsets: ["latin"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: {
@@ -106,7 +96,7 @@ export default function RootLayout({
   const jsonLd = graph(personSchema, organizationSchema, websiteSchema);
 
   return (
-    <html lang="en" className={`${plusJakarta.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className="font-sans">
       <body className="min-h-screen flex flex-col">
         <JsonLd schema={jsonLd} />
         <LoadingScreen />

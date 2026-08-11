@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { PROJECTS } from "@/lib/constants";
 import { Button } from "./Button";
@@ -85,7 +86,7 @@ function FeaturedProject({
       <div className={`lg:col-span-7 ${index % 2 === 1 ? "lg:order-2" : ""}`}>
         {img ? (
           <DesktopMockup>
-            <img src={img} alt={project.title} className="w-full object-contain" />
+            <Image src={img} alt={project.title} width={1200} height={750} className="w-full object-contain" />
           </DesktopMockup>
         ) : (
           <div className="aspect-[16/10] bg-neutral-100 rounded-sm overflow-hidden relative flex items-center justify-center text-neutral-300 text-sm">
@@ -149,7 +150,7 @@ function ProjectRow({
       <div className={`md:col-span-5 ${index % 2 === 1 ? "md:order-2" : ""}`}>
         {img ? (
           <DesktopMockup>
-            <img src={img} alt={project.title} className="w-full object-contain" />
+            <Image src={img} alt={project.title} width={1200} height={750} className="w-full object-contain" />
           </DesktopMockup>
         ) : (
           <div className="aspect-[16/10] bg-neutral-50 rounded-sm overflow-hidden relative">

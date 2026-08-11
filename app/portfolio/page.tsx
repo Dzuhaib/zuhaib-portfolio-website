@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { PortfolioHero } from "@/components/ui/PortfolioHero";
 import { DesktopMockup } from "@/components/ui/DesktopMockup";
@@ -63,7 +64,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
       <div className="mb-6">
         {img ? (
           <DesktopMockup>
-            <img src={img} alt={project.title} className="w-full object-contain" />
+            <Image src={img} alt={project.title} width={1200} height={750} className="w-full object-contain" />
           </DesktopMockup>
         ) : (
           <div className="aspect-[16/10] bg-neutral-100 overflow-hidden flex items-center justify-center text-neutral-300 text-sm">

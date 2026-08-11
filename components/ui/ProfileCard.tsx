@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import React, { useEffect, useRef, useCallback, useMemo } from 'react';
 
 const DEFAULT_INNER_GRADIENT = 'linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)';
@@ -456,11 +457,13 @@ const ProfileCardComponent = ({
                 pointerEvents: 'none'
               }}
             >
-              <img
+              <Image
                 className="w-full absolute left-1/2 bottom-[-1px] backface-hidden will-change-transform transition-transform duration-[120ms] ease-out"
                 src={avatarUrl}
                 alt={`${name || 'User'} avatar`}
                 loading="lazy"
+                width={500}
+                height={650}
                 style={{
                   transformOrigin: '50% 100%',
                   transform:
@@ -485,11 +488,13 @@ const ProfileCardComponent = ({
                       className="rounded-full overflow-hidden border border-white/10 flex-shrink-0"
                       style={{ width: '48px', height: '48px' }}
                     >
-                      <img
+                      <Image
                         className="w-full h-full object-cover rounded-full"
                         src={miniAvatarUrl || avatarUrl}
                         alt={`${name || 'User'} mini avatar`}
                         loading="lazy"
+                        width={48}
+                        height={48}
                         style={{ borderRadius: '50%', pointerEvents: 'auto' }}
                       />
                     </div>

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { ProjectHero } from "@/components/ui/ProjectHero";
 import { SarahSlider } from "@/components/ui/SarahSlider";
@@ -272,13 +273,13 @@ function ArchitectureSection() {
                 <div className={`${i % 2 === 1 ? "md:order-1" : ""}`}>
                   {agent.name === "Alex" ? (
                     <DesktopMockup>
-                      <img src="/images/lead-engine/alex.webp" alt="Alex lead collection interface" className="w-full object-contain" />
+                      <Image src="/images/lead-engine/alex.webp" alt="Alex lead collection interface" width={1200} height={750} className="w-full object-contain" />
                     </DesktopMockup>
                   ) : agent.name === "Sarah" ? (
                     <SarahSlider />
                   ) : agent.name === "Marcus" ? (
                     <DesktopMockup>
-                      <img src="/images/lead-engine/marcus.webp" alt="Marcus email outreach interface" className="w-full object-contain" />
+                      <Image src="/images/lead-engine/marcus.webp" alt="Marcus email outreach interface" width={1200} height={750} className="w-full object-contain" />
                     </DesktopMockup>
                   ) : (
                     <DesktopMockup className={agent.locked ? "border-amber-700/50" : ""}>
@@ -669,12 +670,12 @@ function AgentFactoryCTASection() {
             >
               Let&apos;s Build Your Chatbot
             </a>
-            <a
+            <Link
               href="/portfolio"
               className="inline-flex items-center px-8 py-4 border border-neutral-700 text-neutral-300 text-sm font-semibold hover:border-green hover:text-green transition-colors duration-200"
             >
               See More Work
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -739,10 +740,12 @@ function GrowthOSSection() {
             >
               <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-2" : ""}`}>
                 <DesktopMockup>
-                  <img
+                  <Image
                     src={f.img}
                     alt={f.title}
                     className="w-full object-contain"
+                    width={1200}
+                    height={750}
                   />
                 </DesktopMockup>
               </div>
@@ -942,7 +945,7 @@ function FiveOSSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
                   <div className="lg:col-span-7">
                     <DesktopMockup>
-                      <img src={s.img} alt={s.title} className="w-full object-contain" />
+                      <Image src={s.img} alt={s.title} width={1200} height={750} className="w-full object-contain" />
                     </DesktopMockup>
                   </div>
                   <div className="lg:col-span-5">
@@ -1085,7 +1088,7 @@ function TalentAISection() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
                   <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-2" : ""}`}>
                     <DesktopMockup>
-                      <img src={s.img} alt={s.title} className="w-full object-contain" />
+                      <Image src={s.img} alt={s.title} width={1200} height={750} className="w-full object-contain" />
                     </DesktopMockup>
                   </div>
                   <div className={`lg:col-span-5 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
@@ -1236,7 +1239,7 @@ function VideoDownSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
                   <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-2" : ""}`}>
                     <DesktopMockup>
-                      <img src={s.img} alt={s.title} className="w-full object-contain" />
+                      <Image src={s.img} alt={s.title} width={1200} height={750} className="w-full object-contain" />
                     </DesktopMockup>
                   </div>
                   <div className={`lg:col-span-5 ${i % 2 === 1 ? "lg:order-1" : ""}`}>

@@ -7,8 +7,11 @@ export function CustomCursor() {
   const [isTouch, setIsTouch] = useState(true);
 
   useEffect(() => {
-    setMounted(true);
-    setIsTouch(window.matchMedia("(pointer: coarse)").matches);
+    const frame = window.requestAnimationFrame(() => {
+      setMounted(true);
+      setIsTouch(window.matchMedia("(pointer: coarse)").matches);
+    });
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   if (!mounted || isTouch) return null;
