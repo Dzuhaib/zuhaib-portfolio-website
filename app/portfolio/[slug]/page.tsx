@@ -77,7 +77,11 @@ export default async function ProjectPage({ params }: Props) {
       {slug === "talent-ai" && <TalentAITechStackSection />}
       {slug === "videodown" && <VideoDownSection />}
       {slug === "videodown" && <VideoDownTechStackSection />}
-      <TechnologiesSection project={project} />
+      {slug === "clinza" && <ClinzaSection />}
+      {slug === "clinza" && <ClinzaMetricsSection />}
+      {slug === "clinza" && <ClinzaChannelsSection />}
+      {slug === "clinza" && <ClinzaRolloutSection />}
+      {slug !== "clinza" && <TechnologiesSection project={project} />}
       {project.achievements && <AchievementsSection project={project} />}
       <OtherProjectsSection projects={otherProjects} />
     </>
@@ -1327,6 +1331,309 @@ function VideoDownTechStackSection() {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ClinzaSection() {
+  const modules = [
+    {
+      title: "Landing Page",
+      desc: "The public face of the product — a conversion-focused site that explains the offer, walks clinics through the problem it solves, and routes visitors straight into a pre-order or demo on WhatsApp.",
+      img: "/images/clinza/Landing page.png",
+    },
+    {
+      title: "Unified Dashboard",
+      desc: "One screen for every conversation. Facebook, WhatsApp, Instagram, website chat, and phone calls land in a single inbox, so staff stop switching tabs to find out what a patient asked.",
+      img: "/images/clinza/dashboard.png",
+    },
+    {
+      title: "Communication Integrations",
+      desc: "Pre-built connectors for WhatsApp, Instagram, Facebook Messenger, AI voice calls, and website chat. Each channel is a full AI salesperson — answering in seconds, handling objections, and booking consultations without a human in the loop.",
+      img: "/images/clinza/Comunication integrations, whatsapp, instagram, facebook messenger, AI voice call, website chatbot.png",
+    },
+    {
+      title: "Clinic Knowledge Base",
+      desc: "Upload price lists, treatment descriptions, FAQs, and existing Google Sheets or Google Docs. The AI reads them before it replies, so pricing and treatment answers come from the clinic's own data instead of a generic model guess.",
+      img: "/images/clinza/Knowledge base connection, google sheet, google docs.png",
+    },
+    {
+      title: "Inbox Handoffs",
+      desc: "When the AI detects a medical concern, an allergy, or any request it shouldn't handle alone, it escalates instantly and notifies the team with the full conversation history attached. The doctor takes over with zero context loss.",
+      img: "/images/clinza/Inbox handoffs.png",
+    },
+    {
+      title: "Automated Workflows",
+      desc: "Task sequences run inside the dashboard — follow up on unanswered leads, re-engage cold enquiries, confirm bookings, and route conversations by lead temperature, all triggered by what happens in the conversation.",
+      img: "/images/clinza/Workflow where they can automate the tasks inside the dashboard.png",
+    },
+    {
+      title: "Sales Reports",
+      desc: "Conversion rates, response times, busiest hours, and revenue per channel — exportable as CSV across weekly, monthly, quarterly, and yearly windows so clinics can see exactly which channel is producing patients.",
+      img: "/images/clinza/Reports they can export in csv file by weekly, monthly, quarterly, and yearly.png",
+    },
+  ];
+
+  return (
+    <>
+      <section className="section-padding bg-white">
+        <div className="container-main">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+            <div>
+              <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
+                The Problem
+              </p>
+              <h2 className="heading-lg text-black mb-6">Aesthetic clinics lose patients every single day</h2>
+              <p className="text-neutral-500 leading-relaxed text-lg">
+                Patients message on Facebook, WhatsApp, and Instagram and get an answer hours later — by which point they have already booked somewhere else. The clinic phone rings after hours and nobody picks up, so the patient calls the next clinic on Google Maps. Website visitors ask questions at night, get silence, and never come back. Meanwhile staff spend entire shifts answering the same pricing, hours, and availability questions over and over.
+              </p>
+              <div className="mt-8 bg-red-50 border border-red-100 p-6 rounded-sm">
+                <p className="text-sm font-semibold text-red-800 mb-2">Before Clinza</p>
+                <p className="text-red-700 text-sm leading-relaxed">
+                  Slow replies, missed after-hours calls, and staff tied to the phone instead of treating patients — with no single view of where enquiries came from.
+                </p>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="hidden lg:block absolute left-0 top-0 bottom-0 w-px bg-neutral-200" />
+              <div className="lg:pl-16">
+                <p className="text-green text-sm font-mono tracking-widest uppercase mb-4">
+                  The Solution
+                </p>
+                <h2 className="heading-lg text-black mb-6">Every channel becomes an AI salesperson</h2>
+                <p className="text-neutral-500 leading-relaxed text-lg">
+                  Clinza connects every channel a patient might use into one dashboard, then puts an AI receptionist on all of them at once. It replies in under three seconds, 24/7 including holidays — answering pricing questions from the clinic&apos;s own knowledge base, handling objections, checking the calendar, and booking the appointment. Staff stop being receptionists and start doing the clinical work they were trained for.
+                </p>
+                <div className="mt-8 bg-green-50 border border-green-100 p-6 rounded-sm">
+                  <p className="text-sm font-semibold text-green-800 mb-2">After Clinza</p>
+                  <p className="text-green-700 text-sm leading-relaxed">
+                    10,000+ conversations a month, a 98% response rate, and an average 40% lift in bookings — with every conversation, lead, and appointment visible from a single screen.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-white">
+        <div className="container-main">
+          <div className="max-w-3xl mb-14">
+            <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
+              Product Tour
+            </p>
+            <h2 className="heading-lg text-black mb-6">
+              From landing page to live dashboard
+            </h2>
+            <p className="text-neutral-500 leading-relaxed">
+              The public site that sells the system, and the unified dashboard that runs it —
+              every conversation, integration, handoff, workflow, and report in one product.
+            </p>
+          </div>
+          <div className="space-y-20">
+            {modules.map((m, i) => (
+              <div
+                key={m.title}
+                className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center"
+              >
+                <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-2" : ""}`}>
+                  <DesktopMockup>
+                    <Image
+                      src={m.img}
+                      alt={`Clinza — ${m.title}`}
+                      className="w-full object-contain"
+                      width={1200}
+                      height={750}
+                    />
+                  </DesktopMockup>
+                </div>
+                <div className={`lg:col-span-5 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
+                  <span className="text-green text-sm font-mono font-bold">
+                    {(i + 1).toString().padStart(2, "0")}
+                  </span>
+                  <h3 className="text-2xl font-bold text-black mt-2 mb-4">{m.title}</h3>
+                  <p className="text-neutral-500 leading-relaxed">{m.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+function ClinzaMetricsSection() {
+  const metrics = [
+    { value: "10,000+", label: "Patient conversations handled every month" },
+    { value: "98%", label: "AI response rate across every channel" },
+    { value: "+40%", label: "Average lift in bookings after onboarding" },
+    { value: "24/7", label: "Coverage including nights, weekends, and holidays" },
+  ];
+
+  return (
+    <section className="section-padding bg-black">
+      <div className="container-main">
+        <div className="max-w-3xl mb-14">
+          <p className="text-green text-sm font-mono tracking-widest uppercase mb-4">
+            Real Results
+          </p>
+          <h2 className="heading-lg text-white mb-6">
+            Clinics that use Clinza never look back
+          </h2>
+          <p className="text-neutral-400 leading-relaxed">
+            Every number below comes from live clinic dashboards — conversations
+            answered, response times, and bookings attributed back to the channel
+            that produced them.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-neutral-800 border border-neutral-800">
+          {metrics.map((m) => (
+            <div key={m.label} className="bg-black p-8">
+              <p className="text-4xl md:text-5xl font-bold text-green font-mono mb-3">
+                {m.value}
+              </p>
+              <p className="text-neutral-400 text-sm leading-relaxed">{m.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ClinzaChannelsSection() {
+  const channels = [
+    { name: "Facebook", detail: "Messenger conversations answered and converted" },
+    { name: "WhatsApp", detail: "Patient replies, follow-ups, and confirmations" },
+    { name: "Instagram", detail: "DMs answered in seconds, not hours" },
+    { name: "Website Chat", detail: "Embeddable widget that never lets a visitor leave" },
+    { name: "AI Voice Calls", detail: "ElevenLabs receptionist that picks up after hours" },
+    { name: "Google Business", detail: "Enquiries captured from Search and Maps" },
+  ];
+
+  return (
+    <section className="section-padding bg-neutral-50">
+      <div className="container-main">
+        <div className="max-w-3xl mb-14">
+          <p className="text-green text-sm font-mono tracking-widest uppercase mb-4">
+            The Architecture
+          </p>
+          <h2 className="heading-lg text-black mb-6">
+            Six channels. Six AI salespeople. One inbox.
+          </h2>
+          <p className="text-neutral-500 leading-relaxed">
+            A patient picks whichever channel is convenient. It doesn&apos;t matter —
+            the same AI handles every one of them, reading from the same clinic
+            knowledge base and writing back into the same dashboard.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-neutral-200 border border-neutral-200">
+          {channels.map((c) => (
+            <div key={c.name} className="bg-white p-8">
+              <p className="text-lg font-bold text-black mb-2">{c.name}</p>
+              <p className="text-xs font-mono text-green tracking-wider uppercase mb-4">
+                AI Salesperson
+              </p>
+              <p className="text-sm text-neutral-500 leading-relaxed">{c.detail}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Ground truth, not guesses",
+              body: "Price lists, treatment descriptions, and FAQs loaded from Google Sheets or Google Docs are read before every reply — so answers come from the clinic&apos;s own data.",
+            },
+            {
+              title: "Leads scored automatically",
+              body: "Every conversation is read for booking intent and tagged hot, warm, or cold, so the team knows exactly who to call first.",
+            },
+            {
+              title: "Humans take over instantly",
+              body: "Medical concerns, allergies, or anything the AI shouldn&apos;t answer alone trigger an instant handoff with the full transcript attached.",
+            },
+          ].map((f) => (
+            <div key={f.title} className="border border-neutral-200 bg-white p-7">
+              <h3 className="text-base font-bold text-black mb-3">{f.title}</h3>
+              <p className="text-sm text-neutral-500 leading-relaxed">{f.body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ClinzaRolloutSection() {
+  const steps = [
+    {
+      step: "01",
+      title: "Book & Pre-Order",
+      body: "Message us on WhatsApp or book a demo. Tell us about your clinic and which channels you want connected — we prepare your custom AI sales system.",
+    },
+    {
+      step: "02",
+      title: "We Set Everything Up",
+      body: "We connect your Facebook, WhatsApp, Instagram, website, and phone, train the AI on your services and pricing, configure your dashboard, and test every channel before launch.",
+    },
+    {
+      step: "03",
+      title: "You Launch & Sell",
+      body: "You get a fully running AI sales system. Your AI salespeople start answering, booking, and converting across every channel — 24/7 from day one.",
+    },
+  ];
+
+  return (
+    <section className="section-padding bg-white">
+      <div className="container-main">
+        <div className="max-w-3xl mb-14">
+          <p className="text-neutral-400 text-sm font-mono tracking-widest uppercase mb-4">
+            Simple Process
+          </p>
+          <h2 className="heading-lg text-black mb-6">Pre-order. We set up. You launch.</h2>
+          <p className="text-neutral-500 leading-relaxed">
+            Clinics don&apos;t set up anything themselves. Pre-order, we build and
+            configure everything, then hand over a system that is already running.
+          </p>
+        </div>
+
+        <div className="relative">
+          <div className="hidden md:block absolute left-[19px] top-0 bottom-0 w-px bg-neutral-200" />
+          <div className="space-y-0">
+            {steps.map((s, i) => (
+              <div key={s.step} className={`relative md:pl-16 ${i < steps.length - 1 ? "pb-12" : ""}`}>
+                <div className="hidden md:flex absolute left-0 top-1 w-[39px] h-[39px] rounded-full bg-green items-center justify-center">
+                  <span className="text-white text-xs font-bold">{s.step}</span>
+                </div>
+                <div className="md:hidden text-green text-2xl font-mono font-bold mb-3">{s.step}</div>
+                <h3 className="text-xl font-bold text-black mb-2">{s.title}</h3>
+                <p className="text-neutral-500 leading-relaxed max-w-2xl">{s.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-14 bg-black p-8 md:p-10 rounded-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div>
+            <p className="text-sm font-semibold text-white">Want Clinza for your clinic?</p>
+            <p className="text-xs text-neutral-400 mt-0.5">
+              Pre-order on WhatsApp — we set everything up and hand you a running system.
+            </p>
+          </div>
+          <a
+            href="https://clinza.aivized.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2.5 bg-green text-black font-semibold text-xs rounded-sm hover:bg-emerald-400 transition-colors whitespace-nowrap"
+          >
+            View Live Site →
+          </a>
         </div>
       </div>
     </section>

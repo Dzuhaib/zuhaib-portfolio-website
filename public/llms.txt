@@ -10,13 +10,14 @@
 - [Home](https://zuhaib.aivized.com/): Overview of Zuhaib Ahmed's AI systems and full stack development work, with FAQs
 - [About](https://zuhaib.aivized.com/about): Background, four service pillars, full technology stack
 - [Services](https://zuhaib.aivized.com/services): Nine services with scope, process, and FAQs
-- [Portfolio](https://zuhaib.aivized.com/portfolio): Six shipped AI and web systems with stacks and outcomes
+- [Portfolio](https://zuhaib.aivized.com/portfolio): Seven shipped AI and web systems with stacks and outcomes
 - [Blog](https://zuhaib.aivized.com/blog): Technical writing on Next.js, React, TypeScript, and AI engineering
 - [Contact](https://zuhaib.aivized.com/contact): Email, WhatsApp, and project enquiries
 
 ## Selected work
 
 - [AIVIZED Agent Factory](https://zuhaib.aivized.com/portfolio/aivized-agent-factory): No-code chatbot platform, deploys production chatbots in under 10 minutes
+- [Clinza](https://zuhaib.aivized.com/portfolio/clinza): AI sales system for aesthetic clinics handling 10,000+ conversations a month across WhatsApp, Facebook, Instagram, web, and phone
 - [AI Lead Engine](https://zuhaib.aivized.com/portfolio/ai-lead-engine): Four-agent outreach pipeline processing 100 leads per job
 - [Instagram Growth OS](https://zuhaib.aivized.com/portfolio/growth-os): Meta-verified AI SaaS for Instagram growth
 - [Talent AI](https://zuhaib.aivized.com/portfolio/talent-ai): AI recruitment and CV screening system

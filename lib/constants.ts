@@ -41,6 +41,32 @@ export const NAV_LINKS = [
 
 export const PROJECTS = [
   {
+    title: "Clinza — AI Sales System for Aesthetic Clinics",
+    slug: "clinza",
+    category: "AI SaaS & Healthcare Automation",
+    description:
+      "Clinza turns Facebook, WhatsApp, Instagram, website chat, and phone calls into 24/7 AI salespeople for aesthetic clinics — one dashboard that answers, scores leads, books appointments, and hands off to staff.",
+    problem: "Aesthetic clinics lose patients every day. Enquiries on Facebook, WhatsApp, and Instagram go unanswered for hours, after-hours calls ring out, and website visitors leave without booking. Staff burn hours repeating the same pricing and availability answers.",
+    solution: "Built a multi-channel AI receptionist that unifies every conversation into one dashboard, grounds replies in a clinic knowledge base, scores lead intent, auto-books into connected calendars, and escalates medical or complex requests to a human with full context.",
+    impact: "Handles 10,000+ patient conversations a month with a 98% response rate and an average lift of 40% in bookings — no extra reception staff required.",
+    thumbnail: "/images/clinza/Landing page.png",
+    technologies: [
+      "TypeScript", "Next.js", "React", "Tailwind CSS",
+      "OpenAI", "ElevenLabs AI Voice", "WhatsApp Cloud API",
+      "Meta Graph API", "Google Workspace", "Clinic CRM Integrations",
+    ],
+    liveUrl: "https://clinza.aivized.com",
+    githubUrl: null,
+    achievements: [
+      "10,000+ patient conversations handled every month",
+      "98% AI response rate across six channels, 24/7",
+      "Average 40% lift in bookings after onboarding",
+      "Instant human handoff on medical or complex requests",
+    ],
+    results: [],
+    featured: true,
+  },
+  {
     title: "AIVIZED Agent Factory",
     slug: "aivized-agent-factory",
     category: "AI SaaS & No-Code Platform",

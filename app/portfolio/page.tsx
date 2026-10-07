@@ -7,6 +7,7 @@ import { PROJECTS } from "@/lib/constants";
 import { JsonLd, breadcrumbSchema, graph } from "@/lib/schema";
 
 const projectImages: Record<string, string> = {
+  "clinza": "/images/clinza/Landing page.png",
   "ai-lead-engine": "/images/lead-engine/dashboard.webp",
   "aivized-agent-factory": "/images/agent-factory/dashboard.webp",
   "growth-os": "/images/growth-os/homepage.webp",

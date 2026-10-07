@@ -9,6 +9,7 @@ import { DesktopMockup } from "./DesktopMockup";
 const Grainient = dynamic(() => import("./Grainient"), { ssr: false });
 
 const projectImages: Record<string, string> = {
+  "clinza": "/images/clinza/Landing page.png",
   "ai-lead-engine": "/images/lead-engine/dashboard.webp",
   "aivized-agent-factory": "/images/agent-factory/dashboard.webp",
   "growth-os": "/images/growth-os/homepage.webp",

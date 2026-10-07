@@ -67,6 +67,14 @@ Comprehensive maintenance to keep sites secure, fast, and up-to-date.
 
 ## Portfolio Projects
 
+### Clinza — AI Sales System for Aesthetic Clinics
+AI + Healthcare automation SaaS. Tech: TypeScript, Next.js, React, Tailwind CSS, OpenAI, ElevenLabs AI Voice, WhatsApp Cloud API, Meta Graph API, Google Workspace, clinic CRM integrations. Multi-channel AI receptionist unifying Facebook, WhatsApp, Instagram, website chat, AI voice calls, and Google Business into one dashboard with knowledge-base grounding, lead scoring, auto-booking, human handoffs, automated workflows, and CSV sales reporting.
+- 10,000+ patient conversations handled every month
+- 98% AI response rate, 24/7 across every channel
+- Average 40% lift in bookings after onboarding
+- Instant human handoff with full context on medical or complex requests
+- Per-clinic encrypted storage with full audit trail (HIPAA-ready)
+
 ### AIVIZED Agent Factory
 AI + No-Code platform for creating chatbots without coding. Backend: Python 3.11.8, FastAPI, SQLAlchemy 2.0, PostgreSQL (Neon), OpenAI GPT-4o, cryptography (Fernet), structlog, httpx. Frontend Widget: React 18, TypeScript, Vite 5 IIFE bundle. Admin Dashboard: Next.js 14+, TailwindCSS, Prisma, JWT auth. Infrastructure: PostgreSQL 15+ on Neon, Docker, Railway, OpenAPI 3.0/3.1.
 - Deploy production-ready AI chatbots in under 10 minutes
@@ -137,6 +145,7 @@ AI + Automation multi-agent system. Tech: TypeScript, Next.js 15, React 19, Tail
 - Home: https://zuhaib.aivized.com/
 - Portfolio: https://zuhaib.aivized.com/portfolio
 - Portfolio — AIVIZED Agent Factory: https://zuhaib.aivized.com/portfolio/aivized-agent-factory
+- Portfolio — Clinza: https://zuhaib.aivized.com/portfolio/clinza
 - Portfolio — Instagram Growth OS: https://zuhaib.aivized.com/portfolio/growth-os
 - Portfolio — Talent AI: https://zuhaib.aivized.com/portfolio/talent-ai
 - Portfolio — FiveOS: https://zuhaib.aivized.com/portfolio/fiveos

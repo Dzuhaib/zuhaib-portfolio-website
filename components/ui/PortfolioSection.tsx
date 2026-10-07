@@ -60,6 +60,7 @@ export function PortfolioSection() {
 
 function getProjectImage(slug: string): string | null {
   const images: Record<string, string> = {
+    "clinza": "/images/clinza/Landing page.png",
     "ai-lead-engine": "/images/lead-engine/dashboard.webp",
     "aivized-agent-factory": "/images/agent-factory/dashboard.webp",
     "growth-os": "/images/growth-os/homepage.webp",
