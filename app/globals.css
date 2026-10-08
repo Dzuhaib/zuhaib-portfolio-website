@@ -27,12 +27,17 @@
 
 html {
   scroll-behavior: smooth;
+  /* `hidden` is the fallback for engines without `overflow: clip` support. */
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
   background-color: #ffffff;
   color: #000000;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 ::selection {
