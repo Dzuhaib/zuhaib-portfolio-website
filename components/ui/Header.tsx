@@ -45,13 +45,7 @@ export function Header() {
 
   return (
     <>
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-          scrolled
-            ? "bg-white/90 backdrop-blur-md border-b border-neutral-200 shadow-sm"
-            : "bg-black/70 backdrop-blur-md md:bg-transparent md:backdrop-blur-none md:border-b md:border-transparent"
-        }`}
-      >
+      <header className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 h-20">
           <Link href="/" className="group" onClick={close} aria-label="Zuhaib Ahmed — home">
             <span
